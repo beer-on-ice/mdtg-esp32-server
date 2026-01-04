@@ -1,4 +1,4 @@
-package xiaomai.common.entity;
+package mdtg.common.entity;
 
 import java.io.Serializable;
 import java.util.Date;

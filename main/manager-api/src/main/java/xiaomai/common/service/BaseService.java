@@ -1,4 +1,4 @@
-package xiaomai.common.service;
+package mdtg.common.service;
 
 import java.io.Serializable;
 import java.util.Collection;

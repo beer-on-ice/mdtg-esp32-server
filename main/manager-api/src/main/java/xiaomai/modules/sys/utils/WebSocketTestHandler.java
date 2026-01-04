@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.utils;
+package mdtg.modules.sys.utils;
 
 import java.util.concurrent.CompletableFuture;
 

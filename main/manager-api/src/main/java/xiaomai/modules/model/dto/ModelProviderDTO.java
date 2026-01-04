@@ -1,4 +1,4 @@
-package xiaomai.modules.model.dto;
+package mdtg.modules.model.dto;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -11,7 +11,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import xiaomai.common.validator.group.UpdateGroup;
+import mdtg.common.validator.group.UpdateGroup;
 
 @Data
 @Schema(description = "模型供应器/商")

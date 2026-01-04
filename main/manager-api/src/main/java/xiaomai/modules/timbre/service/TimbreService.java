@@ -1,14 +1,14 @@
-package xiaomai.modules.timbre.service;
+package mdtg.modules.timbre.service;
 
 import java.util.List;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.model.dto.VoiceDTO;
-import xiaomai.modules.timbre.dto.TimbreDataDTO;
-import xiaomai.modules.timbre.dto.TimbrePageDTO;
-import xiaomai.modules.timbre.entity.TimbreEntity;
-import xiaomai.modules.timbre.vo.TimbreDetailsVO;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.model.dto.VoiceDTO;
+import mdtg.modules.timbre.dto.TimbreDataDTO;
+import mdtg.modules.timbre.dto.TimbrePageDTO;
+import mdtg.modules.timbre.entity.TimbreEntity;
+import mdtg.modules.timbre.vo.TimbreDetailsVO;
 
 /**
  * 音色的业务层的定义

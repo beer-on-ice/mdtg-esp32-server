@@ -1,4 +1,4 @@
-package xiaomai.common.convert;
+package mdtg.common.convert;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

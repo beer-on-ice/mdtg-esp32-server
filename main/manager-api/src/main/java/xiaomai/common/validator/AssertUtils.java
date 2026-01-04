@@ -1,4 +1,4 @@
-package xiaomai.common.validator;
+package mdtg.common.validator;
 
 import java.util.List;
 import java.util.Map;
@@ -8,8 +8,8 @@ import org.apache.commons.lang3.StringUtils;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.ArrayUtil;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
 
 /**
  * 校验工具类

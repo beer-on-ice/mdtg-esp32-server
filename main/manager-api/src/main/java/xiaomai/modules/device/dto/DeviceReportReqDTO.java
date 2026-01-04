@@ -1,4 +1,4 @@
-package xiaomai.modules.device.dto;
+package mdtg.modules.device.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;

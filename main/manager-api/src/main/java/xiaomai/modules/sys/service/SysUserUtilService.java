@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.service;
+package mdtg.modules.sys.service;
 
 
 import java.util.function.Consumer;

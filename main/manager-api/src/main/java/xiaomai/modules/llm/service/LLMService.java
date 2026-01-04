@@ -1,4 +1,4 @@
-package xiaomai.modules.llm.service;
+package mdtg.modules.llm.service;
 
 /**
  * LLM服务接口

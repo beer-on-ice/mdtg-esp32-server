@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

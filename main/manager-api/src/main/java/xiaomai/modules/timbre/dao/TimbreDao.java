@@ -1,10 +1,10 @@
-package xiaomai.modules.timbre.dao;
+package mdtg.modules.timbre.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.timbre.entity.TimbreEntity;
+import mdtg.modules.timbre.entity.TimbreEntity;
 
 /**
  * 音色持久层定义

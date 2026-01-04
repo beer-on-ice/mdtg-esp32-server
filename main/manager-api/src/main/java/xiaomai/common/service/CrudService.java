@@ -1,10 +1,10 @@
-package xiaomai.common.service;
+package mdtg.common.service;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-import xiaomai.common.page.PageData;
+import mdtg.common.page.PageData;
 
 /**
  * CRUD基础服务接口

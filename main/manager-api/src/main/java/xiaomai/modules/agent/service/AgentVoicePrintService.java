@@ -1,10 +1,10 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 import java.util.List;
 
-import xiaomai.modules.agent.dto.AgentVoicePrintSaveDTO;
-import xiaomai.modules.agent.dto.AgentVoicePrintUpdateDTO;
-import xiaomai.modules.agent.vo.AgentVoicePrintVO;
+import mdtg.modules.agent.dto.AgentVoicePrintSaveDTO;
+import mdtg.modules.agent.dto.AgentVoicePrintUpdateDTO;
+import mdtg.modules.agent.vo.AgentVoicePrintVO;
 
 /**
  * 智能体声纹处理service

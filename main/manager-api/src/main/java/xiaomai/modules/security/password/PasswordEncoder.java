@@ -1,4 +1,4 @@
-package xiaomai.modules.security.password;
+package mdtg.modules.security.password;
 
 /**
  * Service interface for encoding passwords.

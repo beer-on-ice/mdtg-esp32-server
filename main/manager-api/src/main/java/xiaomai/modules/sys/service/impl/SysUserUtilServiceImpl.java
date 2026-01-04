@@ -1,13 +1,13 @@
-package xiaomai.modules.sys.service.impl;
+package mdtg.modules.sys.service.impl;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.modules.sys.dao.SysUserDao;
-import xiaomai.modules.sys.entity.SysUserEntity;
-import xiaomai.modules.sys.service.SysUserUtilService;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.modules.sys.dao.SysUserDao;
+import mdtg.modules.sys.entity.SysUserEntity;
+import mdtg.modules.sys.service.SysUserUtilService;
 
 import java.util.function.Consumer;
 

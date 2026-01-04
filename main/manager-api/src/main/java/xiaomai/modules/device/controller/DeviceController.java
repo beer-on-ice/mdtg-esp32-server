@@ -1,4 +1,4 @@
-package xiaomai.modules.device.controller;
+package mdtg.modules.device.controller;
 
 import java.util.List;
 
@@ -23,19 +23,19 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.device.dto.DeviceManualAddDTO;
-import xiaomai.modules.device.dto.DeviceRegisterDTO;
-import xiaomai.modules.device.dto.DeviceUnBindDTO;
-import xiaomai.modules.device.dto.DeviceUpdateDTO;
-import xiaomai.modules.device.entity.DeviceEntity;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.modules.security.user.SecurityUser;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.Result;
+import mdtg.modules.device.dto.DeviceManualAddDTO;
+import mdtg.modules.device.dto.DeviceRegisterDTO;
+import mdtg.modules.device.dto.DeviceUnBindDTO;
+import mdtg.modules.device.dto.DeviceUpdateDTO;
+import mdtg.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.modules.security.user.SecurityUser;
+import mdtg.modules.sys.service.SysParamsService;
 
 @Tag(name = "设备管理")
 @RestController

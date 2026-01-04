@@ -1,10 +1,10 @@
-package xiaomai.modules.sys.service.impl;
+package mdtg.modules.sys.service.impl;
 
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
-import xiaomai.modules.security.oauth2.TokenGenerator;
-import xiaomai.modules.sys.service.TokenService;
+import mdtg.modules.security.oauth2.TokenGenerator;
+import mdtg.modules.sys.service.TokenService;
 
 @AllArgsConstructor
 @Service

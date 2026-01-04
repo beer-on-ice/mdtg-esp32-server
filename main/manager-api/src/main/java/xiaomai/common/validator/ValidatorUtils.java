@@ -1,4 +1,4 @@
-package xiaomai.common.validator;
+package mdtg.common.validator;
 
 import java.util.Locale;
 import java.util.Set;
@@ -12,7 +12,7 @@ import org.springframework.validation.beanvalidation.MessageSourceResourceBundle
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.RenException;
 
 /**
  * hibernate-validator校验工具类

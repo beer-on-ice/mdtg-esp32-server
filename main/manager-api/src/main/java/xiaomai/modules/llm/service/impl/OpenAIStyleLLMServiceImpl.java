@@ -1,4 +1,4 @@
-package xiaomai.modules.llm.service.impl;
+package mdtg.modules.llm.service.impl;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,9 +18,9 @@ import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.modules.llm.service.LLMService;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
+import mdtg.modules.llm.service.LLMService;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
 
 /**
  * OpenAI风格API的LLM服务实现

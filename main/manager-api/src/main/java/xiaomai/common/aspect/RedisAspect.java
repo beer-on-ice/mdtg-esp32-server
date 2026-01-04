@@ -1,4 +1,4 @@
-package xiaomai.common.aspect;
+package mdtg.common.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
 
 /**
  * Redis切面处理类
@@ -25,7 +25,7 @@ public class RedisAspect {
     @Value("${renren.redis.open}")
     private boolean open;
 
-    @Around("execution(* xiaomai.common.redis.RedisUtils.*(..))")
+    @Around("execution(* mdtg.common.redis.RedisUtils.*(..))")
     public Object around(ProceedingJoinPoint point) throws Throwable {
         Object result = null;
         if (open) {

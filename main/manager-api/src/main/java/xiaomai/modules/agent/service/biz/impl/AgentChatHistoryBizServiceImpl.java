@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.biz.impl;
+package mdtg.modules.agent.service.biz.impl;
 
 import java.util.Base64;
 import java.util.Date;
@@ -9,19 +9,19 @@ import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.modules.agent.dto.AgentChatHistoryReportDTO;
-import xiaomai.modules.agent.entity.AgentChatHistoryEntity;
-import xiaomai.modules.agent.entity.AgentEntity;
-import xiaomai.modules.agent.service.AgentChatAudioService;
-import xiaomai.modules.agent.service.AgentChatHistoryService;
-import xiaomai.modules.agent.service.AgentChatSummaryService;
-import xiaomai.modules.agent.service.AgentService;
-import xiaomai.modules.agent.service.biz.AgentChatHistoryBizService;
-import xiaomai.modules.device.entity.DeviceEntity;
-import xiaomai.modules.device.service.DeviceService;
+import mdtg.common.constant.Constant;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.modules.agent.dto.AgentChatHistoryReportDTO;
+import mdtg.modules.agent.entity.AgentChatHistoryEntity;
+import mdtg.modules.agent.entity.AgentEntity;
+import mdtg.modules.agent.service.AgentChatAudioService;
+import mdtg.modules.agent.service.AgentChatHistoryService;
+import mdtg.modules.agent.service.AgentChatSummaryService;
+import mdtg.modules.agent.service.AgentService;
+import mdtg.modules.agent.service.biz.AgentChatHistoryBizService;
+import mdtg.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.service.DeviceService;
 
 /**
  * {@link AgentChatHistoryBizService} impl

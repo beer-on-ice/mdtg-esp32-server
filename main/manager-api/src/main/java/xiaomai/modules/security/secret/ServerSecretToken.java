@@ -1,4 +1,4 @@
-package xiaomai.modules.security.secret;
+package mdtg.modules.security.secret;
 
 import org.apache.shiro.authc.AuthenticationToken;
 

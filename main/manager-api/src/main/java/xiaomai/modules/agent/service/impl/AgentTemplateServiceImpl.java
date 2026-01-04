@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import org.springframework.stereotype.Service;
 
@@ -6,9 +6,9 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-import xiaomai.modules.agent.dao.AgentTemplateDao;
-import xiaomai.modules.agent.entity.AgentTemplateEntity;
-import xiaomai.modules.agent.service.AgentTemplateService;
+import mdtg.modules.agent.dao.AgentTemplateDao;
+import mdtg.modules.agent.entity.AgentTemplateEntity;
+import mdtg.modules.agent.service.AgentTemplateService;
 
 import java.util.List;
 import java.util.Objects;

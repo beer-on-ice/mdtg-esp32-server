@@ -1,4 +1,4 @@
-package xiaomai.modules.model.service.impl;
+package mdtg.modules.model.service.impl;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -19,26 +19,26 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.json.JSONObject;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.SensitiveDataUtils;
-import xiaomai.modules.agent.dao.AgentDao;
-import xiaomai.modules.agent.entity.AgentEntity;
-import xiaomai.modules.model.dao.ModelConfigDao;
-import xiaomai.modules.model.dto.LlmModelBasicInfoDTO;
-import xiaomai.modules.model.dto.ModelBasicInfoDTO;
-import xiaomai.modules.model.dto.ModelConfigBodyDTO;
-import xiaomai.modules.model.dto.ModelConfigDTO;
-import xiaomai.modules.model.dto.ModelProviderDTO;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
-import xiaomai.modules.model.service.ModelProviderService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.SensitiveDataUtils;
+import mdtg.modules.agent.dao.AgentDao;
+import mdtg.modules.agent.entity.AgentEntity;
+import mdtg.modules.model.dao.ModelConfigDao;
+import mdtg.modules.model.dto.LlmModelBasicInfoDTO;
+import mdtg.modules.model.dto.ModelBasicInfoDTO;
+import mdtg.modules.model.dto.ModelConfigBodyDTO;
+import mdtg.modules.model.dto.ModelConfigDTO;
+import mdtg.modules.model.dto.ModelProviderDTO;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
+import mdtg.modules.model.service.ModelProviderService;
 
 @Service
 @AllArgsConstructor

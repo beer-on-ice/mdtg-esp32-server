@@ -1,4 +1,4 @@
-package xiaomai.modules.device.controller;
+package mdtg.modules.device.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,14 +35,14 @@ import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.device.entity.OtaEntity;
-import xiaomai.modules.device.service.OtaService;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.device.entity.OtaEntity;
+import mdtg.modules.device.service.OtaService;
 
 @Tag(name = "设备管理", description = "OTA 相关接口")
 @Slf4j

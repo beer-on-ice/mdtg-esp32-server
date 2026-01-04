@@ -1,4 +1,4 @@
-package xiaomai.modules.device.vo;
+package mdtg.modules.device.vo;
 
 import lombok.Data;
 

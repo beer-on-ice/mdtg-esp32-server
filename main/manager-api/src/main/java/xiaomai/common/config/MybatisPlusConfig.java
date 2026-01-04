@@ -1,4 +1,4 @@
-package xiaomai.common.config;
+package mdtg.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerIntercep
 import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 
-import xiaomai.common.interceptor.DataFilterInterceptor;
+import mdtg.common.interceptor.DataFilterInterceptor;
 
 /**
  * mybatis-plus配置

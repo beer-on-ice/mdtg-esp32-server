@@ -1,4 +1,4 @@
-package xiaomai.modules.sms.service.imp;
+package mdtg.modules.sms.service.imp;
 
 import com.aliyun.dysmsapi20170525.Client;
 import com.aliyun.dysmsapi20170525.models.SendSmsRequest;
@@ -8,13 +8,13 @@ import com.aliyun.teautil.models.RuntimeOptions;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.modules.sms.service.SmsService;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.modules.sms.service.SmsService;
+import mdtg.modules.sys.service.SysParamsService;
 
 @Service
 @AllArgsConstructor

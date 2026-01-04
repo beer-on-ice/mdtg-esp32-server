@@ -1,15 +1,15 @@
-package xiaomai.modules.config.init;
+package mdtg.modules.config.init;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
 import jakarta.annotation.PostConstruct;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.modules.config.service.ConfigService;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.modules.config.service.ConfigService;
+import mdtg.modules.sys.service.SysParamsService;
 
 @Configuration
 @DependsOn("liquibase")

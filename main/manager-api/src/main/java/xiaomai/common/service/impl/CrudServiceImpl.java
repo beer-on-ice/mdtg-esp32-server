@@ -1,4 +1,4 @@
-package xiaomai.common.service.impl;
+package mdtg.common.service.impl;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -12,9 +12,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.ReflectionKit;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.CrudService;
-import xiaomai.common.utils.ConvertUtils;
+import mdtg.common.page.PageData;
+import mdtg.common.service.CrudService;
+import mdtg.common.utils.ConvertUtils;
 
 /**
  * CRUD基础服务类

@@ -1,15 +1,15 @@
-package xiaomai.modules.model.service;
+package mdtg.modules.model.service;
 
 import java.util.List;
 import java.util.Map;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.model.dto.LlmModelBasicInfoDTO;
-import xiaomai.modules.model.dto.ModelBasicInfoDTO;
-import xiaomai.modules.model.dto.ModelConfigBodyDTO;
-import xiaomai.modules.model.dto.ModelConfigDTO;
-import xiaomai.modules.model.entity.ModelConfigEntity;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.model.dto.LlmModelBasicInfoDTO;
+import mdtg.modules.model.dto.ModelBasicInfoDTO;
+import mdtg.modules.model.dto.ModelConfigBodyDTO;
+import mdtg.modules.model.dto.ModelConfigDTO;
+import mdtg.modules.model.entity.ModelConfigEntity;
 
 public interface ModelConfigService extends BaseService<ModelConfigEntity> {
 

@@ -1,10 +1,10 @@
-package xiaomai.modules.agent.dao;
+package mdtg.modules.agent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.agent.entity.AgentTemplateEntity;
+import mdtg.modules.agent.entity.AgentTemplateEntity;
 
 /**
  * @author chenerlei

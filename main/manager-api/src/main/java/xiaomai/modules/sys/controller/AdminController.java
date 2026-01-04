@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.controller;
+package mdtg.modules.sys.controller;
 
 import java.util.Map;
 
@@ -17,16 +17,16 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.device.dto.DevicePageUserDTO;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.modules.device.vo.UserShowDeviceListVO;
-import xiaomai.modules.sys.dto.AdminPageUserDTO;
-import xiaomai.modules.sys.service.SysUserService;
-import xiaomai.modules.sys.vo.AdminPageUserVO;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.device.dto.DevicePageUserDTO;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.modules.device.vo.UserShowDeviceListVO;
+import mdtg.modules.sys.dto.AdminPageUserDTO;
+import mdtg.modules.sys.service.SysUserService;
+import mdtg.modules.sys.vo.AdminPageUserVO;
 
 /**
  * 管理员控制层

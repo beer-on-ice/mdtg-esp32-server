@@ -1,4 +1,4 @@
-package xiaomai.modules.device.dto;
+package mdtg.modules.device.dto;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

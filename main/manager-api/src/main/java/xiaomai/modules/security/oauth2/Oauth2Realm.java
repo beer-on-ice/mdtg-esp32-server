@@ -1,4 +1,4 @@
-package xiaomai.modules.security.oauth2;
+package mdtg.modules.security.oauth2;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -20,14 +20,14 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Resource;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.MessageUtils;
-import xiaomai.modules.security.entity.SysUserTokenEntity;
-import xiaomai.modules.security.service.ShiroService;
-import xiaomai.modules.sys.entity.SysUserEntity;
-import xiaomai.modules.sys.enums.SuperAdminEnum;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.MessageUtils;
+import mdtg.modules.security.entity.SysUserTokenEntity;
+import mdtg.modules.security.service.ShiroService;
+import mdtg.modules.sys.entity.SysUserEntity;
+import mdtg.modules.sys.enums.SuperAdminEnum;
 
 /**
  * 认证

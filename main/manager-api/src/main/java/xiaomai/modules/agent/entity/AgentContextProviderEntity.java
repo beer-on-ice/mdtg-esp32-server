@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.entity;
+package mdtg.modules.agent.entity;
 
 import java.util.Date;
 import java.util.List;
@@ -11,7 +11,7 @@ import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import xiaomai.modules.agent.dto.ContextProviderDTO;
+import mdtg.modules.agent.dto.ContextProviderDTO;
 
 @Data
 @TableName(value = "ai_agent_context_provider", autoResultMap = true)

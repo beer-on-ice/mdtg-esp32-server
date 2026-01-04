@@ -1,4 +1,4 @@
-package xiaomai.modules.voiceclone.service.impl;
+package mdtg.modules.voiceclone.service.impl;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -23,21 +23,21 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.DateUtils;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
-import xiaomai.modules.sys.service.SysUserService;
-import xiaomai.modules.voiceclone.dao.VoiceCloneDao;
-import xiaomai.modules.voiceclone.dto.VoiceCloneDTO;
-import xiaomai.modules.voiceclone.dto.VoiceCloneResponseDTO;
-import xiaomai.modules.voiceclone.entity.VoiceCloneEntity;
-import xiaomai.modules.voiceclone.service.VoiceCloneService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.DateUtils;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
+import mdtg.modules.sys.service.SysUserService;
+import mdtg.modules.voiceclone.dao.VoiceCloneDao;
+import mdtg.modules.voiceclone.dto.VoiceCloneDTO;
+import mdtg.modules.voiceclone.dto.VoiceCloneResponseDTO;
+import mdtg.modules.voiceclone.entity.VoiceCloneEntity;
+import mdtg.modules.voiceclone.service.VoiceCloneService;
 
 @Slf4j
 @Service

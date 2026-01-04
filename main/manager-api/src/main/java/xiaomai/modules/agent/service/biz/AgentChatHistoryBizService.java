@@ -1,6 +1,6 @@
-package xiaomai.modules.agent.service.biz;
+package mdtg.modules.agent.service.biz;
 
-import xiaomai.modules.agent.dto.AgentChatHistoryReportDTO;
+import mdtg.modules.agent.dto.AgentChatHistoryReportDTO;
 
 /**
  * 智能体聊天历史业务逻辑层

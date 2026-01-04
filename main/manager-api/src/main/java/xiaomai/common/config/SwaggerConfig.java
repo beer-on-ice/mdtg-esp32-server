@@ -1,4 +1,4 @@
-package xiaomai.common.config;
+package mdtg.common.config;
 
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.controller;
+package mdtg.modules.agent.controller;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -24,23 +24,23 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.DateUtils;
-import xiaomai.common.utils.MessageUtils;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.agent.dto.AgentChatHistoryDTO;
-import xiaomai.modules.agent.dto.AgentChatHistoryReportDTO;
-import xiaomai.modules.agent.dto.AgentChatSessionDTO;
-import xiaomai.modules.agent.service.AgentChatHistoryService;
-import xiaomai.modules.agent.service.AgentService;
-import xiaomai.modules.agent.service.biz.AgentChatHistoryBizService;
-import xiaomai.modules.security.user.SecurityUser;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.DateUtils;
+import mdtg.common.utils.MessageUtils;
+import mdtg.common.utils.Result;
+import mdtg.modules.agent.dto.AgentChatHistoryDTO;
+import mdtg.modules.agent.dto.AgentChatHistoryReportDTO;
+import mdtg.modules.agent.dto.AgentChatSessionDTO;
+import mdtg.modules.agent.service.AgentChatHistoryService;
+import mdtg.modules.agent.service.AgentService;
+import mdtg.modules.agent.service.biz.AgentChatHistoryBizService;
+import mdtg.modules.security.user.SecurityUser;
 
 @Tag(name = "智能体聊天历史管理")
 @RequiredArgsConstructor

@@ -1,4 +1,4 @@
-package xiaomai.modules.sys;
+package mdtg.modules.sys;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,10 +6,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.modules.security.controller.LoginController;
-import xiaomai.modules.security.dto.LoginDTO;
-import xiaomai.modules.security.dto.SmsVerificationDTO;
-import xiaomai.modules.sys.dto.RetrievePasswordDTO;
+import mdtg.modules.security.controller.LoginController;
+import mdtg.modules.security.dto.LoginDTO;
+import mdtg.modules.security.dto.SmsVerificationDTO;
+import mdtg.modules.sys.dto.RetrievePasswordDTO;
 
 @Slf4j
 @SpringBootTest

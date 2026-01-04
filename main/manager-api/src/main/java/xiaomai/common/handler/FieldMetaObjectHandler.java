@@ -1,4 +1,4 @@
-package xiaomai.common.handler;
+package mdtg.common.handler;
 
 import java.util.Date;
 
@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 
-import xiaomai.common.constant.Constant;
-import xiaomai.common.user.UserDetail;
-import xiaomai.modules.security.user.SecurityUser;
+import mdtg.common.constant.Constant;
+import mdtg.common.user.UserDetail;
+import mdtg.modules.security.user.SecurityUser;
 
 /**
  * 公共字段，自动填充值

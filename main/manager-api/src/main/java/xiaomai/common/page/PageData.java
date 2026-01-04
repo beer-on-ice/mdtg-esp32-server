@@ -1,4 +1,4 @@
-package xiaomai.common.page;
+package mdtg.common.page;
 
 import java.io.Serializable;
 import java.util.List;

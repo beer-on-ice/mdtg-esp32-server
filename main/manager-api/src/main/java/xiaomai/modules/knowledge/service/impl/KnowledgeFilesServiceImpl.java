@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.service.impl;
+package mdtg.modules.knowledge.service.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,14 +28,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.modules.knowledge.dto.KnowledgeFilesDTO;
-import xiaomai.modules.knowledge.rag.KnowledgeBaseAdapter;
-import xiaomai.modules.knowledge.rag.KnowledgeBaseAdapterFactory;
-import xiaomai.modules.knowledge.service.KnowledgeBaseService;
-import xiaomai.modules.knowledge.service.KnowledgeFilesService;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.modules.knowledge.dto.KnowledgeFilesDTO;
+import mdtg.modules.knowledge.rag.KnowledgeBaseAdapter;
+import mdtg.modules.knowledge.rag.KnowledgeBaseAdapterFactory;
+import mdtg.modules.knowledge.service.KnowledgeBaseService;
+import mdtg.modules.knowledge.service.KnowledgeFilesService;
 
 @Service
 @AllArgsConstructor

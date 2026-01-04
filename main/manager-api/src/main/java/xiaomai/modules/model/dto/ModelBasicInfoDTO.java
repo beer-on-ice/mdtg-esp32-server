@@ -1,4 +1,4 @@
-package xiaomai.modules.model.dto;
+package mdtg.modules.model.dto;
 
 import lombok.Data;
 

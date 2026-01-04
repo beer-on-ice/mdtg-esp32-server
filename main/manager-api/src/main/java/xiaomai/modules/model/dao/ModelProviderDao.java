@@ -1,12 +1,12 @@
-package xiaomai.modules.model.dao;
+package mdtg.modules.model.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.model.entity.ModelProviderEntity;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.model.entity.ModelProviderEntity;
 
 @Mapper
 public interface ModelProviderDao extends BaseDao<ModelProviderEntity> {

@@ -1,4 +1,4 @@
-package xiaomai.modules.security.entity;
+package mdtg.modules.security.entity;
 
 import java.io.Serializable;
 import java.util.Date;

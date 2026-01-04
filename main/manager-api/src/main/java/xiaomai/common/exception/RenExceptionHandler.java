@@ -1,4 +1,4 @@
-package xiaomai.common.exception;
+package mdtg.common.exception;
 
 import java.util.List;
 import java.util.Objects;
@@ -13,8 +13,8 @@ import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.utils.MessageUtils;
-import xiaomai.common.utils.Result;
+import mdtg.common.utils.MessageUtils;
+import mdtg.common.utils.Result;
 
 /**
  * 异常处理器

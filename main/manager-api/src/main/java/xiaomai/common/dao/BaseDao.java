@@ -1,4 +1,4 @@
-package xiaomai.common.dao;
+package mdtg.common.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 

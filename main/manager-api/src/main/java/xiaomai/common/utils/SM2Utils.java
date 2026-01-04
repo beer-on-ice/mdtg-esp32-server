@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import org.bouncycastle.asn1.gm.GMNamedCurves;
 import org.bouncycastle.asn1.x9.X9ECParameters;

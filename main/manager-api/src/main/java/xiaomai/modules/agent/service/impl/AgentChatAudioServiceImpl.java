@@ -1,12 +1,12 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-import xiaomai.modules.agent.dao.AiAgentChatAudioDao;
-import xiaomai.modules.agent.entity.AgentChatAudioEntity;
-import xiaomai.modules.agent.service.AgentChatAudioService;
+import mdtg.modules.agent.dao.AiAgentChatAudioDao;
+import mdtg.modules.agent.entity.AgentChatAudioEntity;
+import mdtg.modules.agent.service.AgentChatAudioService;
 
 /**
  * 智能体聊天音频数据表处理service {@link AgentChatAudioService} impl

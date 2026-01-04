@@ -1,4 +1,4 @@
-package xiaomai.common.xss;
+package mdtg.common.xss;
 
 import org.jsoup.Jsoup;
 import org.jsoup.safety.Safelist;

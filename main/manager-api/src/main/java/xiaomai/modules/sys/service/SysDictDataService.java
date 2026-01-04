@@ -1,14 +1,14 @@
-package xiaomai.modules.sys.service;
+package mdtg.modules.sys.service;
 
 import java.util.List;
 import java.util.Map;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.sys.dto.SysDictDataDTO;
-import xiaomai.modules.sys.entity.SysDictDataEntity;
-import xiaomai.modules.sys.vo.SysDictDataItem;
-import xiaomai.modules.sys.vo.SysDictDataVO;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.sys.dto.SysDictDataDTO;
+import mdtg.modules.sys.entity.SysDictDataEntity;
+import mdtg.modules.sys.vo.SysDictDataItem;
+import mdtg.modules.sys.vo.SysDictDataVO;
 
 /**
  * 数据字典

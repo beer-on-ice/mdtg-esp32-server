@@ -1,9 +1,9 @@
-package xiaomai.common.xss;
+package mdtg.common.xss;
 
 import org.apache.commons.lang3.StringUtils;
 
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
 
 /**
  * SQL过滤

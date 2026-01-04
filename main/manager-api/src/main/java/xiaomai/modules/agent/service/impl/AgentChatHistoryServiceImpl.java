@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,17 +14,17 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.modules.agent.Enums.AgentChatHistoryType;
-import xiaomai.modules.agent.dao.AiAgentChatHistoryDao;
-import xiaomai.modules.agent.dto.AgentChatHistoryDTO;
-import xiaomai.modules.agent.dto.AgentChatSessionDTO;
-import xiaomai.modules.agent.entity.AgentChatHistoryEntity;
-import xiaomai.modules.agent.service.AgentChatHistoryService;
-import xiaomai.modules.agent.vo.AgentChatHistoryUserVO;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.JsonUtils;
+import mdtg.modules.agent.Enums.AgentChatHistoryType;
+import mdtg.modules.agent.dao.AiAgentChatHistoryDao;
+import mdtg.modules.agent.dto.AgentChatHistoryDTO;
+import mdtg.modules.agent.dto.AgentChatSessionDTO;
+import mdtg.modules.agent.entity.AgentChatHistoryEntity;
+import mdtg.modules.agent.service.AgentChatHistoryService;
+import mdtg.modules.agent.vo.AgentChatHistoryUserVO;
 
 /**
  * 智能体聊天记录表处理service {@link AgentChatHistoryService} impl

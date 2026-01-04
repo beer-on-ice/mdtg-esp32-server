@@ -1,11 +1,11 @@
-package xiaomai.modules.security.service;
+package mdtg.modules.security.service;
 
-import xiaomai.common.page.TokenDTO;
-import xiaomai.common.service.BaseService;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.security.entity.SysUserTokenEntity;
-import xiaomai.modules.sys.dto.PasswordDTO;
-import xiaomai.modules.sys.dto.SysUserDTO;
+import mdtg.common.page.TokenDTO;
+import mdtg.common.service.BaseService;
+import mdtg.common.utils.Result;
+import mdtg.modules.security.entity.SysUserTokenEntity;
+import mdtg.modules.sys.dto.PasswordDTO;
+import mdtg.modules.sys.dto.SysUserDTO;
 
 /**
  * 用户Token

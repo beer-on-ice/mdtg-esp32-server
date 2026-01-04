@@ -1,4 +1,4 @@
-package xiaomai.modules.voiceclone.controller;
+package mdtg.modules.voiceclone.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -19,15 +19,15 @@ import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.model.service.ModelConfigService;
-import xiaomai.modules.voiceclone.dto.VoiceCloneDTO;
-import xiaomai.modules.voiceclone.dto.VoiceCloneResponseDTO;
-import xiaomai.modules.voiceclone.service.VoiceCloneService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.model.service.ModelConfigService;
+import mdtg.modules.voiceclone.dto.VoiceCloneDTO;
+import mdtg.modules.voiceclone.dto.VoiceCloneResponseDTO;
+import mdtg.modules.voiceclone.service.VoiceCloneService;
 
 @Tag(name = "音色资源管理", description = "音色资源开通相关接口")
 @Slf4j
@@ -80,7 +80,7 @@ public class VoiceResourceController {
         try {
             voiceCloneService.save(dto);
             return new Result<Void>();
-        } catch (xiaomai.common.exception.RenException e) {
+        } catch (mdtg.common.exception.RenException e) {
             return new Result<Void>().error(e.getCode(), e.getMsg());
         } catch (RuntimeException e) {
             return new Result<Void>().error(ErrorCode.ADD_DATA_FAILED, e.getMessage());

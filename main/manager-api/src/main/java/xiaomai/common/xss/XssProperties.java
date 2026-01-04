@@ -1,4 +1,4 @@
-package xiaomai.common.xss;
+package mdtg.common.xss;
 
 import java.util.Collections;
 import java.util.List;

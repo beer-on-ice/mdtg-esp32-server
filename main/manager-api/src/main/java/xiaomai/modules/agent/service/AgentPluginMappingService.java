@@ -1,10 +1,10 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 import java.util.List;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import xiaomai.modules.agent.entity.AgentPluginMapping;
+import mdtg.modules.agent.entity.AgentPluginMapping;
 
 /**
  * @description 针对表【ai_agent_plugin_mapping(Agent与插件的唯一映射表)】的数据库操作Service

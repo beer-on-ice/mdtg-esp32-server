@@ -1,4 +1,4 @@
-package xiaomai.modules.config.controller;
+package mdtg.modules.config.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,13 +9,13 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.config.dto.AgentModelsDTO;
-import xiaomai.modules.config.service.ConfigService;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.config.dto.AgentModelsDTO;
+import mdtg.modules.config.service.ConfigService;
 
 /**
- * xiaomai-server 配置获取
+ * mdtg-server 配置获取
  *
  * @since 1.0.0
  */

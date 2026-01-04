@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.controller;
+package mdtg.modules.agent.controller;
 
 import java.util.List;
 
@@ -17,15 +17,15 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.agent.dto.AgentVoicePrintSaveDTO;
-import xiaomai.modules.agent.dto.AgentVoicePrintUpdateDTO;
-import xiaomai.modules.agent.service.AgentVoicePrintService;
-import xiaomai.modules.agent.vo.AgentVoicePrintVO;
-import xiaomai.modules.security.user.SecurityUser;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.utils.Result;
+import mdtg.modules.agent.dto.AgentVoicePrintSaveDTO;
+import mdtg.modules.agent.dto.AgentVoicePrintUpdateDTO;
+import mdtg.modules.agent.service.AgentVoicePrintService;
+import mdtg.modules.agent.vo.AgentVoicePrintVO;
+import mdtg.modules.security.user.SecurityUser;
+import mdtg.modules.sys.service.SysParamsService;
 
 @Tag(name = "智能体声纹管理")
 @AllArgsConstructor

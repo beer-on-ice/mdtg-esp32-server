@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 /**
  * 返回响应体工具类

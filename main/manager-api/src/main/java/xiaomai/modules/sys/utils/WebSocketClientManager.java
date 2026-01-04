@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.utils;
+package mdtg.modules.sys.utils;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -32,7 +32,7 @@ import org.springframework.web.socket.handler.AbstractWebSocketHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.utils.DateUtils;
+import mdtg.common.utils.DateUtils;
 
 /**
  * WebSocketClientResource：支持 try-with-resources 模式

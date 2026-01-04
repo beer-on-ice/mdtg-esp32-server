@@ -1,10 +1,10 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.io.Serializable;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import xiaomai.common.exception.ErrorCode;
+import mdtg.common.exception.ErrorCode;
 
 /**
  * 响应数据

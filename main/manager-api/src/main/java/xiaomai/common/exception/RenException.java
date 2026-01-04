@@ -1,6 +1,6 @@
-package xiaomai.common.exception;
+package mdtg.common.exception;
 
-import xiaomai.common.utils.MessageUtils;
+import mdtg.common.utils.MessageUtils;
 
 /**
  * 自定义异常

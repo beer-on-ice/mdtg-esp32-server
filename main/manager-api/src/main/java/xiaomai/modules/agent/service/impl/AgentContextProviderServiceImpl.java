@@ -1,13 +1,13 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.modules.agent.dao.AgentContextProviderDao;
-import xiaomai.modules.agent.entity.AgentContextProviderEntity;
-import xiaomai.modules.agent.service.AgentContextProviderService;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.modules.agent.dao.AgentContextProviderDao;
+import mdtg.modules.agent.entity.AgentContextProviderEntity;
+import mdtg.modules.agent.service.AgentContextProviderService;
 
 @Service
 public class AgentContextProviderServiceImpl extends BaseServiceImpl<AgentContextProviderDao, AgentContextProviderEntity> implements AgentContextProviderService {

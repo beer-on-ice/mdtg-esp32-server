@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.dto;
+package mdtg.modules.sys.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import xiaomai.modules.sys.enums.ServerActionEnum;
+import mdtg.modules.sys.enums.ServerActionEnum;
 
 /**
  * 发送python服务端操作DTO

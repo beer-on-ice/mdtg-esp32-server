@@ -1,8 +1,8 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import xiaomai.modules.agent.entity.AgentChatAudioEntity;
+import mdtg.modules.agent.entity.AgentChatAudioEntity;
 
 /**
  * 智能体聊天音频数据表处理service

@@ -1,4 +1,4 @@
-package xiaomai.modules.security.oauth2;
+package mdtg.modules.security.oauth2;
 
 import org.apache.shiro.authc.AuthenticationToken;
 

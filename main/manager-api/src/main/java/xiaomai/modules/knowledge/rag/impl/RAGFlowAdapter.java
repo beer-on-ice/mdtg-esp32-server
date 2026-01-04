@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.rag.impl;
+package mdtg.modules.knowledge.rag.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,11 +25,11 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.modules.knowledge.dto.KnowledgeFilesDTO;
-import xiaomai.modules.knowledge.rag.KnowledgeBaseAdapter;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.modules.knowledge.dto.KnowledgeFilesDTO;
+import mdtg.modules.knowledge.rag.KnowledgeBaseAdapter;
 
 /**
  * RAGFlow知识库适配器实现

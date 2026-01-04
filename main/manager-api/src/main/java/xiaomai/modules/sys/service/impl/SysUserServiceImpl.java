@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.service.impl;
+package mdtg.modules.sys.service.impl;
 
 import java.util.HashMap;
 import java.util.List;
@@ -15,24 +15,24 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.modules.agent.service.AgentService;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.modules.security.password.PasswordUtils;
-import xiaomai.modules.sys.dao.SysUserDao;
-import xiaomai.modules.sys.dto.AdminPageUserDTO;
-import xiaomai.modules.sys.dto.PasswordDTO;
-import xiaomai.modules.sys.dto.SysUserDTO;
-import xiaomai.modules.sys.entity.SysUserEntity;
-import xiaomai.modules.sys.enums.SuperAdminEnum;
-import xiaomai.modules.sys.service.SysParamsService;
-import xiaomai.modules.sys.service.SysUserService;
-import xiaomai.modules.sys.vo.AdminPageUserVO;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.modules.agent.service.AgentService;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.modules.security.password.PasswordUtils;
+import mdtg.modules.sys.dao.SysUserDao;
+import mdtg.modules.sys.dto.AdminPageUserDTO;
+import mdtg.modules.sys.dto.PasswordDTO;
+import mdtg.modules.sys.dto.SysUserDTO;
+import mdtg.modules.sys.entity.SysUserEntity;
+import mdtg.modules.sys.enums.SuperAdminEnum;
+import mdtg.modules.sys.service.SysParamsService;
+import mdtg.modules.sys.service.SysUserService;
+import mdtg.modules.sys.vo.AdminPageUserVO;
 
 /**
  * 系统用户

@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.entity;
+package mdtg.modules.sys.entity;
 
 import java.util.Date;
 
@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import xiaomai.common.entity.BaseEntity;
+import mdtg.common.entity.BaseEntity;
 
 /**
  * 系统用户

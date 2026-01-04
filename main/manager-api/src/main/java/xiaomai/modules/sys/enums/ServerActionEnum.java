@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.enums;
+package mdtg.modules.sys.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

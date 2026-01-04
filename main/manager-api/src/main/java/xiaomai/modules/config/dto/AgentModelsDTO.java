@@ -1,4 +1,4 @@
-package xiaomai.modules.config.dto;
+package mdtg.modules.config.dto;
 
 import java.util.Map;
 

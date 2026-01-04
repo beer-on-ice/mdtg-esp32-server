@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.controller;
+package mdtg.modules.sys.controller;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -20,19 +20,19 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import xiaomai.common.annotation.LogOperation;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.sys.dto.EmitSeverActionDTO;
-import xiaomai.modules.sys.dto.ServerActionPayloadDTO;
-import xiaomai.modules.sys.dto.ServerActionResponseDTO;
-import xiaomai.modules.sys.enums.ServerActionEnum;
-import xiaomai.modules.sys.service.SysParamsService;
-import xiaomai.modules.sys.utils.WebSocketClientManager;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.common.redis.RedisUtils;
+import mdtg.common.annotation.LogOperation;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.utils.Result;
+import mdtg.modules.sys.dto.EmitSeverActionDTO;
+import mdtg.modules.sys.dto.ServerActionPayloadDTO;
+import mdtg.modules.sys.dto.ServerActionResponseDTO;
+import mdtg.modules.sys.enums.ServerActionEnum;
+import mdtg.modules.sys.service.SysParamsService;
+import mdtg.modules.sys.utils.WebSocketClientManager;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.common.redis.RedisUtils;
 
 /**
  * 服务端管理控制器
@@ -93,7 +93,7 @@ public class ServerSideManageController {
         String deviceId = UUID.randomUUID().toString();
         String clientId = UUID.randomUUID().toString();
 
-        String redisKey = xiaomai.common.redis.RedisKeys.getTmpRegisterMacKey(deviceId);
+        String redisKey = mdtg.common.redis.RedisKeys.getTmpRegisterMacKey(deviceId);
         redisUtils.set(redisKey, "true", 300); // 5分钟有效期
 
         WebSocketHttpHeaders headers = new WebSocketHttpHeaders();

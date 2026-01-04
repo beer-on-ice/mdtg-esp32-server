@@ -1,4 +1,4 @@
-package xiaomai.common.validator.group;
+package mdtg.common.validator.group;
 
 /**
  * 默认 Group

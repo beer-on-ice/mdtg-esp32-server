@@ -1,4 +1,4 @@
-package xiaomai.modules.model.entity;
+package mdtg.modules.model.entity;
 
 import java.util.Date;
 

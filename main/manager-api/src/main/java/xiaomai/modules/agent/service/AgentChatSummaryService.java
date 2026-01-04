@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 /**
  * 智能体聊天记录总结服务接口

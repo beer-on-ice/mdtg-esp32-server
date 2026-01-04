@@ -1,4 +1,4 @@
-package xiaomai.modules.voiceclone.entity;
+package mdtg.modules.voiceclone.entity;
 
 import java.util.Date;
 

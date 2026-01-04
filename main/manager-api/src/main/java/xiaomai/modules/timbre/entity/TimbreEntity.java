@@ -1,4 +1,4 @@
-package xiaomai.modules.timbre.entity;
+package mdtg.modules.timbre.entity;
 
 import java.util.Date;
 

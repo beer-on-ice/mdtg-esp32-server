@@ -1,4 +1,4 @@
-package xiaomai;
+package mdtg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +8,6 @@ public class AdminApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AdminApplication.class, args);
-        System.out.println("http://localhost:8002/xiaomai/doc.html");
+        System.out.println("http://localhost:8002/mdtg/doc.html");
     }
 }

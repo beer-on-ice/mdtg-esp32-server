@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

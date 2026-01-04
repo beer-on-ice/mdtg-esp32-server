@@ -1,4 +1,4 @@
-package xiaomai.common.user;
+package mdtg.common.user;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package xiaomai.modules.security.secret;
+package mdtg.modules.security.secret;
 
 import java.io.IOException;
 
@@ -12,12 +12,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.utils.HttpContextUtils;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.utils.HttpContextUtils;
+import mdtg.common.utils.JsonUtils;
+import mdtg.common.utils.Result;
+import mdtg.modules.sys.service.SysParamsService;
 
 /**
  * Config API 过滤器

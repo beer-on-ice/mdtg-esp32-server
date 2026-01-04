@@ -1,10 +1,10 @@
-package xiaomai.modules.model.service;
+package mdtg.modules.model.service;
 
 import java.util.Collection;
 import java.util.List;
 
-import xiaomai.common.page.PageData;
-import xiaomai.modules.model.dto.ModelProviderDTO;
+import mdtg.common.page.PageData;
+import mdtg.modules.model.dto.ModelProviderDTO;
 
 public interface ModelProviderService {
 

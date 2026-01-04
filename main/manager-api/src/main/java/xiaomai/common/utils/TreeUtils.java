@@ -1,11 +1,11 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import xiaomai.common.validator.AssertUtils;
+import mdtg.common.validator.AssertUtils;
 
 /**
  * 树形结构工具类，如：菜单、部门等

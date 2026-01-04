@@ -1,4 +1,4 @@
-package xiaomai.modules.security.service.impl;
+package mdtg.modules.security.service.impl;
 
 import java.io.IOException;
 import java.util.Random;
@@ -15,14 +15,14 @@ import com.wf.captcha.base.Captcha;
 
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletResponse;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.modules.security.service.CaptchaService;
-import xiaomai.modules.sms.service.SmsService;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.modules.security.service.CaptchaService;
+import mdtg.modules.sms.service.SmsService;
+import mdtg.modules.sys.service.SysParamsService;
 
 /**
  * 验证码

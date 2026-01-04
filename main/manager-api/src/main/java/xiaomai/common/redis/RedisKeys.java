@@ -1,4 +1,4 @@
-package xiaomai.common.redis;
+package mdtg.common.redis;
 
 /**
  * Redis Key 常量类

@@ -1,10 +1,10 @@
-package xiaomai.modules.sys.redis;
+package mdtg.modules.sys.redis;
 
 import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
 
 /**
  * 参数管理

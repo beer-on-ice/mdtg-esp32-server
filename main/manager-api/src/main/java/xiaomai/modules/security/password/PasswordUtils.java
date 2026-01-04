@@ -1,4 +1,4 @@
-package xiaomai.modules.security.password;
+package mdtg.modules.security.password;
 
 /**
  * 密码工具类

@@ -1,4 +1,4 @@
-package xiaomai.modules.timbre.service.impl;
+package mdtg.modules.timbre.service.impl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,24 +16,24 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 
 import cn.hutool.core.collection.CollectionUtil;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.MessageUtils;
-import xiaomai.modules.model.dto.VoiceDTO;
-import xiaomai.modules.security.user.SecurityUser;
-import xiaomai.modules.timbre.dao.TimbreDao;
-import xiaomai.modules.timbre.dto.TimbreDataDTO;
-import xiaomai.modules.timbre.dto.TimbrePageDTO;
-import xiaomai.modules.timbre.entity.TimbreEntity;
-import xiaomai.modules.timbre.service.TimbreService;
-import xiaomai.modules.timbre.vo.TimbreDetailsVO;
-import xiaomai.modules.voiceclone.dao.VoiceCloneDao;
-import xiaomai.modules.voiceclone.entity.VoiceCloneEntity;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.MessageUtils;
+import mdtg.modules.model.dto.VoiceDTO;
+import mdtg.modules.security.user.SecurityUser;
+import mdtg.modules.timbre.dao.TimbreDao;
+import mdtg.modules.timbre.dto.TimbreDataDTO;
+import mdtg.modules.timbre.dto.TimbrePageDTO;
+import mdtg.modules.timbre.entity.TimbreEntity;
+import mdtg.modules.timbre.service.TimbreService;
+import mdtg.modules.timbre.vo.TimbreDetailsVO;
+import mdtg.modules.voiceclone.dao.VoiceCloneDao;
+import mdtg.modules.voiceclone.entity.VoiceCloneEntity;
 
 /**
  * 音色的业务层的实现

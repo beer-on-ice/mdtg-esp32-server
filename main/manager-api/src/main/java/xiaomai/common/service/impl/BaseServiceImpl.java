@@ -1,4 +1,4 @@
-package xiaomai.common.service.impl;
+package mdtg.common.service.impl;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -26,10 +26,10 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.toolkit.SqlHelper;
 
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.common.utils.ConvertUtils;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.common.utils.ConvertUtils;
 
 /**
  * 基础服务类，所有Service都要继承
@@ -47,7 +47,7 @@ public abstract class BaseServiceImpl<M extends BaseMapper<T>, T> implements Bas
      * @param params            分页查询参数
      * @param defaultOrderField 默认排序字段
      * @param isAsc             排序方式
-     * @see xiaomai.common.constant.Constant
+     * @see mdtg.common.constant.Constant
      *      params.put(Constant.PAGE, "1");
      *      params.put(Constant.LIMIT, "10");
      *      params.put(Constant.ORDER_FIELD, "field"); // 单个字段

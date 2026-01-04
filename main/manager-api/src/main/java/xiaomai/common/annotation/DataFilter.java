@@ -1,4 +1,4 @@
-package xiaomai.common.annotation;
+package mdtg.common.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

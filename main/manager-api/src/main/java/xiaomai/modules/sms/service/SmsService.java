@@ -1,4 +1,4 @@
-package xiaomai.modules.sms.service;
+package mdtg.modules.sms.service;
 
 /**
  * 短信服务的方法定义接口

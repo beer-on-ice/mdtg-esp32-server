@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.enums;
+package mdtg.modules.sys.enums;
 
 /**
  * 超级管理员枚举

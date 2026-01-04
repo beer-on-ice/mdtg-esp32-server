@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.controller;
+package mdtg.modules.agent.controller;
 
 import java.util.List;
 
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.agent.service.AgentMcpAccessPointService;
-import xiaomai.modules.agent.service.AgentService;
-import xiaomai.modules.security.user.SecurityUser;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.Result;
+import mdtg.modules.agent.service.AgentMcpAccessPointService;
+import mdtg.modules.agent.service.AgentService;
+import mdtg.modules.security.user.SecurityUser;
 
 @Tag(name = "智能体Mcp接入点管理")
 @RequiredArgsConstructor

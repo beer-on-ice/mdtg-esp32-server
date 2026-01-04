@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import org.apache.commons.lang3.StringUtils;
 

@@ -1,13 +1,13 @@
-package xiaomai.modules.agent.vo;
+package mdtg.modules.agent.vo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import xiaomai.modules.agent.dto.ContextProviderDTO;
-import xiaomai.modules.agent.entity.AgentEntity;
-import xiaomai.modules.agent.entity.AgentPluginMapping;
+import mdtg.modules.agent.dto.ContextProviderDTO;
+import mdtg.modules.agent.entity.AgentEntity;
+import mdtg.modules.agent.entity.AgentPluginMapping;
 
 import java.util.List;
 

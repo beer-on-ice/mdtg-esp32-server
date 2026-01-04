@@ -1,12 +1,12 @@
-package xiaomai.modules.security.dao;
+package mdtg.modules.security.dao;
 
 import java.util.Date;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.security.entity.SysUserTokenEntity;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.security.entity.SysUserTokenEntity;
 
 /**
  * 系统用户Token

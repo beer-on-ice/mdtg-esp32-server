@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.entity;
+package mdtg.modules.agent.entity;
 
 import java.io.Serializable;
 import java.util.Date;

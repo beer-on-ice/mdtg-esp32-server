@@ -1,15 +1,15 @@
-package xiaomai.modules.voiceclone.service;
+package mdtg.modules.voiceclone.service;
 
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.voiceclone.dto.VoiceCloneDTO;
-import xiaomai.modules.voiceclone.dto.VoiceCloneResponseDTO;
-import xiaomai.modules.voiceclone.entity.VoiceCloneEntity;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.voiceclone.dto.VoiceCloneDTO;
+import mdtg.modules.voiceclone.dto.VoiceCloneResponseDTO;
+import mdtg.modules.voiceclone.entity.VoiceCloneEntity;
 
 /**
  * 声音克隆管理

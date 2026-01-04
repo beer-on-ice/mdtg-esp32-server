@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.util.Date;
 import java.util.Enumeration;
@@ -13,8 +13,8 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import jakarta.servlet.http.HttpServletRequest;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
 
 /**
  * Http

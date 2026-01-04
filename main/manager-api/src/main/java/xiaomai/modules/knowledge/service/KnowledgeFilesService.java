@@ -1,12 +1,12 @@
-package xiaomai.modules.knowledge.service;
+package mdtg.modules.knowledge.service;
 
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import xiaomai.common.page.PageData;
-import xiaomai.modules.knowledge.dto.KnowledgeFilesDTO;
+import mdtg.common.page.PageData;
+import mdtg.modules.knowledge.dto.KnowledgeFilesDTO;
 
 /**
  * 知识库文档服务接口

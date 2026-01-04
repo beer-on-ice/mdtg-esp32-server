@@ -1,10 +1,10 @@
-package xiaomai.modules.security.oauth2;
+package mdtg.modules.security.oauth2;
 
 import java.security.MessageDigest;
 import java.util.UUID;
 
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
 
 /**
  * 生成token

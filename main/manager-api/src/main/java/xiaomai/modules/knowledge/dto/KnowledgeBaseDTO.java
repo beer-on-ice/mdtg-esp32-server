@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.dto;
+package mdtg.modules.knowledge.dto;
 
 import java.io.Serial;
 import java.io.Serializable;

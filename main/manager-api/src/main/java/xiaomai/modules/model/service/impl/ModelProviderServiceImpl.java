@@ -1,4 +1,4 @@
-package xiaomai.modules.model.service.impl;
+package mdtg.modules.model.service.impl;
 
 import java.util.Collection;
 import java.util.Date;
@@ -15,20 +15,20 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 
 import cn.hutool.json.JSONArray;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.modules.knowledge.dao.KnowledgeBaseDao;
-import xiaomai.modules.knowledge.entity.KnowledgeBaseEntity;
-import xiaomai.modules.model.dao.ModelProviderDao;
-import xiaomai.modules.model.dto.ModelProviderDTO;
-import xiaomai.modules.model.entity.ModelProviderEntity;
-import xiaomai.modules.model.service.ModelProviderService;
-import xiaomai.modules.security.user.SecurityUser;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.modules.knowledge.dao.KnowledgeBaseDao;
+import mdtg.modules.knowledge.entity.KnowledgeBaseEntity;
+import mdtg.modules.model.dao.ModelProviderDao;
+import mdtg.modules.model.dto.ModelProviderDTO;
+import mdtg.modules.model.entity.ModelProviderEntity;
+import mdtg.modules.model.service.ModelProviderService;
+import mdtg.modules.security.user.SecurityUser;
 
 @Service
 @AllArgsConstructor

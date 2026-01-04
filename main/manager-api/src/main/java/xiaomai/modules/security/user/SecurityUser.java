@@ -1,9 +1,9 @@
-package xiaomai.modules.security.user;
+package mdtg.modules.security.user;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 
-import xiaomai.common.user.UserDetail;
+import mdtg.common.user.UserDetail;
 
 /**
  * Shiro工具类

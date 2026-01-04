@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.util.Arrays;
 import java.util.HashMap;

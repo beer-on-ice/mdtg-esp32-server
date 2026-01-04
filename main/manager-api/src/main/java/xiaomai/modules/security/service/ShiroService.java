@@ -1,7 +1,7 @@
-package xiaomai.modules.security.service;
+package mdtg.modules.security.service;
 
-import xiaomai.modules.security.entity.SysUserTokenEntity;
-import xiaomai.modules.sys.entity.SysUserEntity;
+import mdtg.modules.security.entity.SysUserTokenEntity;
+import mdtg.modules.sys.entity.SysUserEntity;
 
 /**
  * shiro相关接口

@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.service.impl;
+package mdtg.modules.sys.service.impl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,19 +14,19 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.common.utils.SM2Utils;
-import xiaomai.modules.sys.dao.SysParamsDao;
-import xiaomai.modules.sys.dto.SysParamsDTO;
-import xiaomai.modules.sys.entity.SysParamsEntity;
-import xiaomai.modules.sys.redis.SysParamsRedis;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.JsonUtils;
+import mdtg.common.utils.SM2Utils;
+import mdtg.modules.sys.dao.SysParamsDao;
+import mdtg.modules.sys.dto.SysParamsDTO;
+import mdtg.modules.sys.entity.SysParamsEntity;
+import mdtg.modules.sys.redis.SysParamsRedis;
+import mdtg.modules.sys.service.SysParamsService;
 
 /**
  * 参数管理

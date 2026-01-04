@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.controller;
+package mdtg.modules.sys.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -19,14 +19,14 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.sys.dto.SysDictDataDTO;
-import xiaomai.modules.sys.service.SysDictDataService;
-import xiaomai.modules.sys.vo.SysDictDataItem;
-import xiaomai.modules.sys.vo.SysDictDataVO;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.sys.dto.SysDictDataDTO;
+import mdtg.modules.sys.service.SysDictDataService;
+import mdtg.modules.sys.vo.SysDictDataItem;
+import mdtg.modules.sys.vo.SysDictDataVO;
 
 /**
  * 字典数据管理

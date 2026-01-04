@@ -1,4 +1,4 @@
-package xiaomai.modules.device.service.impl;
+package mdtg.modules.device.service.impl;
 
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
@@ -30,29 +30,29 @@ import cn.hutool.core.util.RandomUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.DateUtils;
-import xiaomai.modules.device.dao.DeviceDao;
-import xiaomai.modules.device.dto.DeviceManualAddDTO;
-import xiaomai.modules.device.dto.DevicePageUserDTO;
-import xiaomai.modules.device.dto.DeviceReportReqDTO;
-import xiaomai.modules.device.dto.DeviceReportRespDTO;
-import xiaomai.modules.device.entity.DeviceEntity;
-import xiaomai.modules.device.entity.OtaEntity;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.modules.device.service.OtaService;
-import xiaomai.modules.device.vo.UserShowDeviceListVO;
-import xiaomai.modules.security.user.SecurityUser;
-import xiaomai.modules.sys.service.SysParamsService;
-import xiaomai.modules.sys.service.SysUserUtilService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.DateUtils;
+import mdtg.modules.device.dao.DeviceDao;
+import mdtg.modules.device.dto.DeviceManualAddDTO;
+import mdtg.modules.device.dto.DevicePageUserDTO;
+import mdtg.modules.device.dto.DeviceReportReqDTO;
+import mdtg.modules.device.dto.DeviceReportRespDTO;
+import mdtg.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.entity.OtaEntity;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.modules.device.service.OtaService;
+import mdtg.modules.device.vo.UserShowDeviceListVO;
+import mdtg.modules.security.user.SecurityUser;
+import mdtg.modules.sys.service.SysParamsService;
+import mdtg.modules.sys.service.SysUserUtilService;
 
 @Slf4j
 @Service
@@ -189,7 +189,7 @@ public class DeviceServiceImpl extends BaseServiceImpl<DeviceDao, DeviceEntity> 
 
         if (StringUtils.isBlank(wsUrl) || wsUrl.equals("null")) {
             log.error("WebSocket地址未配置，请登录智控台，在参数管理找到【server.websocket】配置");
-            wsUrl = "ws://xiaomai.server.com:8000/xiaomai/v1/";
+            wsUrl = "ws://mdtg.server.com:8000/mdtg/v1/";
             websocket.setUrl(wsUrl);
         } else {
             String[] wsUrls = wsUrl.split("\\;");
@@ -198,7 +198,7 @@ public class DeviceServiceImpl extends BaseServiceImpl<DeviceDao, DeviceEntity> 
                 websocket.setUrl(wsUrls[RandomUtil.randomInt(0, wsUrls.length)]);
             } else {
                 log.error("WebSocket地址未配置，请登录智控台，在参数管理找到【server.websocket】配置");
-                websocket.setUrl("ws://xiaomai.server.com:8000/xiaomai/v1/");
+                websocket.setUrl("ws://mdtg.server.com:8000/mdtg/v1/");
             }
         }
 

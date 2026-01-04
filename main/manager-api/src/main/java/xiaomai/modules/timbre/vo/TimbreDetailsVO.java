@@ -1,4 +1,4 @@
-package xiaomai.modules.timbre.vo;
+package mdtg.modules.timbre.vo;
 
 import java.io.Serializable;
 

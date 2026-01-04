@@ -1,4 +1,4 @@
-package xiaomai.modules.model.controller;
+package mdtg.modules.model.controller;
 
 import java.util.List;
 
@@ -16,12 +16,12 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.common.utils.ResultUtils;
-import xiaomai.common.validator.group.UpdateGroup;
-import xiaomai.modules.model.dto.ModelProviderDTO;
-import xiaomai.modules.model.service.ModelProviderService;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.common.utils.ResultUtils;
+import mdtg.common.validator.group.UpdateGroup;
+import mdtg.modules.model.dto.ModelProviderDTO;
+import mdtg.modules.model.service.ModelProviderService;
 
 @AllArgsConstructor
 @RestController

@@ -1,9 +1,9 @@
-package xiaomai.modules.sys.dao;
+package mdtg.modules.sys.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.sys.entity.SysUserEntity;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.sys.entity.SysUserEntity;
 
 /**
  * 系统用户

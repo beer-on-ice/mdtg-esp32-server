@@ -1,15 +1,15 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 import java.util.List;
 import java.util.Map;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.agent.dto.AgentCreateDTO;
-import xiaomai.modules.agent.dto.AgentDTO;
-import xiaomai.modules.agent.dto.AgentUpdateDTO;
-import xiaomai.modules.agent.entity.AgentEntity;
-import xiaomai.modules.agent.vo.AgentInfoVO;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.agent.dto.AgentCreateDTO;
+import mdtg.modules.agent.dto.AgentDTO;
+import mdtg.modules.agent.dto.AgentUpdateDTO;
+import mdtg.modules.agent.entity.AgentEntity;
+import mdtg.modules.agent.vo.AgentInfoVO;
 
 /**
  * 智能体表处理service

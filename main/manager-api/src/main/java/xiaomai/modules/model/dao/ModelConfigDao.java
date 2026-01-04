@@ -1,4 +1,4 @@
-package xiaomai.modules.model.dao;
+package mdtg.modules.model.dao;
 
 import java.util.List;
 import java.util.Map;
@@ -6,8 +6,8 @@ import java.util.Map;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.model.entity.ModelConfigEntity;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.model.entity.ModelConfigEntity;
 
 @Mapper
 public interface ModelConfigDao extends BaseDao<ModelConfigEntity> {

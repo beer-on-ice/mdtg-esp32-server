@@ -1,4 +1,4 @@
-package xiaomai.modules.voiceclone.dao;
+package mdtg.modules.voiceclone.dao;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.model.dto.VoiceDTO;
-import xiaomai.modules.voiceclone.entity.VoiceCloneEntity;
+import mdtg.modules.model.dto.VoiceDTO;
+import mdtg.modules.voiceclone.entity.VoiceCloneEntity;
 
 /**
  * 声音克隆

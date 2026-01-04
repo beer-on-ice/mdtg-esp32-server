@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.rag;
+package mdtg.modules.knowledge.rag;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
 
 /**
  * 知识库适配器工厂类
@@ -24,7 +24,7 @@ public class KnowledgeBaseAdapterFactory {
 
     static {
         // 注册内置适配器类型
-        registerAdapter("ragflow", xiaomai.modules.knowledge.rag.impl.RAGFlowAdapter.class);
+        registerAdapter("ragflow", mdtg.modules.knowledge.rag.impl.RAGFlowAdapter.class);
         // 可以在这里注册更多适配器类型
     }
 

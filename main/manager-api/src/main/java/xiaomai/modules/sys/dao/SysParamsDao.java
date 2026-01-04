@@ -1,12 +1,12 @@
-package xiaomai.modules.sys.dao;
+package mdtg.modules.sys.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.sys.entity.SysParamsEntity;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.sys.entity.SysParamsEntity;
 
 /**
  * 参数管理

@@ -1,7 +1,7 @@
-package xiaomai.modules.sys.dto;
+package mdtg.modules.sys.dto;
 
 import lombok.Data;
-import xiaomai.modules.sys.enums.ServerActionEnum;
+import mdtg.modules.sys.enums.ServerActionEnum;
 
 import java.util.Map;
 

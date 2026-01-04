@@ -1,4 +1,4 @@
-package xiaomai.modules.timbre.controller;
+package mdtg.modules.timbre.controller;
 
 import java.util.Map;
 
@@ -17,14 +17,14 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.timbre.dto.TimbreDataDTO;
-import xiaomai.modules.timbre.dto.TimbrePageDTO;
-import xiaomai.modules.timbre.service.TimbreService;
-import xiaomai.modules.timbre.vo.TimbreDetailsVO;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.timbre.dto.TimbreDataDTO;
+import mdtg.modules.timbre.dto.TimbrePageDTO;
+import mdtg.modules.timbre.service.TimbreService;
+import mdtg.modules.timbre.vo.TimbreDetailsVO;
 
 /**
  * 音色控制层

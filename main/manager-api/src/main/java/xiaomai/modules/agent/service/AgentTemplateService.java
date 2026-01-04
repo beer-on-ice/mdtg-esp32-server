@@ -1,8 +1,8 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import xiaomai.modules.agent.entity.AgentTemplateEntity;
+import mdtg.modules.agent.entity.AgentTemplateEntity;
 
 /**
  * @author chenerlei

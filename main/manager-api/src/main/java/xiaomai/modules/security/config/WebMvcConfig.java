@@ -1,4 +1,4 @@
-package xiaomai.modules.security.config;
+package mdtg.modules.security.config;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -32,7 +32,7 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalTimeSerializer;
 
-import xiaomai.common.utils.DateUtils;
+import mdtg.common.utils.DateUtils;
 
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {

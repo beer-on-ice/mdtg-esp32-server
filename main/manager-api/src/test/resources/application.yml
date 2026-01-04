@@ -18,5 +18,5 @@ renren:
 
 logging:
   level:
-    xiaomai.modules.device: DEBUG
+    mdtg.modules.device: DEBUG
     org.springframework.data.redis: DEBUG

@@ -1,4 +1,4 @@
-package xiaomai.modules.security.oauth2;
+package mdtg.modules.security.oauth2;
 
 import java.io.IOException;
 
@@ -14,12 +14,12 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.utils.HttpContextUtils;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.common.utils.MessageUtils;
-import xiaomai.common.utils.Result;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.utils.HttpContextUtils;
+import mdtg.common.utils.JsonUtils;
+import mdtg.common.utils.MessageUtils;
+import mdtg.common.utils.Result;
 
 /**
  * oauth2过滤器

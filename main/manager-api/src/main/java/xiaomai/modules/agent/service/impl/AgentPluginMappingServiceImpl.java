@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,14 +13,14 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.modules.agent.dao.AgentPluginMappingMapper;
-import xiaomai.modules.agent.entity.AgentPluginMapping;
-import xiaomai.modules.agent.service.AgentPluginMappingService;
-import xiaomai.modules.knowledge.entity.KnowledgeBaseEntity;
-import xiaomai.modules.knowledge.service.KnowledgeBaseService;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
+import mdtg.common.utils.JsonUtils;
+import mdtg.modules.agent.dao.AgentPluginMappingMapper;
+import mdtg.modules.agent.entity.AgentPluginMapping;
+import mdtg.modules.agent.service.AgentPluginMappingService;
+import mdtg.modules.knowledge.entity.KnowledgeBaseEntity;
+import mdtg.modules.knowledge.service.KnowledgeBaseService;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
 
 /**
  * @description 针对表【ai_agent_plugin_mapping(Agent与插件的唯一映射表)】的数据库操作Service实现

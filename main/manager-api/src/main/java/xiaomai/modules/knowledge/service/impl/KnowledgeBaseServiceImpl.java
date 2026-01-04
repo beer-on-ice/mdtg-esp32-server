@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.service.impl;
+package mdtg.modules.knowledge.service.impl;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -23,25 +23,25 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.MessageUtils;
-import xiaomai.modules.knowledge.dao.KnowledgeBaseDao;
-import xiaomai.modules.knowledge.dto.KnowledgeBaseDTO;
-import xiaomai.modules.knowledge.entity.KnowledgeBaseEntity;
-import xiaomai.modules.knowledge.rag.KnowledgeBaseAdapter;
-import xiaomai.modules.knowledge.rag.KnowledgeBaseAdapterFactory;
-import xiaomai.modules.knowledge.service.KnowledgeBaseService;
-import xiaomai.modules.model.dao.ModelConfigDao;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
-import xiaomai.modules.security.user.SecurityUser;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.MessageUtils;
+import mdtg.modules.knowledge.dao.KnowledgeBaseDao;
+import mdtg.modules.knowledge.dto.KnowledgeBaseDTO;
+import mdtg.modules.knowledge.entity.KnowledgeBaseEntity;
+import mdtg.modules.knowledge.rag.KnowledgeBaseAdapter;
+import mdtg.modules.knowledge.rag.KnowledgeBaseAdapterFactory;
+import mdtg.modules.knowledge.service.KnowledgeBaseService;
+import mdtg.modules.model.dao.ModelConfigDao;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
+import mdtg.modules.security.user.SecurityUser;
 
 @Service
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package xiaomai.common.redis;
+package mdtg.common.redis;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -13,7 +13,7 @@ import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Resource;
-import xiaomai.common.utils.ResourcesUtils;
+import mdtg.common.utils.ResourcesUtils;
 
 /**
  * Redis工具类

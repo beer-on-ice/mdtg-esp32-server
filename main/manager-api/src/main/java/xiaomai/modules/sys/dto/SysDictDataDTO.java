@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.dto;
+package mdtg.modules.sys.dto;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -12,10 +12,10 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import lombok.Data;
-import xiaomai.common.utils.DateUtils;
-import xiaomai.common.validator.group.AddGroup;
-import xiaomai.common.validator.group.DefaultGroup;
-import xiaomai.common.validator.group.UpdateGroup;
+import mdtg.common.utils.DateUtils;
+import mdtg.common.validator.group.AddGroup;
+import mdtg.common.validator.group.DefaultGroup;
+import mdtg.common.validator.group.UpdateGroup;
 
 /**
  * 字典数据

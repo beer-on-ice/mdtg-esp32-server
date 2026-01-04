@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.dao;
+package mdtg.modules.agent.dao;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.agent.entity.AgentChatHistoryEntity;
+import mdtg.modules.agent.entity.AgentChatHistoryEntity;
 
 /**
  * {@link AgentChatHistoryEntity} 智能体聊天历史记录Dao对象

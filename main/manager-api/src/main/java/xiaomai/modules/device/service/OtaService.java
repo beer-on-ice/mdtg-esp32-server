@@ -1,10 +1,10 @@
-package xiaomai.modules.device.service;
+package mdtg.modules.device.service;
 
 import java.util.Map;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.device.entity.OtaEntity;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.device.entity.OtaEntity;
 
 /**
  * OTA固件管理

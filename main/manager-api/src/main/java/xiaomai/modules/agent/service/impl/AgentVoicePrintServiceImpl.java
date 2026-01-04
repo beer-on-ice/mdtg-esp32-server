@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -25,21 +25,21 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.modules.agent.dao.AgentVoicePrintDao;
-import xiaomai.modules.agent.dto.AgentVoicePrintSaveDTO;
-import xiaomai.modules.agent.dto.AgentVoicePrintUpdateDTO;
-import xiaomai.modules.agent.dto.IdentifyVoicePrintResponse;
-import xiaomai.modules.agent.entity.AgentVoicePrintEntity;
-import xiaomai.modules.agent.service.AgentChatAudioService;
-import xiaomai.modules.agent.service.AgentChatHistoryService;
-import xiaomai.modules.agent.service.AgentVoicePrintService;
-import xiaomai.modules.agent.vo.AgentVoicePrintVO;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.JsonUtils;
+import mdtg.modules.agent.dao.AgentVoicePrintDao;
+import mdtg.modules.agent.dto.AgentVoicePrintSaveDTO;
+import mdtg.modules.agent.dto.AgentVoicePrintUpdateDTO;
+import mdtg.modules.agent.dto.IdentifyVoicePrintResponse;
+import mdtg.modules.agent.entity.AgentVoicePrintEntity;
+import mdtg.modules.agent.service.AgentChatAudioService;
+import mdtg.modules.agent.service.AgentChatHistoryService;
+import mdtg.modules.agent.service.AgentVoicePrintService;
+import mdtg.modules.agent.vo.AgentVoicePrintVO;
+import mdtg.modules.sys.service.SysParamsService;
 
 /**
  * @author zjy

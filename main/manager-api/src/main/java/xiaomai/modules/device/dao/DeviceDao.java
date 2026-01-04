@@ -1,4 +1,4 @@
-package xiaomai.modules.device.dao;
+package mdtg.modules.device.dao;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.entity.DeviceEntity;
 
 @Mapper
 public interface DeviceDao extends BaseMapper<DeviceEntity> {

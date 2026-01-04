@@ -1,4 +1,4 @@
-package xiaomai.modules.security.service.impl;
+package mdtg.modules.security.service.impl;
 
 import java.util.Date;
 
@@ -6,19 +6,19 @@ import org.springframework.stereotype.Service;
 
 import cn.hutool.core.date.DateUtil;
 import lombok.AllArgsConstructor;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.TokenDTO;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.HttpContextUtils;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.security.dao.SysUserTokenDao;
-import xiaomai.modules.security.entity.SysUserTokenEntity;
-import xiaomai.modules.security.oauth2.TokenGenerator;
-import xiaomai.modules.security.service.SysUserTokenService;
-import xiaomai.modules.sys.dto.PasswordDTO;
-import xiaomai.modules.sys.dto.SysUserDTO;
-import xiaomai.modules.sys.service.SysUserService;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.TokenDTO;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.HttpContextUtils;
+import mdtg.common.utils.Result;
+import mdtg.modules.security.dao.SysUserTokenDao;
+import mdtg.modules.security.entity.SysUserTokenEntity;
+import mdtg.modules.security.oauth2.TokenGenerator;
+import mdtg.modules.security.service.SysUserTokenService;
+import mdtg.modules.sys.dto.PasswordDTO;
+import mdtg.modules.sys.dto.SysUserDTO;
+import mdtg.modules.sys.service.SysUserService;
 
 @AllArgsConstructor
 @Service

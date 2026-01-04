@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.controller;
+package mdtg.modules.agent.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -24,14 +24,14 @@ import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.Result;
-import xiaomai.common.utils.ResultUtils;
-import xiaomai.modules.agent.entity.AgentTemplateEntity;
-import xiaomai.modules.agent.service.AgentTemplateService;
-import xiaomai.modules.agent.vo.AgentTemplateVO;
+import mdtg.common.constant.Constant;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.Result;
+import mdtg.common.utils.ResultUtils;
+import mdtg.modules.agent.entity.AgentTemplateEntity;
+import mdtg.modules.agent.service.AgentTemplateService;
+import mdtg.modules.agent.vo.AgentTemplateVO;
 
 @Tag(name = "智能体模板管理")
 @AllArgsConstructor

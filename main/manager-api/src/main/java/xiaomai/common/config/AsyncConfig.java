@@ -1,4 +1,4 @@
-package xiaomai.common.config;
+package mdtg.common.config;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionHandler;

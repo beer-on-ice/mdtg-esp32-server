@@ -1,10 +1,10 @@
-package xiaomai.modules.knowledge.dao;
+package mdtg.modules.knowledge.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.knowledge.entity.KnowledgeBaseEntity;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.knowledge.entity.KnowledgeBaseEntity;
 
 /**
  * 知识库知识库

@@ -1,12 +1,12 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
 
 
 import java.io.BufferedReader;

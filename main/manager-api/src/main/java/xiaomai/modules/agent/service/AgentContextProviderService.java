@@ -1,7 +1,7 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.agent.entity.AgentContextProviderEntity;
+import mdtg.common.service.BaseService;
+import mdtg.modules.agent.entity.AgentContextProviderEntity;
 
 public interface AgentContextProviderService extends BaseService<AgentContextProviderEntity> {
     /**

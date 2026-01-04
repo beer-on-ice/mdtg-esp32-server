@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.controller;
+package mdtg.modules.knowledge.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -14,15 +14,15 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.knowledge.dto.KnowledgeBaseDTO;
-import xiaomai.modules.knowledge.dto.KnowledgeFilesDTO;
-import xiaomai.modules.knowledge.service.KnowledgeBaseService;
-import xiaomai.modules.knowledge.service.KnowledgeFilesService;
-import xiaomai.modules.security.user.SecurityUser;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.modules.knowledge.dto.KnowledgeBaseDTO;
+import mdtg.modules.knowledge.dto.KnowledgeFilesDTO;
+import mdtg.modules.knowledge.service.KnowledgeBaseService;
+import mdtg.modules.knowledge.service.KnowledgeFilesService;
+import mdtg.modules.security.user.SecurityUser;
 
 @AllArgsConstructor
 @RestController

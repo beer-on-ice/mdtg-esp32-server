@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.controller;
+package mdtg.modules.sys.controller;
 
 import java.util.Map;
 
@@ -22,21 +22,21 @@ import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.annotation.LogOperation;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.AssertUtils;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.common.validator.group.AddGroup;
-import xiaomai.common.validator.group.DefaultGroup;
-import xiaomai.common.validator.group.UpdateGroup;
-import xiaomai.modules.config.service.ConfigService;
-import xiaomai.modules.sys.dto.SysParamsDTO;
-import xiaomai.modules.sys.service.SysParamsService;
-import xiaomai.modules.sys.utils.WebSocketValidator;
+import mdtg.common.annotation.LogOperation;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.AssertUtils;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.common.validator.group.AddGroup;
+import mdtg.common.validator.group.DefaultGroup;
+import mdtg.common.validator.group.UpdateGroup;
+import mdtg.modules.config.service.ConfigService;
+import mdtg.modules.sys.dto.SysParamsDTO;
+import mdtg.modules.sys.service.SysParamsService;
+import mdtg.modules.sys.utils.WebSocketValidator;
 
 /**
  * 参数管理
@@ -286,7 +286,7 @@ public class SysParamsController {
             throw new RenException(ErrorCode.MQTT_SECRET_CHARACTER_INSECURE);
         }
         // 不允许包含弱密码
-        String[] weakPasswords = { "test", "1234", "admin", "password", "qwerty", "xiaomai" };
+        String[] weakPasswords = { "test", "1234", "admin", "password", "qwerty", "mdtg" };
         for (String weakPassword : weakPasswords) {
             if (secret.toLowerCase().contains(weakPassword)) {
                 throw new RenException(ErrorCode.MQTT_SECRET_WEAK_PASSWORD);

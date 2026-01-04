@@ -1,4 +1,4 @@
-package xiaomai.modules.device;
+package mdtg.modules.device;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -11,9 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.modules.sys.dto.SysUserDTO;
-import xiaomai.modules.sys.service.SysUserService;
+import mdtg.common.redis.RedisUtils;
+import mdtg.modules.sys.dto.SysUserDTO;
+import mdtg.modules.sys.service.SysUserService;
 
 @Slf4j
 @SpringBootTest

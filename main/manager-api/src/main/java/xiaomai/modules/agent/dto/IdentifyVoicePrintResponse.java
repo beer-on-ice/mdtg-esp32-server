@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.dto;
+package mdtg.modules.agent.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

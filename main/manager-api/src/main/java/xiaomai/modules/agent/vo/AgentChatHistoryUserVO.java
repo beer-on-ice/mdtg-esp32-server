@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.vo;
+package mdtg.modules.agent.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

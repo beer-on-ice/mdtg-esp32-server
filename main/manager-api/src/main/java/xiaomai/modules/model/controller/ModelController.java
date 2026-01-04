@@ -1,4 +1,4 @@
-package xiaomai.modules.model.controller;
+package mdtg.modules.model.controller;
 
 import java.util.List;
 
@@ -16,21 +16,21 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
-import xiaomai.common.page.PageData;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.common.utils.Result;
-import xiaomai.modules.agent.service.AgentTemplateService;
-import xiaomai.modules.config.service.ConfigService;
-import xiaomai.modules.model.dto.LlmModelBasicInfoDTO;
-import xiaomai.modules.model.dto.ModelBasicInfoDTO;
-import xiaomai.modules.model.dto.ModelConfigBodyDTO;
-import xiaomai.modules.model.dto.ModelConfigDTO;
-import xiaomai.modules.model.dto.ModelProviderDTO;
-import xiaomai.modules.model.dto.VoiceDTO;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
-import xiaomai.modules.model.service.ModelProviderService;
-import xiaomai.modules.timbre.service.TimbreService;
+import mdtg.common.page.PageData;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.common.utils.Result;
+import mdtg.modules.agent.service.AgentTemplateService;
+import mdtg.modules.config.service.ConfigService;
+import mdtg.modules.model.dto.LlmModelBasicInfoDTO;
+import mdtg.modules.model.dto.ModelBasicInfoDTO;
+import mdtg.modules.model.dto.ModelConfigBodyDTO;
+import mdtg.modules.model.dto.ModelConfigDTO;
+import mdtg.modules.model.dto.ModelProviderDTO;
+import mdtg.modules.model.dto.VoiceDTO;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
+import mdtg.modules.model.service.ModelProviderService;
+import mdtg.modules.timbre.service.TimbreService;
 
 @AllArgsConstructor
 @RestController

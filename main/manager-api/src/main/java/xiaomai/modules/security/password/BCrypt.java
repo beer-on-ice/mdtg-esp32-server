@@ -1,4 +1,4 @@
-package xiaomai.modules.security.password;
+package mdtg.modules.security.password;
 
 import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;

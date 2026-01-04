@@ -1,4 +1,4 @@
-package xiaomai.modules.device.controller;
+package mdtg.modules.device.controller;
 
 import java.nio.charset.StandardCharsets;
 
@@ -23,12 +23,12 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.modules.device.dto.DeviceReportReqDTO;
-import xiaomai.modules.device.dto.DeviceReportRespDTO;
-import xiaomai.modules.device.entity.DeviceEntity;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.modules.device.dto.DeviceReportReqDTO;
+import mdtg.modules.device.dto.DeviceReportRespDTO;
+import mdtg.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.modules.sys.service.SysParamsService;
 
 @Tag(name = "设备管理", description = "OTA 相关接口")
 @Slf4j

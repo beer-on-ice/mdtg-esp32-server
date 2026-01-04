@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.service.impl;
+package mdtg.modules.sys.service.impl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -17,19 +17,19 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
 import lombok.AllArgsConstructor;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.common.utils.ConvertUtils;
-import xiaomai.modules.sys.dao.SysDictTypeDao;
-import xiaomai.modules.sys.dao.SysUserDao;
-import xiaomai.modules.sys.dto.SysDictTypeDTO;
-import xiaomai.modules.sys.entity.SysDictTypeEntity;
-import xiaomai.modules.sys.entity.SysUserEntity;
-import xiaomai.modules.sys.service.SysDictDataService;
-import xiaomai.modules.sys.service.SysDictTypeService;
-import xiaomai.modules.sys.vo.SysDictTypeVO;
+import mdtg.common.exception.RenException;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.page.PageData;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.common.utils.ConvertUtils;
+import mdtg.modules.sys.dao.SysDictTypeDao;
+import mdtg.modules.sys.dao.SysUserDao;
+import mdtg.modules.sys.dto.SysDictTypeDTO;
+import mdtg.modules.sys.entity.SysDictTypeEntity;
+import mdtg.modules.sys.entity.SysUserEntity;
+import mdtg.modules.sys.service.SysDictDataService;
+import mdtg.modules.sys.service.SysDictTypeService;
+import mdtg.modules.sys.vo.SysDictTypeVO;
 
 /**
  * 字典类型

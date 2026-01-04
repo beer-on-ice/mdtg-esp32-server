@@ -1,4 +1,4 @@
-package xiaomai.modules.device.service.impl;
+package mdtg.modules.device.service.impl;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -11,11 +11,11 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
 import io.micrometer.common.util.StringUtils;
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.impl.BaseServiceImpl;
-import xiaomai.modules.device.dao.OtaDao;
-import xiaomai.modules.device.entity.OtaEntity;
-import xiaomai.modules.device.service.OtaService;
+import mdtg.common.page.PageData;
+import mdtg.common.service.impl.BaseServiceImpl;
+import mdtg.modules.device.dao.OtaDao;
+import mdtg.modules.device.entity.OtaEntity;
+import mdtg.modules.device.service.OtaService;
 
 @Service
 public class OtaServiceImpl extends BaseServiceImpl<OtaDao, OtaEntity> implements OtaService {

@@ -1,4 +1,4 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import java.util.ArrayList;
 import java.util.Collection;

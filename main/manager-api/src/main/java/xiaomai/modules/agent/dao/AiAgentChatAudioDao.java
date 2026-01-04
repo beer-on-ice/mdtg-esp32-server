@@ -1,10 +1,10 @@
-package xiaomai.modules.agent.dao;
+package mdtg.modules.agent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.agent.entity.AgentChatAudioEntity;
+import mdtg.modules.agent.entity.AgentChatAudioEntity;
 
 /**
  * {@link AgentChatAudioEntity} 智能体聊天音频数据Dao对象

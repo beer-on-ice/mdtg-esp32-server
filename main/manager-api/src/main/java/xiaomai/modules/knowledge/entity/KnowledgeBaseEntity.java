@@ -1,4 +1,4 @@
-package xiaomai.modules.knowledge.entity;
+package mdtg.modules.knowledge.entity;
 
 import java.util.Date;
 

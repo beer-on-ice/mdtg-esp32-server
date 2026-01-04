@@ -1,11 +1,11 @@
-package xiaomai.common.utils;
+package mdtg.common.utils;
 
 import org.apache.commons.lang3.StringUtils;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.modules.security.service.CaptchaService;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.modules.security.service.CaptchaService;
+import mdtg.modules.sys.service.SysParamsService;
 
 /**
  * SM2解密和验证码验证工具类

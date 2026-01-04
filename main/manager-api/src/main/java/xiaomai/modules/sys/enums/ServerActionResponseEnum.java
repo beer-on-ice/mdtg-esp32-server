@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.enums;
+package mdtg.modules.sys.enums;
 
 import org.apache.commons.lang3.StringUtils;
 

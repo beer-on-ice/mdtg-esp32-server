@@ -1,4 +1,4 @@
-package xiaomai.modules.sys.vo;
+package mdtg.modules.sys.vo;
 
 import java.io.Serializable;
 

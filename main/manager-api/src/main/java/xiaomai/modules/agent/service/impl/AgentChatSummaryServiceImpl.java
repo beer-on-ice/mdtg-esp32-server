@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,20 +14,20 @@ import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
 import lombok.RequiredArgsConstructor;
-import xiaomai.modules.agent.dto.AgentChatHistoryDTO;
-import xiaomai.modules.agent.dto.AgentChatSummaryDTO;
-import xiaomai.modules.agent.dto.AgentMemoryDTO;
-import xiaomai.modules.agent.dto.AgentUpdateDTO;
-import xiaomai.modules.agent.entity.AgentChatHistoryEntity;
-import xiaomai.modules.agent.service.AgentChatHistoryService;
-import xiaomai.modules.agent.service.AgentChatSummaryService;
-import xiaomai.modules.agent.service.AgentService;
-import xiaomai.modules.agent.vo.AgentInfoVO;
-import xiaomai.modules.device.entity.DeviceEntity;
-import xiaomai.modules.device.service.DeviceService;
-import xiaomai.modules.llm.service.LLMService;
-import xiaomai.modules.model.entity.ModelConfigEntity;
-import xiaomai.modules.model.service.ModelConfigService;
+import mdtg.modules.agent.dto.AgentChatHistoryDTO;
+import mdtg.modules.agent.dto.AgentChatSummaryDTO;
+import mdtg.modules.agent.dto.AgentMemoryDTO;
+import mdtg.modules.agent.dto.AgentUpdateDTO;
+import mdtg.modules.agent.entity.AgentChatHistoryEntity;
+import mdtg.modules.agent.service.AgentChatHistoryService;
+import mdtg.modules.agent.service.AgentChatSummaryService;
+import mdtg.modules.agent.service.AgentService;
+import mdtg.modules.agent.vo.AgentInfoVO;
+import mdtg.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.service.DeviceService;
+import mdtg.modules.llm.service.LLMService;
+import mdtg.modules.model.entity.ModelConfigEntity;
+import mdtg.modules.model.service.ModelConfigService;
 
 /**
  * 智能体聊天记录总结服务实现类

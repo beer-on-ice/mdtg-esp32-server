@@ -1,4 +1,4 @@
-package xiaomai.modules.security.dto;
+package mdtg.modules.security.dto;
 
 import java.io.Serializable;
 

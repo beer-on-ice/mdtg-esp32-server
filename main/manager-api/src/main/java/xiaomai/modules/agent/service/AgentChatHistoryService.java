@@ -1,15 +1,15 @@
-package xiaomai.modules.agent.service;
+package mdtg.modules.agent.service;
 
 import java.util.List;
 import java.util.Map;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import xiaomai.common.page.PageData;
-import xiaomai.modules.agent.dto.AgentChatHistoryDTO;
-import xiaomai.modules.agent.dto.AgentChatSessionDTO;
-import xiaomai.modules.agent.entity.AgentChatHistoryEntity;
-import xiaomai.modules.agent.vo.AgentChatHistoryUserVO;
+import mdtg.common.page.PageData;
+import mdtg.modules.agent.dto.AgentChatHistoryDTO;
+import mdtg.modules.agent.dto.AgentChatSessionDTO;
+import mdtg.modules.agent.entity.AgentChatHistoryEntity;
+import mdtg.modules.agent.vo.AgentChatHistoryUserVO;
 
 /**
  * 智能体聊天记录表处理service

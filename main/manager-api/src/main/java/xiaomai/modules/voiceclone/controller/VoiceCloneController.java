@@ -1,4 +1,4 @@
-package xiaomai.modules.voiceclone.controller;
+package mdtg.modules.voiceclone.controller;
 
 import java.util.Map;
 import java.util.UUID;
@@ -21,19 +21,19 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.exception.ErrorCode;
-import xiaomai.common.exception.RenException;
-import xiaomai.common.page.PageData;
-import xiaomai.common.redis.RedisKeys;
-import xiaomai.common.redis.RedisUtils;
-import xiaomai.common.user.UserDetail;
-import xiaomai.common.utils.Result;
-import xiaomai.common.validator.ValidatorUtils;
-import xiaomai.modules.security.user.SecurityUser;
-import xiaomai.modules.voiceclone.dto.VoiceCloneResponseDTO;
-import xiaomai.modules.voiceclone.entity.VoiceCloneEntity;
-import xiaomai.modules.voiceclone.service.VoiceCloneService;
+import mdtg.common.constant.Constant;
+import mdtg.common.exception.ErrorCode;
+import mdtg.common.exception.RenException;
+import mdtg.common.page.PageData;
+import mdtg.common.redis.RedisKeys;
+import mdtg.common.redis.RedisUtils;
+import mdtg.common.user.UserDetail;
+import mdtg.common.utils.Result;
+import mdtg.common.validator.ValidatorUtils;
+import mdtg.modules.security.user.SecurityUser;
+import mdtg.modules.voiceclone.dto.VoiceCloneResponseDTO;
+import mdtg.modules.voiceclone.entity.VoiceCloneEntity;
+import mdtg.modules.voiceclone.service.VoiceCloneService;
 
 @Tag(name = "音色资源管理", description = "音色资源开通相关接口")
 @Slf4j

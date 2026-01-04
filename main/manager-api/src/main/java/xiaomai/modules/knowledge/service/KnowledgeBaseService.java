@@ -1,12 +1,12 @@
-package xiaomai.modules.knowledge.service;
+package mdtg.modules.knowledge.service;
 
 import java.util.List;
 import java.util.Map;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.knowledge.dto.KnowledgeBaseDTO;
-import xiaomai.modules.knowledge.entity.KnowledgeBaseEntity;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.knowledge.dto.KnowledgeBaseDTO;
+import mdtg.modules.knowledge.entity.KnowledgeBaseEntity;
 
 /**
  * 知识库知识库服务接口

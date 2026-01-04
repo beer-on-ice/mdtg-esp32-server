@@ -1,4 +1,4 @@
-package xiaomai.modules.config.service;
+package mdtg.modules.config.service;
 
 import java.util.Map;
 

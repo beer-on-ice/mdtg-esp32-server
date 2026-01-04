@@ -1,8 +1,8 @@
-package xiaomai.modules.agent.vo;
+package mdtg.modules.agent.vo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import xiaomai.modules.agent.entity.AgentTemplateEntity;
+import mdtg.modules.agent.entity.AgentTemplateEntity;
 
 @Data
 @EqualsAndHashCode(callSuper = true)

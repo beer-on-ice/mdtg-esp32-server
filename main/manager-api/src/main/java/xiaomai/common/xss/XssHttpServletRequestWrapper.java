@@ -1,4 +1,4 @@
-package xiaomai.common.xss;
+package mdtg.common.xss;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

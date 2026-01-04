@@ -1,8 +1,8 @@
-package xiaomai.modules.knowledge.config;
+package mdtg.modules.knowledge.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import xiaomai.modules.knowledge.rag.KnowledgeBaseAdapterFactory;
+import mdtg.modules.knowledge.rag.KnowledgeBaseAdapterFactory;
 
 /**
  * 知识库配置类

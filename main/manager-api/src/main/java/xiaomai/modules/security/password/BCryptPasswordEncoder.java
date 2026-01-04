@@ -1,4 +1,4 @@
-package xiaomai.modules.security.password;
+package mdtg.modules.security.password;
 
 import java.security.SecureRandom;
 import java.util.regex.Pattern;

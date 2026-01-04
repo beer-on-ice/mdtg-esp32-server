@@ -1,4 +1,4 @@
-package xiaomai.common.constant;
+package mdtg.common.constant;
 
 import lombok.Getter;
 
@@ -309,7 +309,7 @@ public interface Constant {
     /**
      * 无效固件URL
      */
-    String INVALID_FIRMWARE_URL = "http://xiaomai.server.com:8002/xiaomai/otaMag/download/NOT_ACTIVATED_FIRMWARE_THIS_IS_A_INVALID_URL";
+    String INVALID_FIRMWARE_URL = "http://mdtg.server.com:8002/mdtg/otaMag/download/NOT_ACTIVATED_FIRMWARE_THIS_IS_A_INVALID_URL";
 
     /**
      * 字典类型

@@ -1,4 +1,4 @@
-package xiaomai.modules.security.config;
+package mdtg.modules.security.config;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -16,10 +16,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import jakarta.servlet.Filter;
-import xiaomai.modules.security.oauth2.Oauth2Filter;
-import xiaomai.modules.security.oauth2.Oauth2Realm;
-import xiaomai.modules.security.secret.ServerSecretFilter;
-import xiaomai.modules.sys.service.SysParamsService;
+import mdtg.modules.security.oauth2.Oauth2Filter;
+import mdtg.modules.security.oauth2.Oauth2Realm;
+import mdtg.modules.security.secret.ServerSecretFilter;
+import mdtg.modules.sys.service.SysParamsService;
 
 /**
  * Shiro的配置文件

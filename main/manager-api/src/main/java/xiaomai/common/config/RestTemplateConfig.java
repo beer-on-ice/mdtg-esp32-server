@@ -1,4 +1,4 @@
-package xiaomai.common.config;
+package mdtg.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

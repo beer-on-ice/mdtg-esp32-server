@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.service.impl;
+package mdtg.modules.agent.service.impl;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -14,14 +14,14 @@ import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import xiaomai.common.constant.Constant;
-import xiaomai.common.utils.AESUtils;
-import xiaomai.common.utils.HashEncryptionUtil;
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.modules.agent.Enums.XiaoMaiMcpJsonRpcJson;
-import xiaomai.modules.agent.service.AgentMcpAccessPointService;
-import xiaomai.modules.sys.service.SysParamsService;
-import xiaomai.modules.sys.utils.WebSocketClientManager;
+import mdtg.common.constant.Constant;
+import mdtg.common.utils.AESUtils;
+import mdtg.common.utils.HashEncryptionUtil;
+import mdtg.common.utils.JsonUtils;
+import mdtg.modules.agent.Enums.MdtgMcpJsonRpcJson;
+import mdtg.modules.agent.service.AgentMcpAccessPointService;
+import mdtg.modules.sys.service.SysParamsService;
+import mdtg.modules.sys.utils.WebSocketClientManager;
 
 @AllArgsConstructor
 @Service
@@ -71,7 +71,7 @@ public class AgentMcpAccessPointServiceImpl implements AgentMcpAccessPointServic
 
                 // 步骤1: 发送初始化消息并等待响应
                 log.info("发送MCP初始化消息，智能体ID: {}", id);
-                client.sendText(XiaoMaiMcpJsonRpcJson.getInitializeJson());
+                client.sendText(MdtgMcpJsonRpcJson.getInitializeJson());
 
                 // 等待初始化响应 (id=1) - 移除固定延迟，改为响应驱动
                 List<String> initResponses = client.listenerWithoutClose(response -> {
@@ -115,10 +115,10 @@ public class AgentMcpAccessPointServiceImpl implements AgentMcpAccessPointServic
 
                 // 步骤2: 发送初始化完成通知 - 只有在收到initialize响应后才发送
                 log.info("发送MCP初始化完成通知，智能体ID: {}", id);
-                client.sendText(XiaoMaiMcpJsonRpcJson.getNotificationsInitializedJson());
+                client.sendText(MdtgMcpJsonRpcJson.getNotificationsInitializedJson());
                 // 步骤3: 发送工具列表请求 - 立即发送，无需额外延迟
                 log.info("发送MCP工具列表请求，智能体ID: {}", id);
-                client.sendText(XiaoMaiMcpJsonRpcJson.getToolsListJson());
+                client.sendText(MdtgMcpJsonRpcJson.getToolsListJson());
 
                 // 等待工具列表响应 (id=2)
                 List<String> toolsResponses = client.listener(response -> {

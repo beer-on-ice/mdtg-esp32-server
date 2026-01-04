@@ -1,12 +1,12 @@
-package xiaomai.modules.sys.service;
+package mdtg.modules.sys.service;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.sys.dto.AdminPageUserDTO;
-import xiaomai.modules.sys.dto.PasswordDTO;
-import xiaomai.modules.sys.dto.SysUserDTO;
-import xiaomai.modules.sys.entity.SysUserEntity;
-import xiaomai.modules.sys.vo.AdminPageUserVO;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.sys.dto.AdminPageUserDTO;
+import mdtg.modules.sys.dto.PasswordDTO;
+import mdtg.modules.sys.dto.SysUserDTO;
+import mdtg.modules.sys.entity.SysUserEntity;
+import mdtg.modules.sys.vo.AdminPageUserVO;
 
 /**
  * 系统用户

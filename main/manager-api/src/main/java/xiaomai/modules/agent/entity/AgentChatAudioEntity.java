@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.entity;
+package mdtg.modules.agent.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

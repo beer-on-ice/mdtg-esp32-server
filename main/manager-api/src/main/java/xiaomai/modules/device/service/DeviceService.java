@@ -1,16 +1,16 @@
-package xiaomai.modules.device.service;
+package mdtg.modules.device.service;
 
 import java.util.Date;
 import java.util.List;
 
-import xiaomai.common.page.PageData;
-import xiaomai.common.service.BaseService;
-import xiaomai.modules.device.dto.DevicePageUserDTO;
-import xiaomai.modules.device.dto.DeviceReportReqDTO;
-import xiaomai.modules.device.dto.DeviceReportRespDTO;
-import xiaomai.modules.device.dto.DeviceManualAddDTO;
-import xiaomai.modules.device.entity.DeviceEntity;
-import xiaomai.modules.device.vo.UserShowDeviceListVO;
+import mdtg.common.page.PageData;
+import mdtg.common.service.BaseService;
+import mdtg.modules.device.dto.DevicePageUserDTO;
+import mdtg.modules.device.dto.DeviceReportReqDTO;
+import mdtg.modules.device.dto.DeviceReportRespDTO;
+import mdtg.modules.device.dto.DeviceManualAddDTO;
+import mdtg.modules.device.entity.DeviceEntity;
+import mdtg.modules.device.vo.UserShowDeviceListVO;
 
 public interface DeviceService extends BaseService<DeviceEntity> {
 

@@ -1,10 +1,10 @@
-package xiaomai.modules.device.dao;
+package mdtg.modules.device.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-import xiaomai.modules.device.entity.OtaEntity;
+import mdtg.modules.device.entity.OtaEntity;
 
 /**
  * OTA固件管理

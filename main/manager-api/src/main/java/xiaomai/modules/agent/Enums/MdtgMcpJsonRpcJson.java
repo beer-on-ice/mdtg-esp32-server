@@ -1,7 +1,7 @@
-package xiaomai.modules.agent.Enums;
+package mdtg.modules.agent.Enums;
 
-import xiaomai.common.utils.JsonUtils;
-import xiaomai.common.utils.JsonRpcTwo;
+import mdtg.common.utils.JsonUtils;
+import mdtg.common.utils.JsonRpcTwo;
 
 import java.util.Map;
 
@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 优麦MCP JSON-RPC 请求json
  */
-public class XiaoMaiMcpJsonRpcJson {
+public class MdtgMcpJsonRpcJson {
     //优麦初始化mcp请求json
     private static final String INITIALIZE_JSON;
     //优麦mcp初始化成功，返回通知请求json

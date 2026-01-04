@@ -1,4 +1,4 @@
-package xiaomai.modules.agent.vo;
+package mdtg.modules.agent.vo;
 
 import lombok.Data;
 

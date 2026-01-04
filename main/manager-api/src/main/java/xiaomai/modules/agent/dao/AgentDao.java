@@ -1,12 +1,12 @@
-package xiaomai.modules.agent.dao;
+package mdtg.modules.agent.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import org.apache.ibatis.annotations.Select;
-import xiaomai.common.dao.BaseDao;
-import xiaomai.modules.agent.entity.AgentEntity;
-import xiaomai.modules.agent.vo.AgentInfoVO;
+import mdtg.common.dao.BaseDao;
+import mdtg.modules.agent.entity.AgentEntity;
+import mdtg.modules.agent.vo.AgentInfoVO;
 
 @Mapper
 public interface AgentDao extends BaseDao<AgentEntity> {
