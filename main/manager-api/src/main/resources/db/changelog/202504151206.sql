@@ -4,7 +4,7 @@ update `ai_model_config` set config_json =  '{\"type\": \"intent_llm\", \"llm\":
 
 -- 添加edge音色
 delete from `ai_tts_voice` where tts_model_id = 'TTS_EdgeTTS';
-INSERT INTO `ai_tts_voice` VALUES 
+INSERT INTO `ai_tts_voice` VALUES
 ('TTS_EdgeTTS0001', 'TTS_EdgeTTS', 'EdgeTTS女声-晓晓', 'zh-CN-XiaoxiaoNeural', '普通话', NULL, NULL, 1, NULL, NULL, NULL, NULL),
 ('TTS_EdgeTTS0002', 'TTS_EdgeTTS', 'EdgeTTS男声-云扬', 'zh-CN-YunyangNeural', '普通话', NULL, NULL, 1, NULL, NULL, NULL, NULL),
 ('TTS_EdgeTTS0003', 'TTS_EdgeTTS', 'EdgeTTS女声-晓伊', 'zh-CN-XiaoyiNeural', '普通话', NULL, NULL, 1, NULL, NULL, NULL, NULL),
@@ -20,7 +20,7 @@ INSERT INTO `ai_tts_voice` VALUES
 -- 增加是否允许用户注册参数
 delete from `sys_params` where  id in (103,104);
 INSERT INTO `sys_params` (id, param_code, param_value, value_type, param_type, remark) VALUES (103, 'server.allow_user_register', 'false', 'boolean', 1, '是否运行管理员以外的人注册');
-INSERT INTO `sys_params` (id, param_code, param_value, value_type, param_type, remark) VALUES (104, 'server.fronted_url', 'http://xiaozhi.server.com', 'string', 1, '下发六位验证码时显示的控制面板地址');
+INSERT INTO `sys_params` (id, param_code, param_value, value_type, param_type, remark) VALUES (104, 'server.fronted_url', 'http://xiaomai.server.com', 'string', 1, '下发六位验证码时显示的控制面板地址');
 
 -- 修正CosyVoiceSiliconflow音色
 delete from `ai_tts_voice` where tts_model_id = 'TTS_CosyVoiceSiliconflow';

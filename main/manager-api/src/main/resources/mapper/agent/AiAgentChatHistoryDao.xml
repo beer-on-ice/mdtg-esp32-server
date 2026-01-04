@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="xiaozhi.modules.agent.dao.AiAgentChatHistoryDao">
-  <resultMap id="BaseResultMap" type="xiaozhi.modules.agent.entity.AgentChatHistoryEntity">
+<mapper namespace="xiaomai.modules.agent.dao.AiAgentChatHistoryDao">
+  <resultMap id="BaseResultMap" type="xiaomai.modules.agent.entity.AgentChatHistoryEntity">
     <!--@mbg.generated-->
     <!--@Table ai_agent_chat_history-->
     <id column="id" jdbcType="BIGINT" property="id" />
@@ -18,7 +18,7 @@
   </resultMap>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, mac_address, agent_id, session_id, sort, chat_type, content, audio, audio_url, 
+    id, mac_address, agent_id, session_id, sort, chat_type, content, audio, audio_url,
     created_at, updated_at
   </sql>
 
@@ -35,7 +35,7 @@
       #{id}
     </foreach>
   </delete>
-  
+
   <update id="deleteAudioIdByAgentId">
     UPDATE ai_agent_chat_history
     SET audio_id = NULL
@@ -43,7 +43,7 @@
   </update>
 
   <delete id="deleteHistoryByAgentId">
-    DELETE FROM ai_agent_chat_history 
+    DELETE FROM ai_agent_chat_history
     WHERE agent_id = #{agentId}
   </delete>
 </mapper>

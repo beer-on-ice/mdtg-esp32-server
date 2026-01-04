@@ -1,4 +1,4 @@
-package xiaozhi.modules.sys;
+package xiaomai.modules.sys;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,10 +6,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaozhi.modules.security.controller.LoginController;
-import xiaozhi.modules.security.dto.LoginDTO;
-import xiaozhi.modules.security.dto.SmsVerificationDTO;
-import xiaozhi.modules.sys.dto.RetrievePasswordDTO;
+import xiaomai.modules.security.controller.LoginController;
+import xiaomai.modules.security.dto.LoginDTO;
+import xiaomai.modules.security.dto.SmsVerificationDTO;
+import xiaomai.modules.sys.dto.RetrievePasswordDTO;
 
 @Slf4j
 @SpringBootTest

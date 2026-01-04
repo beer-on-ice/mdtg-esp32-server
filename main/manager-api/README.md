@@ -16,4 +16,4 @@ Vue 3.x
 
 # 接口文档
 
-启动后打开：http://localhost:8002/xiaozhi/doc.html
+启动后打开：http://localhost:8002/xiaomai/doc.html

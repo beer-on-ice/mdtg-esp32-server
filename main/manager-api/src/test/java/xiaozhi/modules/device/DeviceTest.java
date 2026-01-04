@@ -1,4 +1,4 @@
-package xiaozhi.modules.device;
+package xiaomai.modules.device;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -11,9 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import lombok.extern.slf4j.Slf4j;
-import xiaozhi.common.redis.RedisUtils;
-import xiaozhi.modules.sys.dto.SysUserDTO;
-import xiaozhi.modules.sys.service.SysUserService;
+import xiaomai.common.redis.RedisUtils;
+import xiaomai.modules.sys.dto.SysUserDTO;
+import xiaomai.modules.sys.service.SysUserService;
 
 @Slf4j
 @SpringBootTest

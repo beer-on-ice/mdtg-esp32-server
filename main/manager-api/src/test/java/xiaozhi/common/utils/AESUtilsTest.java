@@ -1,4 +1,4 @@
-package xiaozhi.common.utils;
+package xiaomai.common.utils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -8,7 +8,7 @@ public class AESUtilsTest {
 
     @Test
     public void testEncryptAndDecrypt() {
-        String key = "xiaozhi1234567890";
+        String key = "xiaomai1234567890";
         String plainText = "Hello, 小麦!";
 
         System.out.println("原始文本: " + plainText);
@@ -48,7 +48,7 @@ public class AESUtilsTest {
 
     @Test
     public void testSpecialCharacters() {
-        String key = "xiaozhi1234567890";
+        String key = "xiaomai1234567890";
         String[] testTexts = {
                 "Hello World",
                 "你好世界",
@@ -70,7 +70,7 @@ public class AESUtilsTest {
     @Test
     public void testCrossLanguageCompatibility() {
         // 这些是Python版本生成的加密结果，用于测试跨语言兼容性
-        String key = "xiaozhi1234567890";
+        String key = "xiaomai1234567890";
         String plainText = "Hello, 小麦!";
 
         // Python版本生成的加密结果（需要运行Python测试后获取）
