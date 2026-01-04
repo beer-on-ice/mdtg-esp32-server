@@ -87,7 +87,7 @@ export default {
 	data() {
 		return {
 			form: {
-				agentCode: '优麦',
+				agentCode: '小麦',
 				agentName: '',
 				systemPrompt: '',
 				sort: 0,
@@ -222,7 +222,7 @@ export default {
 			this.form = {
 				...this.form,
 				agentName: this.$t('templateQuickConfig.newTemplate'),
-				agentCode: '优麦',
+				agentCode: '小麦',
 				systemPrompt: '',
 				sort: 1
 			}

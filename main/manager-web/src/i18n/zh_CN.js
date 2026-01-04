@@ -297,7 +297,7 @@ export default {
 
 	// 注册页面相关
 	'register.title': '创建账号',
-	'register.welcome': '欢迎使用优麦AI',
+	'register.welcome': '欢迎使用小麦AI',
 	'register.usernamePlaceholder': '请输入用户名',
 	'register.mobilePlaceholder': '请输入手机号码',
 	'register.captchaPlaceholder': '请输入验证码',
@@ -533,7 +533,7 @@ export default {
 	'button.close': '关闭',
 
 	// 系统信息
-	'system.name': '优麦服务',
+	'system.name': '小麦服务',
 
 	// 声纹相关
 	'voiceprint.management': '声纹管理',
@@ -665,7 +665,7 @@ export default {
 
 	// 首页文本
 	'home.addAgent': '添加智能体',
-	'home.greeting': '你好优麦',
+	'home.greeting': '你好小麦',
 	'home.wish': '让我们度过美好的一天！',
 	'home.languageModel': '语言模型',
 	'home.voiceModel': '音色模型',

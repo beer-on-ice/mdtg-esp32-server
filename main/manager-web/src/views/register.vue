@@ -6,7 +6,7 @@
 				<div style="display: flex; align-items: center; margin-top: 15px; margin-left: 10px; gap: 10px">
 					<img loading="lazy" alt="" src="@/assets/xiaomai-logo.png" style="width: 45px; height: 45px" />
 					<!-- <img loading="lazy" alt="" :src="xiaomaiAiIcon" style="height: 18px" /> -->
-					<h2>麦迪科技康养机器人平台</h2>
+					<h2>优麦康养机器人平台</h2>
 				</div>
 			</el-header>
 			<div class="login-person">

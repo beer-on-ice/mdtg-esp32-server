@@ -5,7 +5,7 @@
 			<div class="header-left" @click="goHome">
 				<img loading="lazy" alt="" src="@/assets/xiaomai-logo.png" class="logo-img" />
 				<!-- <img loading="lazy" alt="" :src="xiaomaiAiIcon" class="brand-img" /> -->
-				<h2>麦迪科技康养机器人平台</h2>
+				<h2>优麦康养机器人平台</h2>
 			</div>
 
 			<!-- 中间导航菜单 -->
