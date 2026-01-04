@@ -1,6 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: pip
-    directory: /main/mdtg-server
+    directory: /main/xiaomai-server
     schedule:
       interval: weekly

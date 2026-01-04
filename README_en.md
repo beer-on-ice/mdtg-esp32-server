@@ -220,11 +220,11 @@ Websocket Interface Address: wss://2662r3426b.vicp.fun/xiaomai/v1/
 
 This project provides the following testing tools to help you verify the system and choose suitable models:
 
-|          Tool Name          | Location                                      |                Usage Method                 |                                             Function Description                                             |
-| :-------------------------: | :-------------------------------------------- | :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
-| Audio Interaction Test Tool | main》mdtg-server》test》test_page.html       |      Open directly with Google Chrome       |       Tests audio playback and reception functions, verifies if Python-side audio processing is normal       |
-| Model Response Test Tool 1  | main》mdtg-server》performance_tester.py      |   Execute `python performance_tester.py`    | Tests response speed of three core modules: ASR(speech recognition), LLM(large model), TTS(speech synthesis) |
-| Model Response Test Tool 2  | main》mdtg-server》performance_tester_vllm.py | Execute `python performance_tester_vllm.py` |                                   Tests VLLM(vision model) response speed                                    |
+|          Tool Name          | Location                                         |                Usage Method                 |                                             Function Description                                             |
+| :-------------------------: | :----------------------------------------------- | :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
+| Audio Interaction Test Tool | main》xiaomai-server》test》test_page.html       |      Open directly with Google Chrome       |       Tests audio playback and reception functions, verifies if Python-side audio processing is normal       |
+| Model Response Test Tool 1  | main》xiaomai-server》performance_tester.py      |   Execute `python performance_tester.py`    | Tests response speed of three core modules: ASR(speech recognition), LLM(large model), TTS(speech synthesis) |
+| Model Response Test Tool 2  | main》xiaomai-server》performance_tester_vllm.py | Execute `python performance_tester_vllm.py` |                                   Tests VLLM(vision model) response speed                                    |
 
 > 💡 Note: When testing model speed, only models with configured keys will be tested.
 
@@ -264,11 +264,11 @@ If you are a software developer, here is an [Open Letter to Developers](docs/con
 
 Xiaomai is an ecosystem. When using this product, you can also check out other [excellent projects](https://github.com/78/xiaomai-esp32?tab=readme-ov-file#related-open-source-projects) in this ecosystem
 
-| Project Name           | Project Address                                                               | Project Description                                                                                                                                                                                    |
-| :--------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Xiaomai Android Client | [xiaomai-android-client](https://github.com/TOM88812/xiaomai-android-client)  | An Android and iOS voice dialogue application based on mdtg-server, supporting real-time voice interaction and text dialogue.<br/>Currently a Flutter version, connecting iOS and Android platforms.   |
-| Xiaomai Desktop Client | [py-xiaomai](https://github.com/Huang-junsen/py-xiaomai)                      | This project provides a Python-based AI client for beginners, allowing users to experience Xiaomai AI functionality through code even without physical hardware conditions.                            |
-| Xiaomai Java Server    | [mdtg-esp32-server-java](https://github.com/joey-zhou/mdtg-esp32-server-java) | Xiaomai open-source backend service Java version is a Java-based open-source project.<br/>It includes frontend and backend services, aiming to provide users with a complete backend service solution. |
+| Project Name           | Project Address                                                               | Project Description                                                                                                                                                                                     |
+| :--------------------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Xiaomai Android Client | [xiaomai-android-client](https://github.com/TOM88812/xiaomai-android-client)  | An Android and iOS voice dialogue application based on xiaomai-server, supporting real-time voice interaction and text dialogue.<br/>Currently a Flutter version, connecting iOS and Android platforms. |
+| Xiaomai Desktop Client | [py-xiaomai](https://github.com/Huang-junsen/py-xiaomai)                      | This project provides a Python-based AI client for beginners, allowing users to experience Xiaomai AI functionality through code even without physical hardware conditions.                             |
+| Xiaomai Java Server    | [mdtg-esp32-server-java](https://github.com/joey-zhou/mdtg-esp32-server-java) | Xiaomai open-source backend service Java version is a Java-based open-source project.<br/>It includes frontend and backend services, aiming to provide users with a complete backend service solution.  |
 
 ---
 

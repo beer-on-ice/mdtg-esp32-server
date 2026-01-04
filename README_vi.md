@@ -225,10 +225,10 @@ Nếu bạn quan tâm đến thời gian của từng thành phần, vui lòng x
 
 Dự án này cung cấp các công cụ kiểm tra sau để giúp bạn xác minh hệ thống và chọn mô hình phù hợp:
 
-|             Tên công cụ             | Vị trí                                   |             Phương pháp sử dụng             |                                                              Mô tả chức năng                                                               |
-| :---------------------------------: | :--------------------------------------- | :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: |
-| Công cụ kiểm tra tương tác âm thanh | main》mdtg-server》test》test_page.html  | Mở trực tiếp bằng trình duyệt Google Chrome |                     Kiểm tra chức năng phát và nhận âm thanh, xác minh xử lý âm thanh phía Python có bình thường không                     |
-|  Công cụ kiểm tra phản hồi mô hình  | main》mdtg-server》performance_tester.py |  Thực hiện `python performance_tester.py`   | Kiểm tra tốc độ phản hồi của ba module cốt lõi ASR(Nhận dạng giọng nói), LLM(Mô hình lớn), VLLM(Mô hình thị giác), TTS(Tổng hợp giọng nói) |
+|             Tên công cụ             | Vị trí                                      |             Phương pháp sử dụng             |                                                              Mô tả chức năng                                                               |
+| :---------------------------------: | :------------------------------------------ | :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: |
+| Công cụ kiểm tra tương tác âm thanh | main》xiaomai-server》test》test_page.html  | Mở trực tiếp bằng trình duyệt Google Chrome |                     Kiểm tra chức năng phát và nhận âm thanh, xác minh xử lý âm thanh phía Python có bình thường không                     |
+|  Công cụ kiểm tra phản hồi mô hình  | main》xiaomai-server》performance_tester.py |  Thực hiện `python performance_tester.py`   | Kiểm tra tốc độ phản hồi của ba module cốt lõi ASR(Nhận dạng giọng nói), LLM(Mô hình lớn), VLLM(Mô hình thị giác), TTS(Tổng hợp giọng nói) |
 
 > 💡 Gợi ý: Khi kiểm tra tốc độ mô hình, chỉ kiểm tra các mô hình đã cấu hình khóa.
 

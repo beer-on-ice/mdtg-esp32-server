@@ -175,8 +175,8 @@ http://homeassistant.local:8123
 
 如果你的`data`目录下没有`.mcp_server_settings.json`文件，
 
-- 请把在`mdtg-server`文件夹根目录的`mcp_server_settings.json`文件复制到`data`目录下，并重命名为`.mcp_server_settings.json`
-- 或[下载这个文件](https://github.com/beer-on-ice/mdtg-esp32-server/blob/main/main/mdtg-server/mcp_server_settings.json)，下载到`data`目录下，并重命名为`.mcp_server_settings.json`
+- 请把在`xiaomai-server`文件夹根目录的`mcp_server_settings.json`文件复制到`data`目录下，并重命名为`.mcp_server_settings.json`
+- 或[下载这个文件](https://github.com/beer-on-ice/mdtg-esp32-server/blob/main/main/xiaomai-server/mcp_server_settings.json)，下载到`data`目录下，并重命名为`.mcp_server_settings.json`
 
 修改`"mcpServers"`里的这部分的内容：
 

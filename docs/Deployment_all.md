@@ -40,14 +40,14 @@ sudo bash -c "$(wget -qO- https://ghfast.top/https://raw.githubusercontent.com/b
 
 #### 1.2.1 创建目录
 
-安装完后，你需要为这个项目找一个安放配置文件的目录，例如我们可以新建一个文件夹叫`mdtg-server`。
+安装完后，你需要为这个项目找一个安放配置文件的目录，例如我们可以新建一个文件夹叫`xiaomai-server`。
 
-创建好目录后，你需要在`mdtg-server`下面创建`data`文件夹和`models`文件夹，`models`下面还要再创建`SenseVoiceSmall`文件夹。
+创建好目录后，你需要在`xiaomai-server`下面创建`data`文件夹和`models`文件夹，`models`下面还要再创建`SenseVoiceSmall`文件夹。
 
 最终目录结构如下所示：
 
 ```
-mdtg-server
+xiaomai-server
   ├─ data
   ├─ models
      ├─ SenseVoiceSmall
@@ -69,28 +69,28 @@ mdtg-server
 
 ##### 1.2.3.1 下载 docker-compose_all.yaml
 
-用浏览器打开[这个链接](../main/mdtg-server/docker-compose_all.yml)。
+用浏览器打开[这个链接](../main/xiaomai-server/docker-compose_all.yml)。
 
 在页面的右侧找到名称为`RAW`按钮，在`RAW`按钮的旁边，找到下载的图标，点击下载按钮，下载`docker-compose_all.yml`文件。 把文件下载到你的
-`mdtg-server`中。
+`xiaomai-server`中。
 
-或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/docker-compose_all.yml` 下载。
+或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/docker-compose_all.yml` 下载。
 
 下载完后，回到本教程继续往下。
 
 ##### 1.2.3.2 下载 config_from_api.yaml
 
-用浏览器打开[这个链接](../main/mdtg-server/config_from_api.yaml)。
+用浏览器打开[这个链接](../main/xiaomai-server/config_from_api.yaml)。
 
 在页面的右侧找到名称为`RAW`按钮，在`RAW`按钮的旁边，找到下载的图标，点击下载按钮，下载`config_from_api.yaml`文件。 把文件下载到你的
-`mdtg-server`下面的`data`文件夹中，然后把`config_from_api.yaml`文件重命名为`.config.yaml`。
+`xiaomai-server`下面的`data`文件夹中，然后把`config_from_api.yaml`文件重命名为`.config.yaml`。
 
-或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/config_from_api.yaml` 下载保存。
+或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/config_from_api.yaml` 下载保存。
 
-下载完配置文件后，我们确认一下整个`mdtg-server`里面的文件如下所示：
+下载完配置文件后，我们确认一下整个`xiaomai-server`里面的文件如下所示：
 
 ```
-mdtg-server
+xiaomai-server
   ├─ docker-compose_all.yml
   ├─ data
     ├─ .config.yaml
@@ -107,7 +107,7 @@ mdtg-server
 
 ## 3. 清除历史版本镜像和容器
 
-接下来打开命令行工具，使用`终端`或`命令行`工具 进入到你的`mdtg-server`，执行以下命令
+接下来打开命令行工具，使用`终端`或`命令行`工具 进入到你的`xiaomai-server`，执行以下命令
 
 ```
 docker compose -f docker-compose_all.yml down
@@ -162,7 +162,7 @@ http://localhost:8002/xiaomai/doc.html
 
 `server.secret`需要说明一下，这个`参数值`很重要，作用是让我们的`Server`端连接`manager-api`。`server.secret`是每次从零部署 manager 模块时，会自动随机生成的密钥。
 
-复制`参数值`后，打开`mdtg-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
+复制`参数值`后，打开`xiaomai-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
 
 ```
 manager-api:
@@ -384,13 +384,13 @@ conda install libiconv -y
 打开完，找到页面中一个绿色的按钮，写着`Code`的按钮，点开它，然后你就看到`Download ZIP`的按钮。
 
 点击它，下载本项目源码压缩包。下载到你电脑后，解压它，此时它的名字可能叫`mdtg-esp32-server-main`
-你需要把它重命名成`mdtg-esp32-server`，在这个文件里，进入到`main`文件夹，再进入到`mdtg-server`，好了请记住这个目录`mdtg-server`。
+你需要把它重命名成`mdtg-esp32-server`，在这个文件里，进入到`main`文件夹，再进入到`xiaomai-server`，好了请记住这个目录`xiaomai-server`。
 
 ```
 # 继续使用conda环境
 conda activate mdtg-esp32-server
-# 进入到你的项目根目录，再进入main/mdtg-server
-cd main/mdtg-server
+# 进入到你的项目根目录，再进入main/xiaomai-server
+cd main/xiaomai-server
 pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 pip install -r requirements.txt
 ```
@@ -411,10 +411,10 @@ pip install -r requirements.txt
 
 `server.secret`需要说明一下，这个`参数值`很重要，作用是让我们的`Server`端连接`manager-api`。`server.secret`是每次从零部署 manager 模块时，会自动随机生成的密钥。
 
-如果你的`mdtg-server`目录没有`data`，你需要创建`data`目录。
-如果你的`data`下面没有`.config.yaml`文件，你可以把`mdtg-server`目录下的`config_from_api.yaml`文件复制到`data`，并重命名为`.config.yaml`
+如果你的`xiaomai-server`目录没有`data`，你需要创建`data`目录。
+如果你的`data`下面没有`.config.yaml`文件，你可以把`xiaomai-server`目录下的`config_from_api.yaml`文件复制到`data`，并重命名为`.config.yaml`
 
-复制`参数值`后，打开`mdtg-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
+复制`参数值`后，打开`xiaomai-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
 
 ```
 manager-api:
@@ -435,7 +435,7 @@ manager-api:
 ## 5.运行项目
 
 ```
-# 确保在mdtg-server目录下执行
+# 确保在xiaomai-server目录下执行
 conda activate mdtg-esp32-server
 python app.py
 ```

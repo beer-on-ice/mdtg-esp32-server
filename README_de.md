@@ -224,10 +224,10 @@ Wenn Sie sich um die Latenz jeder Komponente kümmern, lesen Sie bitte den [Xiao
 
 Dieses Projekt bietet die folgenden Testwerkzeuge, um Ihnen bei der Überprüfung des Systems und der Auswahl geeigneter Modelle zu helfen:
 
-|        Werkzeugname        | Standort                                 |            Verwendungsmethode            |                                                              Funktionsbeschreibung                                                              |
-| :------------------------: | :--------------------------------------- | :--------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
-| Audio-Interaktionstesttool | main》mdtg-server》test》test_page.html  |     Direkt mit Google Chrome öffnen      |                 Testet Audio-Wiedergabe- und Empfangsfunktionen, überprüft, ob die Python-seitige Audioverarbeitung normal ist                  |
-|  Modell-Reaktionstesttool  | main》mdtg-server》performance_tester.py | Ausführen `python performance_tester.py` | Testet die Reaktionsgeschwindigkeit von ASR (Spracherkennung), LLM (großes Modell), VLLM (Vision-Modell), TTS (Sprachsynthese) drei Kernmodulen |
+|        Werkzeugname        | Standort                                    |            Verwendungsmethode            |                                                              Funktionsbeschreibung                                                              |
+| :------------------------: | :------------------------------------------ | :--------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+| Audio-Interaktionstesttool | main》xiaomai-server》test》test_page.html  |     Direkt mit Google Chrome öffnen      |                 Testet Audio-Wiedergabe- und Empfangsfunktionen, überprüft, ob die Python-seitige Audioverarbeitung normal ist                  |
+|  Modell-Reaktionstesttool  | main》xiaomai-server》performance_tester.py | Ausführen `python performance_tester.py` | Testet die Reaktionsgeschwindigkeit von ASR (Spracherkennung), LLM (großes Modell), VLLM (Vision-Modell), TTS (Sprachsynthese) drei Kernmodulen |
 
 > 💡 Hinweis: Beim Testen der Modellgeschwindigkeit werden nur Modelle mit konfigurierten Schlüsseln getestet.
 

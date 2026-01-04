@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'main/mdtg-server/requirements.txt'
+      - 'main/xiaomai-server/requirements.txt'
       - 'Dockerfile-server-base'
       - '.github/workflows/build-base-image.yml'
 

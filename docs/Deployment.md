@@ -16,14 +16,14 @@
 
 #### 1.1.1 创建目录
 
-安装完 docker 后，你需要为这个项目找一个安放配置文件的目录，例如我们可以新建一个文件夹叫`mdtg-server`。
+安装完 docker 后，你需要为这个项目找一个安放配置文件的目录，例如我们可以新建一个文件夹叫`xiaomai-server`。
 
-创建好目录后，你需要在`mdtg-server`下面创建`data`文件夹和`models`文件夹，`models`下面还要再创建`SenseVoiceSmall`文件夹。
+创建好目录后，你需要在`xiaomai-server`下面创建`data`文件夹和`models`文件夹，`models`下面还要再创建`SenseVoiceSmall`文件夹。
 
 最终目录结构如下所示：
 
 ```
-mdtg-server
+xiaomai-server
   ├─ data
   ├─ models
      ├─ SenseVoiceSmall
@@ -42,24 +42,24 @@ mdtg-server
 
 ##### 1.1.3.1 下载 docker-compose.yaml
 
-用浏览器打开[这个链接](../main/mdtg-server/docker-compose.yml)。
+用浏览器打开[这个链接](../main/xiaomai-server/docker-compose.yml)。
 
 在页面的右侧找到名称为`RAW`按钮，在`RAW`按钮的旁边，找到下载的图标，点击下载按钮，下载`docker-compose.yml`文件。 把文件下载到你的
-`mdtg-server`中。
+`xiaomai-server`中。
 
 下载完后，回到本教程继续往下。
 
 ##### 1.1.3.2 创建 config.yaml
 
-用浏览器打开[这个链接](../main/mdtg-server/config.yaml)。
+用浏览器打开[这个链接](../main/xiaomai-server/config.yaml)。
 
 在页面的右侧找到名称为`RAW`按钮，在`RAW`按钮的旁边，找到下载的图标，点击下载按钮，下载`config.yaml`文件。 把文件下载到你的
-`mdtg-server`下面的`data`文件夹中，然后把`config.yaml`文件重命名为`.config.yaml`。
+`xiaomai-server`下面的`data`文件夹中，然后把`config.yaml`文件重命名为`.config.yaml`。
 
-下载完配置文件后，我们确认一下整个`mdtg-server`里面的文件如下所示：
+下载完配置文件后，我们确认一下整个`xiaomai-server`里面的文件如下所示：
 
 ```
-mdtg-server
+xiaomai-server
   ├─ docker-compose.yml
   ├─ data
     ├─ .config.yaml
@@ -79,7 +79,7 @@ mdtg-server
 
 ## 3. 执行 docker 命令
 
-打开命令行工具，使用`终端`或`命令行`工具 进入到你的`mdtg-server`，执行以下命令
+打开命令行工具，使用`终端`或`命令行`工具 进入到你的`xiaomai-server`，执行以下命令
 
 ```
 docker compose up -d
@@ -157,13 +157,13 @@ conda install libiconv -y
 打开完，找到页面中一个绿色的按钮，写着`Code`的按钮，点开它，然后你就看到`Download ZIP`的按钮。
 
 点击它，下载本项目源码压缩包。下载到你电脑后，解压它，此时它的名字可能叫`mdtg-esp32-server-main`
-你需要把它重命名成`mdtg-esp32-server`，在这个文件里，进入到`main`文件夹，再进入到`mdtg-server`，好了请记住这个目录`mdtg-server`。
+你需要把它重命名成`mdtg-esp32-server`，在这个文件里，进入到`main`文件夹，再进入到`xiaomai-server`，好了请记住这个目录`xiaomai-server`。
 
 ```
 # 继续使用conda环境
 conda activate mdtg-esp32-server
-# 进入到你的项目根目录，再进入main/mdtg-server
-cd main/mdtg-server
+# 进入到你的项目根目录，再进入main/xiaomai-server
+cd main/xiaomai-server
 pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 pip install -r requirements.txt
 ```
@@ -183,7 +183,7 @@ pip install -r requirements.txt
 ## 5.运行项目
 
 ```
-# 确保在mdtg-server目录下执行
+# 确保在xiaomai-server目录下执行
 conda activate mdtg-esp32-server
 python app.py
 ```
@@ -194,12 +194,12 @@ python app.py
 
 ## 配置项目
 
-如果你的`mdtg-server`目录没有`data`，你需要创建`data`目录。
+如果你的`xiaomai-server`目录没有`data`，你需要创建`data`目录。
 如果你的`data`下面没有`.config.yaml`文件，有两个方式，任选一种：
 
-第一个方式：你可以把`mdtg-server`目录下的`config.yaml`文件复制到`data`，并重命名为`.config.yaml`。在此文件上修改
+第一个方式：你可以把`xiaomai-server`目录下的`config.yaml`文件复制到`data`，并重命名为`.config.yaml`。在此文件上修改
 
-第二个方式：你也可以创建在`data`目录下手动创建`.config.yaml`空文件，然后在这个文件中增加必要的配置信息，系统会优先读取`.config.yaml`文件的配置，如果`.config.yaml`没有配置的，系统会自动去加载`mdtg-server`目录下的`config.yaml`的配置。推荐使用这种方式，这种方式是最简洁的方式。
+第二个方式：你也可以创建在`data`目录下手动创建`.config.yaml`空文件，然后在这个文件中增加必要的配置信息，系统会优先读取`.config.yaml`文件的配置，如果`.config.yaml`没有配置的，系统会自动去加载`xiaomai-server`目录下的`config.yaml`的配置。推荐使用这种方式，这种方式是最简洁的方式。
 
 - 默认的 LLM 使用的是`ChatGLMLLM`，你需要配置密钥，因为他们的模型，虽然有免费的，但是仍要去[官网](https://bigmodel.cn/usercenter/proj-mgmt/apikeys)注册密钥，才能启动。
 

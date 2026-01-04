@@ -5,11 +5,11 @@
 
 - 第一部分：部署 MQTT 网关
 - 第二部分：全模块运行实现优麦硬件 MQTT+UDP 连接
-- 第三部分：单模块运行 mdtg-server 实现优麦硬件 MQTT+UDP 连接
+- 第三部分：单模块运行 xiaomai-server 实现优麦硬件 MQTT+UDP 连接
 
 ## 准备阶段
 
-准备好你的`mdtg-server`的`mqtt-websocket`连接地址。在你原来的`websocket地址`基础上，添加`?from=mqtt_gateway`字符，就可以得到`mqtt-websocket`连接地址
+准备好你的`xiaomai-server`的`mqtt-websocket`连接地址。在你原来的`websocket地址`基础上，添加`?from=mqtt_gateway`字符，就可以得到`mqtt-websocket`连接地址
 
 1、如果你是源码部署，你的`mqtt-websocket`地址是：
 
@@ -53,7 +53,7 @@ npm install -g pm2
 cp config/mqtt.json.example config/mqtt.json
 ```
 
-4. 编辑配置文件 config/mqtt.json，把你在`本文准备阶段`的`mqtt-websocket`地址替换到`chat_servers`里。例如源码部署的`mdtg-server`就是如下配置：
+4. 编辑配置文件 config/mqtt.json，把你在`本文准备阶段`的`mqtt-websocket`地址替换到`chat_servers`里。例如源码部署的`xiaomai-server`就是如下配置：
 
 ```
 {
@@ -84,7 +84,7 @@ MQTT_PORT=1883            # MQTT服务器端口
 UDP_PORT=8884             # UDP服务器端口
 API_PORT=8007             # 管理API端口
 MQTT_SIGNATURE_KEY=test   # MQTT签名密钥
-SERVER_SECRET=Te1st12134  # 服务器密钥，请保持和智控台（server.secret）一致或者和mdtg-server里（server.auth_key）保持一致
+SERVER_SECRET=Te1st12134  # 服务器密钥，请保持和智控台（server.secret）一致或者和xiaomai-server里（server.auth_key）保持一致
 ```
 
 请注意`PUBLIC_IP`配置，确保其与实际公网 IP 一致，如果有域名就填域名。
