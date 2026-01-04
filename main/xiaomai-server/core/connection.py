@@ -201,7 +201,7 @@ class ConnectionHandler:
             # 启动超时检查任务
             self.timeout_task = asyncio.create_task(self._check_timeout())
 
-            self.welcome_msg = self.config["xiaozhi"]
+            self.welcome_msg = self.config["xiaomai"]
             self.welcome_msg["session_id"] = self.session_id
 
             # 在后台初始化配置和组件（完全不阻塞主循环）

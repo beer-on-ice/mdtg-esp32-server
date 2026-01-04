@@ -250,7 +250,7 @@ async def send_mcp_initialize_message(conn):
                 "vision": vision,
             },
             "clientInfo": {
-                "name": "XiaozhiClient",
+                "name": "XiaomaiClient",
                 "version": "1.0.0",
             },
         },

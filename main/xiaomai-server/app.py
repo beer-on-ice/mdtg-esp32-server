@@ -51,14 +51,14 @@ async def main():
     # auth_key用于jwt认证，比如视觉分析接口的jwt认证、ota接口的token生成与websocket认证
     # 获取配置文件中的auth_key
     auth_key = config["server"].get("auth_key", "")
-    
+
     # 验证auth_key，无效则尝试使用manager-api.secret
     if not auth_key or len(auth_key) == 0 or "你" in auth_key:
         auth_key = config.get("manager-api", {}).get("secret", "")
         # 验证secret，无效则生成随机密钥
         if not auth_key or len(auth_key) == 0 or "你" in auth_key:
             auth_key = str(uuid.uuid4().hex)
-    
+
     config["server"]["auth_key"] = auth_key
 
     # 添加 stdin 监控任务
@@ -79,7 +79,7 @@ async def main():
     port = int(config["server"].get("http_port", 8003))
     if not read_config_from_api:
         logger.bind(tag=TAG).info(
-            "OTA接口是\t\thttp://{}:{}/xiaozhi/ota/",
+            "OTA接口是\t\thttp://{}:{}/xiaomai/ota/",
             get_local_ip(),
             port,
         )
@@ -107,7 +107,7 @@ async def main():
         websocket_port = int(server_config.get("port", 8000))
 
     logger.bind(tag=TAG).info(
-        "Websocket地址是\tws://{}:{}/xiaozhi/v1/",
+        "Websocket地址是\tws://{}:{}/xiaomai/v1/",
         get_local_ip(),
         websocket_port,
     )
