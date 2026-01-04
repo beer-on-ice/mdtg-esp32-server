@@ -533,7 +533,7 @@ export default {
 	'button.close': '關閉',
 
 	// 系统信息
-	'system.name': '小麦服務',
+	'system.name': '优麦服務',
 
 	// 声纹相关
 	'voiceprint.management': '聲紋管理',
