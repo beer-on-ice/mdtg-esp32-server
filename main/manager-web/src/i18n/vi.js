@@ -210,7 +210,7 @@ export default {
 	'firmwareDialog.clickUpload': 'Nhấp để tải lên',
 	'firmwareDialog.uploadTip': 'Chỉ hỗ trợ tệp firmware (.bin/.apk), kích thước không vượt quá 100MB',
 	'firmwareDialog.uploadHint':
-		'Nhắc nhở: Vui lòng tải lên tệp xiaomai.bin đã hợp nhất trước, không phải tệp merged-binary.bin đã hợp nhất',
+		'Nhắc nhở: Vui lòng tải lên tệp mdtg.bin đã hợp nhất trước, không phải tệp merged-binary.bin đã hợp nhất',
 	'firmwareDialog.remark': 'Ghi chú',
 	'firmwareDialog.remarkPlaceholder': 'Vui lòng nhập thông tin ghi chú',
 	'firmwareDialog.requiredFirmwareName': 'Vui lòng nhập tên firmware (board + phiên bản)',
@@ -304,7 +304,7 @@ export default {
 
 	// Register page related
 	'register.title': 'Tạo tài khoản',
-	'register.welcome': 'Chào mừng đến với XiaoMai AI',
+	'register.welcome': 'Chào mừng đến với MDTG AI',
 	'register.usernamePlaceholder': 'Vui lòng nhập tên đăng nhập',
 	'register.mobilePlaceholder': 'Vui lòng nhập số điện thoại di động',
 	'register.captchaPlaceholder': 'Vui lòng nhập mã xác minh',
@@ -544,7 +544,7 @@ export default {
 	'button.close': 'Đóng',
 
 	// System information
-	'system.name': 'Dịch vụ XiaoMai',
+	'system.name': 'Dịch vụ MDTG',
 
 	// Voiceprint related
 	'voiceprint.management': 'Quản lý dấu giọng nói',
@@ -677,7 +677,7 @@ export default {
 
 	// Home page text
 	'home.addAgent': 'Thêm tác nhân',
-	'home.greeting': 'Xin chào XiaoMai',
+	'home.greeting': 'Xin chào MDTG',
 	'home.wish': 'Chúc bạn một ngày tuyệt vời!',
 	'home.languageModel': 'LLM',
 	'home.voiceModel': 'TTS',
@@ -726,7 +726,7 @@ export default {
 	'paramManagement.operationCancelled': 'Đã hủy xóa',
 	'paramManagement.operationClosed': 'Đã đóng thao tác',
 	'paramManagement.updateSuccess':
-		'Cập nhật thành công. Một số cấu hình chỉ có hiệu lực sau khi khởi động lại mô-đun xiaomai-server.',
+		'Cập nhật thành công. Một số cấu hình chỉ có hiệu lực sau khi khởi động lại mô-đun mdtg-server.',
 	'paramManagement.addSuccess': 'Thêm thành công',
 	'paramManagement.updateFailed': 'Cập nhật thất bại',
 	'paramManagement.addFailed': 'Thêm thất bại',
@@ -866,7 +866,7 @@ export default {
 	'modelConfig.disableSuccess': 'Tắt thành công',
 	'modelConfig.operationFailed': 'Thao tác thất bại',
 	'modelConfig.setDefaultSuccess':
-		'Đặt mô hình mặc định thành công, vui lòng khởi động lại module xiaomai-server thủ công kịp thời',
+		'Đặt mô hình mặc định thành công, vui lòng khởi động lại module mdtg-server thủ công kịp thời',
 	'modelConfig.itemsPerPage': '{items} mục/trang',
 	'modelConfig.firstPage': 'Trang đầu',
 	'modelConfig.prevPage': 'Trang trước',

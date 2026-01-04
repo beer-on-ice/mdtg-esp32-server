@@ -209,7 +209,7 @@ export default {
 	'firmwareDialog.clickUpload': 'Click to Upload',
 	'firmwareDialog.uploadTip': 'Only firmware files (.bin/.apk) are supported, and size should not exceed 100MB',
 	'firmwareDialog.uploadHint':
-		'Warm reminder: Please upload the pre-merged xiaomai.bin file, not the merged merged-binary.bin file',
+		'Warm reminder: Please upload the pre-merged mdtg.bin file, not the merged merged-binary.bin file',
 	'firmwareDialog.remark': 'Remark',
 	'firmwareDialog.remarkPlaceholder': 'Please enter remark information',
 	'firmwareDialog.requiredFirmwareName': 'Please enter firmware name (board + version)',
@@ -303,7 +303,7 @@ export default {
 
 	// Register page related
 	'register.title': 'Create Account',
-	'register.welcome': 'Welcome to XiaoMai AI',
+	'register.welcome': 'Welcome to MDTG AI',
 	'register.usernamePlaceholder': 'Please enter username',
 	'register.mobilePlaceholder': 'Please enter mobile phone number',
 	'register.captchaPlaceholder': 'Please enter captcha',
@@ -542,7 +542,7 @@ export default {
 	'button.close': 'Close',
 
 	// System information
-	'system.name': 'XiaoMai Service',
+	'system.name': 'MDTG Service',
 
 	// Voiceprint related
 	'voiceprint.management': 'Voiceprint Management',
@@ -674,7 +674,7 @@ export default {
 
 	// Home page text
 	'home.addAgent': 'Add Agent',
-	'home.greeting': 'Hi XiaoMai',
+	'home.greeting': 'Hi MDTG',
 	'home.wish': "Let's have a wonderful day!",
 	'home.languageModel': 'LLM',
 	'home.voiceModel': 'TTS',
@@ -723,7 +723,7 @@ export default {
 	'paramManagement.operationCancelled': 'Deletion cancelled',
 	'paramManagement.operationClosed': 'Operation closed',
 	'paramManagement.updateSuccess':
-		'Update successful. Some configurations will take effect only after restarting the xiaomai-server module.',
+		'Update successful. Some configurations will take effect only after restarting the mdtg-server module.',
 	'paramManagement.addSuccess': 'Add successful',
 	'paramManagement.updateFailed': 'Update failed',
 	'paramManagement.addFailed': 'Add failed',
@@ -864,7 +864,7 @@ export default {
 	'modelConfig.disableSuccess': 'Disable successful',
 	'modelConfig.operationFailed': 'Operation failed',
 	'modelConfig.setDefaultSuccess':
-		'Set default model successful, please restart the xiaomai-server module manually in time',
+		'Set default model successful, please restart the mdtg-server module manually in time',
 	'modelConfig.itemsPerPage': '{items} items/page',
 	'modelConfig.firstPage': 'First Page',
 	'modelConfig.prevPage': 'Previous Page',

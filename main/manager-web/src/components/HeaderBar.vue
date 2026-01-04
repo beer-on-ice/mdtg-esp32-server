@@ -283,7 +283,7 @@ export default {
 			// 搜索历史相关
 			searchHistory: [],
 			showHistory: false,
-			SEARCH_HISTORY_KEY: 'xiaomai_search_history',
+			SEARCH_HISTORY_KEY: 'mdtg_search_history',
 			MAX_HISTORY_COUNT: 3,
 			// Cascader 配置
 			cascaderProps: {
