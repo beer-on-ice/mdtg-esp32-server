@@ -1,9 +1,8 @@
 # 语音识别、大语言模型、非流式语音合成、流式语音合成、视觉模型的性能测试工具使用指南
 
-1.在main/xiaozhi-server目录下创建data目录
-2.在data目录下创建.config.yaml文件
-3.在.data/config.yaml中，写入你的语音识别、大语言模型、流式语音合成、视觉模型的参数
+1.在 main/mdtg-server 目录下创建 data 目录 2.在 data 目录下创建.config.yaml 文件 3.在.data/config.yaml 中，写入你的语音识别、大语言模型、流式语音合成、视觉模型的参数
 例如：
+
 ```
 LLM:
   ChatGLMLLM:
@@ -21,7 +20,9 @@ VLLM:
 
 ASR:
 ```
-4.在main/xiaozhi-server目录下运行performance_tester.py: 
+
+4.在 main/mdtg-server 目录下运行 performance_tester.py:
+
 ```
 python performance_tester.py
 ```

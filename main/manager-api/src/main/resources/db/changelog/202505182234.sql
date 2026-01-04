@@ -4,7 +4,7 @@ delete from sys_params where id in (610, 611, 612, 613);
 INSERT INTO sys_params
 (id, param_code, param_value, value_type, param_type, remark, creator, create_date, updater, update_date)
     VALUES
-(108, 'server.name', 'xiaozhi-esp32-server', 'string', 1, '系统名称', NULL, NULL, NULL, NULL),
+(108, 'server.name', 'mdtg-esp32-server', 'string', 1, '系统名称', NULL, NULL, NULL, NULL),
 (109, 'server.beian_icp_num', 'null', 'string', 1, 'icp备案号，填写null则不设置', NULL, NULL, NULL, NULL),
 (110, 'server.beian_ga_num', 'null', 'string', 1, '公安备案号，填写null则不设置', NULL, NULL, NULL, NULL),
 (111, 'server.enable_mobile_register', 'false', 'boolean', 1, '是否开启手机注册', NULL, NULL, NULL, NULL),
@@ -19,12 +19,12 @@ update sys_params set remark = '是否允许管理员以外的人注册' where p
 -- 增加手机区域字典
 -- 插入固件类型字典类型
 delete from `sys_dict_type` where `id` = 102;
-INSERT INTO `sys_dict_type` (`id`, `dict_type`, `dict_name`, `remark`, `sort`, `creator`, `create_date`, `updater`, `update_date`) VALUES 
+INSERT INTO `sys_dict_type` (`id`, `dict_type`, `dict_name`, `remark`, `sort`, `creator`, `create_date`, `updater`, `update_date`) VALUES
 (102, 'MOBILE_AREA', '手机区域', '手机区域字典', 0, 1, NOW(), 1, NOW());
 
 -- 插入固件类型字典数据
 delete from `sys_dict_data` where `dict_type_id` = 102;
-INSERT INTO `sys_dict_data` (`id`, `dict_type_id`, `dict_label`, `dict_value`, `remark`, `sort`, `creator`, `create_date`, `updater`, `update_date`) VALUES 
+INSERT INTO `sys_dict_data` (`id`, `dict_type_id`, `dict_label`, `dict_value`, `remark`, `sort`, `creator`, `create_date`, `updater`, `update_date`) VALUES
 (102001, 102, '中国大陆', '+86', '中国大陆', 1, 1, NOW(), 1, NOW()),
 (102002, 102, '中国香港', '+852', '中国香港', 2, 1, NOW(), 1, NOW()),
 (102003, 102, '中国澳门', '+853', '中国澳门', 3, 1, NOW(), 1, NOW()),

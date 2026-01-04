@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>xiaozhi</groupId>
-    <artifactId>xiaozhi-esp32-api</artifactId>
+    <artifactId>mdtg-esp32-api</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1</version>
-    <name>xiaozhi-esp32-api</name>
-    <description>小智后台管理系统</description>
+    <name>mdtg-esp32-api</name>
+    <description>优麦后台管理系统</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

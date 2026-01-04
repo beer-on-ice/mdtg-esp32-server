@@ -7,10 +7,10 @@ DELETE FROM `ai_model_config` WHERE `id` = 'ASR_FunASRServer';
 INSERT INTO `ai_model_config` VALUES ('ASR_FunASRServer', 'ASR', 'FunASRServer', 'FunASR服务语音识别', 0, 1, '{\"type\": \"fun_server\", \"host\": \"127.0.0.1\", \"port\": 10096}', NULL, NULL, 5, NULL, NULL, NULL, NULL);
 
 -- 修改ai_model_config表的remark字段类型为TEXT
-ALTER TABLE `ai_model_config` MODIFY COLUMN `remark` TEXT COMMENT '备注'; 
+ALTER TABLE `ai_model_config` MODIFY COLUMN `remark` TEXT COMMENT '备注';
 
 -- 更新ASR模型配置的说明文档
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/modelscope/FunASR/blob/main/runtime/docs/SDK_advanced_guide_online_zh.md',
 `remark` = '独立部署FunASR，使用FunASR的API服务，只需要五句话
 第一句：mkdir -p ./funasr-runtime-resources/models
@@ -22,16 +22,16 @@ UPDATE `ai_model_config` SET
 以上是使用CPU推理，如果有GPU，详细参考：https://github.com/modelscope/FunASR/blob/main/runtime/docs/SDK_advanced_guide_online_zh.md' WHERE `id` = 'ASR_FunASRServer';
 
 -- 更新FunASR本地模型配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/modelscope/FunASR',
 `remark` = 'FunASR本地模型配置说明：
-1. 需要下载模型文件到xiaozhi-server/models/SenseVoiceSmall目录
+1. 需要下载模型文件到xiaomai-server/models/SenseVoiceSmall目录
 2. 支持中日韩粤语音识别
 3. 本地推理，无需网络连接
 4. 待识别文件保存在tmp/目录' WHERE `id` = 'ASR_FunASR';
 
 -- 更新SherpaASR配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/k2-fsa/sherpa-onnx',
 `remark` = 'SherpaASR配置说明：
 1. 运行时自动下载模型文件到models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17目录
@@ -40,7 +40,7 @@ UPDATE `ai_model_config` SET
 4. 输出文件保存在tmp/目录' WHERE `id` = 'ASR_SherpaASR';
 
 -- 更新豆包ASR配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.volcengine.com/speech/app',
 `remark` = '豆包ASR配置说明：
 1. 需要在火山引擎控制台创建应用并获取appid和access_token
@@ -54,7 +54,7 @@ UPDATE `ai_model_config` SET
 4. 填入配置文件中' WHERE `id` = 'ASR_DoubaoASR';
 
 -- 更新腾讯ASR配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.cloud.tencent.com/cam/capi',
 `remark` = '腾讯ASR配置说明：
 1. 需要在腾讯云控制台创建应用并获取appid、secret_id和secret_key
@@ -69,7 +69,7 @@ UPDATE `ai_model_config` SET
 
 -- 更新TTS模型配置说明
 -- EdgeTTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/rany2/edge-tts',
 `remark` = 'EdgeTTS配置说明：
 1. 使用微软Edge TTS服务
@@ -79,7 +79,7 @@ UPDATE `ai_model_config` SET
 5. 输出文件保存在tmp/目录' WHERE `id` = 'TTS_EdgeTTS';
 
 -- 豆包TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.volcengine.com/speech/service/8',
 `remark` = '豆包TTS配置说明：
 1. 访问 https://console.volcengine.com/speech/service/8
@@ -89,7 +89,7 @@ UPDATE `ai_model_config` SET
 5. 填入配置文件中' WHERE `id` = 'TTS_DoubaoTTS';
 
 -- 硅基流动TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://cloud.siliconflow.cn/account/ak',
 `remark` = '硅基流动TTS配置说明：
 1. 访问 https://cloud.siliconflow.cn/account/ak
@@ -97,7 +97,7 @@ UPDATE `ai_model_config` SET
 3. 填入配置文件中' WHERE `id` = 'TTS_CosyVoiceSiliconflow';
 
 -- Coze中文TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://www.coze.cn/open/oauth/pats',
 `remark` = 'Coze中文TTS配置说明：
 1. 访问 https://www.coze.cn/open/oauth/pats
@@ -105,7 +105,7 @@ UPDATE `ai_model_config` SET
 3. 填入配置文件中' WHERE `id` = 'TTS_CozeCnTTS';
 
 -- FishSpeech配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/fishaudio/fish-speech',
 `remark` = 'FishSpeech配置说明：
 1. 需要本地部署FishSpeech服务
@@ -115,7 +115,7 @@ UPDATE `ai_model_config` SET
 5. 运行服务示例命令：python -m tools.api_server --listen 0.0.0.0:8080 --llama-checkpoint-path "checkpoints/fish-speech-1.5" --decoder-checkpoint-path "checkpoints/fish-speech-1.5/firefly-gan-vq-fsq-8x1024-21hz-generator.pth" --decoder-config-name firefly_gan_vq --compile' WHERE `id` = 'TTS_FishSpeech';
 
 -- GPT-SoVITS V2配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/RVC-Boss/GPT-SoVITS',
 `remark` = 'GPT-SoVITS V2配置说明：
 1. 需要本地部署GPT-SoVITS服务
@@ -126,7 +126,7 @@ UPDATE `ai_model_config` SET
 1. 运行服务示例命令：python api_v2.py -a 127.0.0.1 -p 9880 -c GPT_SoVITS/configs/demo.yaml' WHERE `id` = 'TTS_GPT_SOVITS_V2';
 
 -- GPT-SoVITS V3配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/RVC-Boss/GPT-SoVITS',
 `remark` = 'GPT-SoVITS V3配置说明：
 1. 需要本地部署GPT-SoVITS V3服务
@@ -135,7 +135,7 @@ UPDATE `ai_model_config` SET
 4. 输出文件保存在tmp/目录' WHERE `id` = 'TTS_GPT_SOVITS_V3';
 
 -- MiniMax TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://platform.minimaxi.com/',
 `remark` = 'MiniMax TTS配置说明：
 1. 需要在MiniMax平台创建账户并充值
@@ -150,7 +150,7 @@ UPDATE `ai_model_config` SET
 5. 填入配置文件中' WHERE `id` = 'TTS_MinimaxTTS';
 
 -- 阿里云TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://nls-portal.console.aliyun.com/',
 `remark` = '阿里云TTS配置说明：
 1. 需要在阿里云平台开通智能语音交互服务
@@ -165,7 +165,7 @@ UPDATE `ai_model_config` SET
 注意：token是临时的24小时有效，长期使用需要配置access_key_id和access_key_secret' WHERE `id` = 'TTS_AliyunTTS';
 
 -- 腾讯TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.cloud.tencent.com/cam/capi',
 `remark` = '腾讯TTS配置说明：
 1. 需要在腾讯云平台开通智能语音交互服务
@@ -180,7 +180,7 @@ UPDATE `ai_model_config` SET
 5. 填入配置文件中' WHERE `id` = 'TTS_TencentTTS';
 
 -- 302AI TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://dash.302.ai/',
 `remark` = '302AI TTS配置说明：
 1. 需要在302平台创建账户并获取API密钥
@@ -194,7 +194,7 @@ UPDATE `ai_model_config` SET
 价格：$35/百万字符' WHERE `id` = 'TTS_TTS302AI';
 
 -- 机智云TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://agentrouter.gizwitsapi.com/panel/token',
 `remark` = '机智云TTS配置说明：
 1. 需要在机智云平台获取API密钥
@@ -207,7 +207,7 @@ UPDATE `ai_model_config` SET
 注意：前一万名注册的用户，将送5元体验金额' WHERE `id` = 'TTS_GizwitsTTS';
 
 -- ACGN TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://acgn.ttson.cn/',
 `remark` = 'ACGN TTS配置说明：
 1. 需要在ttson平台购买token
@@ -221,7 +221,7 @@ UPDATE `ai_model_config` SET
 开发相关疑问请提交至网站上的qq' WHERE `id` = 'TTS_ACGNTTS';
 
 -- OpenAI TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://platform.openai.com/api-keys',
 `remark` = 'OpenAI TTS配置说明：
 1. 需要在OpenAI平台获取API密钥
@@ -234,7 +234,7 @@ UPDATE `ai_model_config` SET
 注意：国内需要使用代理访问' WHERE `id` = 'TTS_OpenAITTS';
 
 -- 自定义TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = NULL,
 `remark` = '自定义TTS配置说明：
 1. 支持自定义TTS接口服务
@@ -247,7 +247,7 @@ UPDATE `ai_model_config` SET
 3. 设置返回音频格式' WHERE `id` = 'TTS_CustomTTS';
 
 -- 火山引擎边缘大模型网关TTS配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.volcengine.com/vei/aigateway/',
 `remark` = '火山引擎边缘大模型网关TTS配置说明：
 1. 访问 https://console.volcengine.com/vei/aigateway/
@@ -259,7 +259,7 @@ UPDATE `ai_model_config` SET
 
 -- 更新LLM模型配置说明
 -- ChatGLM配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://bigmodel.cn/usercenter/proj-mgmt/apikeys',
 `remark` = 'ChatGLM配置说明：
 1. 访问 https://bigmodel.cn/usercenter/proj-mgmt/apikeys
@@ -267,7 +267,7 @@ UPDATE `ai_model_config` SET
 3. 填入配置文件中' WHERE `id` = 'LLM_ChatGLMLLM';
 
 -- Ollama配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://ollama.com/',
 `remark` = 'Ollama配置说明：
 1. 安装Ollama服务
@@ -275,7 +275,7 @@ UPDATE `ai_model_config` SET
 3. 确保服务运行在http://localhost:11434' WHERE `id` = 'LLM_OllamaLLM';
 
 -- 通义千问配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://bailian.console.aliyun.com/?apiKey=1#/api-key',
 `remark` = '通义千问配置说明：
 1. 访问 https://bailian.console.aliyun.com/?apiKey=1#/api-key
@@ -284,7 +284,7 @@ UPDATE `ai_model_config` SET
 4. 支持自定义参数：temperature=0.7, max_tokens=500, top_p=1, top_k=50' WHERE `id` = 'LLM_AliLLM';
 
 -- 通义百炼配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://bailian.console.aliyun.com/?apiKey=1#/api-key',
 `remark` = '通义百炼配置说明：
 1. 访问 https://bailian.console.aliyun.com/?apiKey=1#/api-key
@@ -292,7 +292,7 @@ UPDATE `ai_model_config` SET
 3. 填入配置文件中' WHERE `id` = 'LLM_AliAppLLM';
 
 -- 豆包大模型配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.volcengine.com/ark/region:ark+cn-beijing/openManagement',
 `remark` = '豆包大模型配置说明：
 1. 访问 https://console.volcengine.com/ark/region:ark+cn-beijing/openManagement
@@ -303,7 +303,7 @@ UPDATE `ai_model_config` SET
 注意：有免费额度500000token' WHERE `id` = 'LLM_DoubaoLLM';
 
 -- DeepSeek配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://platform.deepseek.com/',
 `remark` = 'DeepSeek配置说明：
 1. 访问 https://platform.deepseek.com/
@@ -311,7 +311,7 @@ UPDATE `ai_model_config` SET
 3. 填入配置文件中' WHERE `id` = 'LLM_DeepSeekLLM';
 
 -- Dify配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://cloud.dify.ai/',
 `remark` = 'Dify配置说明：
 1. 访问 https://cloud.dify.ai/
@@ -322,7 +322,7 @@ UPDATE `ai_model_config` SET
 注意：建议使用本地部署的Dify接口，国内部分区域访问公有云接口可能受限' WHERE `id` = 'LLM_DifyLLM';
 
 -- Gemini配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://aistudio.google.com/apikey',
 `remark` = 'Gemini配置说明：
 1. 使用谷歌Gemini API服务
@@ -336,7 +336,7 @@ UPDATE `ai_model_config` SET
 注意：若在中国境内使用，请遵守《生成式人工智能服务管理暂行办法》' WHERE `id` = 'LLM_GeminiLLM';
 
 -- Coze配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://www.coze.cn/open/oauth/pats',
 `remark` = 'Coze配置说明：
 1. 使用Coze平台服务
@@ -349,7 +349,7 @@ UPDATE `ai_model_config` SET
 4. 填入配置文件中' WHERE `id` = 'LLM_CozeLLM';
 
 -- LM Studio配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://lmstudio.ai/',
 `remark` = 'LM Studio配置说明：
 1. 使用本地部署的LM Studio服务
@@ -362,7 +362,7 @@ UPDATE `ai_model_config` SET
 3. 确保服务运行在http://localhost:1234/v1' WHERE `id` = 'LLM_LMStudioLLM';
 
 -- FastGPT配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://cloud.tryfastgpt.ai/account/apikey',
 `remark` = 'FastGPT配置说明：
 1. 使用FastGPT平台服务
@@ -375,7 +375,7 @@ UPDATE `ai_model_config` SET
 3. 填入配置文件中' WHERE `id` = 'LLM_FastgptLLM';
 
 -- Xinference配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/xorbitsai/inference',
 `remark` = 'Xinference配置说明：
 1. 使用本地部署的Xinference服务
@@ -388,7 +388,7 @@ UPDATE `ai_model_config` SET
 3. 确保服务运行在http://localhost:9997' WHERE `id` = 'LLM_XinferenceLLM';
 
 -- Xinference小模型配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/xorbitsai/inference',
 `remark` = 'Xinference小模型配置说明：
 1. 使用本地部署的Xinference服务
@@ -401,7 +401,7 @@ UPDATE `ai_model_config` SET
 3. 确保服务运行在http://localhost:9997' WHERE `id` = 'LLM_XinferenceSmallLLM';
 
 -- 火山引擎边缘大模型网关LLM配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://console.volcengine.com/vei/aigateway/',
 `remark` = '火山引擎边缘大模型网关LLM配置说明：
 1. 使用火山引擎边缘大模型网关服务
@@ -417,7 +417,7 @@ UPDATE `ai_model_config` SET
 
 -- 更新Memory模型配置说明
 -- 无记忆配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = NULL,
 `remark` = '无记忆配置说明：
 1. 不保存对话历史
@@ -426,7 +426,7 @@ UPDATE `ai_model_config` SET
 4. 适合对隐私要求高的场景' WHERE `id` = 'Memory_nomem';
 
 -- 本地短期记忆配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = NULL,
 `remark` = '本地短期记忆配置说明：
 1. 使用本地存储保存对话历史
@@ -436,7 +436,7 @@ UPDATE `ai_model_config` SET
 5. 无需额外配置' WHERE `id` = 'Memory_mem_local_short';
 
 -- Mem0AI记忆配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://app.mem0.ai/dashboard/api-keys',
 `remark` = 'Mem0AI记忆配置说明：
 1. 使用Mem0AI服务保存对话历史
@@ -450,7 +450,7 @@ UPDATE `ai_model_config` SET
 
 -- 更新Intent模型配置说明
 -- 无意图识别配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = NULL,
 `remark` = '无意图识别配置说明：
 1. 不进行意图识别
@@ -459,7 +459,7 @@ UPDATE `ai_model_config` SET
 4. 适合简单对话场景' WHERE `id` = 'Intent_nointent';
 
 -- LLM意图识别配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = NULL,
 `remark` = 'LLM意图识别配置说明：
 1. 使用独立的LLM进行意图识别
@@ -472,7 +472,7 @@ UPDATE `ai_model_config` SET
 2. 如果不指定，则使用selected_module.LLM的模型' WHERE `id` = 'Intent_intent_llm';
 
 -- 函数调用意图识别配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = NULL,
 `remark` = '函数调用意图识别配置说明：
 1. 使用LLM的function_call功能进行意图识别
@@ -492,7 +492,7 @@ UPDATE `ai_model_config` SET
 
 -- 更新VAD模型配置说明
 -- SileroVAD配置说明
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 `doc_link` = 'https://github.com/snakers4/silero-vad',
 `remark` = 'SileroVAD配置说明：
 1. 使用SileroVAD模型进行语音活动检测

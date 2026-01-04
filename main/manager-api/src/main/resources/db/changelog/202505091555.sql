@@ -2,7 +2,7 @@
 UPDATE `ai_model_provider` SET fields = '[{"key": "host", "type": "string", "label": "服务地址"}, {"key": "port", "type": "number", "label": "端口号"}, {"key": "type", "type": "string", "label": "服务类型"}, {"key": "is_ssl", "type": "boolean", "label": "是否使用SSL"}, {"key": "api_key", "type": "string", "label": "API密钥"}, {"key": "output_dir", "type": "string", "label": "输出目录"}]' WHERE id = 'SYSTEM_ASR_FunASRServer';
 
 -- 更新模型配置表
-UPDATE `ai_model_config` SET 
+UPDATE `ai_model_config` SET
 config_json = '{"host": "127.0.0.1", "port": 10096, "type": "fun_server", "is_ssl": true, "api_key": "none", "output_dir": "tmp/"}',
 `doc_link` = 'https://github.com/modelscope/FunASR/blob/main/runtime/docs/SDK_advanced_guide_online_zh.md',
 `remark` = '独立部署FunASR，使用FunASR的API服务，只需要五句话
@@ -15,11 +15,11 @@ config_json = '{"host": "127.0.0.1", "port": 10096, "type": "fun_server", "is_ss
 以上是使用CPU推理，如果有GPU，详细参考：https://github.com/modelscope/FunASR/blob/main/runtime/docs/SDK_advanced_guide_online_zh.md' WHERE `id` = 'ASR_FunASRServer';
 
 -- FishSpeech配置说明
-UPDATE `ai_model_config` SET 
-`doc_link` = 'https://github.com/xinnan-tech/xiaozhi-esp32-server/blob/main/docs/fish-speech-integration.md',
+UPDATE `ai_model_config` SET
+`doc_link` = 'https://github.com/beer-on-ice/mdtg-esp32-server/blob/main/docs/fish-speech-integration.md',
 `remark` = 'FishSpeech配置说明：
 1. 需要本地部署FishSpeech服务
 2. 支持自定义音色
 3. 本地推理，无需网络连接
 4. 输出文件保存在tmp/目录
-5. 可参照教程https://github.com/xinnan-tech/xiaozhi-esp32-server/blob/main/docs/fish-speech-integration.md' WHERE `id` = 'TTS_FishSpeech';
+5. 可参照教程https://github.com/beer-on-ice/mdtg-esp32-server/blob/main/docs/fish-speech-integration.md' WHERE `id` = 'TTS_FishSpeech';

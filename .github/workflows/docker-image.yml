@@ -3,10 +3,10 @@ name: Docker Image CI
 on:
   push:
     tags:
-      - 'v*.*.*'  # 只在以 v 开头的标签推送时触发，例如 v1.0.0
+      - 'v*.*.*' # 只在以 v 开头的标签推送时触发，例如 v1.0.0
   workflow_dispatch:
   workflow_run:
-    workflows: ["Build Base Image"]
+    workflows: ['Build Base Image']
     types:
       - completed
 
@@ -57,8 +57,8 @@ jobs:
             echo "IS_VERSION=false" >> $GITHUB_ENV
           fi
 
-      # 构建 xiaozhi-server 镜像
-      - name: Build and push xiaozhi-server
+      # 构建 mdtg-server 镜像
+      - name: Build and push mdtg-server
         uses: docker/build-push-action@v6
         with:
           context: .

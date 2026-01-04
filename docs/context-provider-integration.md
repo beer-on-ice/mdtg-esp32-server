@@ -2,19 +2,20 @@
 
 ## 概述
 
-`上下文源`，就是为小智系统提示词的上下文添加【数据源】。
+`上下文源`，就是为优麦系统提示词的上下文添加【数据源】。
 
-`上下文源` 在小智在唤醒那一刻，获取外部系统的数据，并将其动态注入到大模型的系统提示词（System Prompt）中。
+`上下文源` 在优麦在唤醒那一刻，获取外部系统的数据，并将其动态注入到大模型的系统提示词（System Prompt）中。
 让其做到唤醒时感知世界某个事物的状态。
 
-它和MCP、记忆有本质的区别：`上下文源`是强制让小智感知世界的数据；`记忆(Mem)`是让他知道之前聊了什么内容；`MCP(functionc all)`是当需要调用某项能力/知识的时候使用调用。
+它和 MCP、记忆有本质的区别：`上下文源`是强制让优麦感知世界的数据；`记忆(Mem)`是让他知道之前聊了什么内容；`MCP(functionc all)`是当需要调用某项能力/知识的时候使用调用。
 
-通过这个功能，在小智唤醒的一刹那，“感知”到：
+通过这个功能，在优麦唤醒的一刹那，“感知”到：
+
 - 人体健康传感器状态（体温、血压、血氧状态等）
 - 业务系统的实时数据（服务器负载、待办数据、股票信息等）
 - 任何可以通过 HTTP API 获取的文本信息
 
-**注意**：该功能只是方便小智在唤醒的时候感知事物的状态，而如果想要小智唤醒后实时获取事物的状态，建议在此功能上再结合MCP工具的调用。
+**注意**：该功能只是方便优麦在唤醒的时候感知事物的状态，而如果想要优麦唤醒后实时获取事物的状态，建议在此功能上再结合 MCP 工具的调用。
 
 ## 工作原理
 
@@ -24,7 +25,7 @@
 
 ## 接口规范
 
-为了让小智正确解析数据，您的 API 需要满足以下规范：
+为了让优麦正确解析数据，您的 API 需要满足以下规范：
 
 - **请求方式**：`GET`
 - **请求头**：系统会自动添加 `device-id` 字段到 Request Header。
@@ -33,18 +34,21 @@
 ### 响应示例
 
 **情况 1：返回键值对**
+
 ```json
 {
-  "code": 0,
-  "msg": "success",
-  "data": {
-    "客厅温度": "26℃",
-    "客厅湿度": "45%",
-    "大门状态": "已关闭"
-  }
+	"code": 0,
+	"msg": "success",
+	"data": {
+		"客厅温度": "26℃",
+		"客厅湿度": "45%",
+		"大门状态": "已关闭"
+	}
 }
 ```
-*注入效果：*
+
+_注入效果：_
+
 ```markdown
 <context>
 - **客厅温度：** 26℃
@@ -54,16 +58,16 @@
 ```
 
 **情况 2：返回列表**
+
 ```json
 {
-  "code": 0,
-  "data": [
-    "您有10个待办事项",
-    "当前汽车的行驶速度是100km每小时"
-  ]
+	"code": 0,
+	"data": ["您有10个待办事项", "当前汽车的行驶速度是100km每小时"]
 }
 ```
-*注入效果：*
+
+_注入效果：_
+
 ```markdown
 <context>
 - 您有10个待办事项
@@ -83,15 +87,15 @@
 
 ### 方式 2：配置文件配置（单模块部署）
 
-编辑 `xiaozhi-server/data/.config.yaml` 文件，添加 `context_providers` 配置段：
+编辑 `mdtg-server/data/.config.yaml` 文件，添加 `context_providers` 配置段：
 
 ```yaml
 # 上下文源配置
 context_providers:
-  - url: "http://api.example.com/data"
+  - url: 'http://api.example.com/data'
     headers:
-      Authorization: "Bearer your-token"
-  - url: "http://another-api.com/data"
+      Authorization: 'Bearer your-token'
+  - url: 'http://another-api.com/data'
 ```
 
 ## 启用功能
@@ -193,7 +197,7 @@ class MockRequestHandler(http.server.SimpleHTTPRequestHandler):
                     "固件": "v2.0.1"
                 }
             }
-        
+
         # Case 5: 404 Not Found
         else:
             status_code = 404
