@@ -4,7 +4,7 @@
 
 <p align="center">
 本项目基于人机共生智能理论和技术研发智能终端软硬件体系<br/>为开源智能硬件项目
-<a href="https://github.com/78/xiaomai-esp32">xiaomai-esp32</a>提供后端服务<br/>
+<a href="https://github.com/beer-on-ice/mdtg-esp32">mdtg-esp32</a>提供后端服务<br/>
 根据<a href="https://ccnphfhqs21z.feishu.cn/wiki/M0XiwldO9iJwHikpXD5cEx71nKh">优麦通信协议</a>使用Python、Java、Vue实现<br/>
 支持MQTT+UDP协议、Websocket协议、MCP接入点、声纹识别、知识库
 </p>
@@ -45,7 +45,7 @@ Spearheaded by Professor Siyuan Liu's Team (South China University of Technology
 ## 适用人群 👥
 
 本项目需要配合 ESP32 硬件设备使用。如果您已经购买了 ESP32 相关硬件，且成功对接过虾哥部署的后端服务，并希望独立搭建自己的
-`xiaomai-esp32` 后端服务，那么本项目非常适合您。
+`mdtg-esp32` 后端服务，那么本项目非常适合您。
 
 想看使用效果？请猛戳视频 🎥
 
@@ -196,8 +196,8 @@ Spearheaded by Professor Siyuan Liu's Team (South China University of Technology
 智控台(h5版): https://2662r3426b.vicp.fun/h5/index.html
 
 服务测试工具： https://2662r3426b.vicp.fun/test/
-OTA接口地址: https://2662r3426b.vicp.fun/xiaomai/ota/
-Websocket接口地址: wss://2662r3426b.vicp.fun/xiaomai/v1/
+OTA接口地址: https://2662r3426b.vicp.fun/mdtg/ota/
+Websocket接口地址: wss://2662r3426b.vicp.fun/mdtg/v1/
 ```
 
 #### 🚩 配置说明和推荐
@@ -220,16 +220,16 @@ Websocket接口地址: wss://2662r3426b.vicp.fun/xiaomai/v1/
 | Intent(意图识别) |    function_call(函数调用)     |       function_call(函数调用)       |
 | Memory(记忆功能) | mem_local_short(本地短期记忆） |   mem_local_short（本地短期记忆）   |
 
-如果您关心各组件的耗时，请查阅[优麦各组件性能测试报告](https://github.com/beer-on-ice/xiaomai-performance-research)，可按报告中的测试方法在您的环境中实际测试。
+如果您关心各组件的耗时，请查阅[优麦各组件性能测试报告](https://github.com/beer-on-ice/mdtg-performance-research)，可按报告中的测试方法在您的环境中实际测试。
 
 #### 🔧 测试工具
 
 本项目提供以下测试工具，帮助您验证系统和选择合适的模型：
 
-|     工具名称     | 位置                                        |              使用方法               |                                       功能说明                                       |
-| :--------------: | :------------------------------------------ | :---------------------------------: | :----------------------------------------------------------------------------------: |
-| 音频交互测试工具 | main》xiaomai-server》test》test_page.html  |       使用谷歌浏览器直接打开        |                测试音频播放和接收功能，验证 Python 端音频处理是否正常                |
-| 模型响应测试工具 | main》xiaomai-server》performance_tester.py | 执行 `python performance_tester.py` | 测试 ASR(语音识别)、LLM(大模型)、VLLM(视觉模型)、TTS(语音合成)三个核心模块的响应速度 |
+|     工具名称     | 位置                                     |              使用方法               |                                       功能说明                                       |
+| :--------------: | :--------------------------------------- | :---------------------------------: | :----------------------------------------------------------------------------------: |
+| 音频交互测试工具 | main》mdtg-server》test》test_page.html  |       使用谷歌浏览器直接打开        |                测试音频播放和接收功能，验证 Python 端音频处理是否正常                |
+| 模型响应测试工具 | main》mdtg-server》performance_tester.py | 执行 `python performance_tester.py` | 测试 ASR(语音识别)、LLM(大模型)、VLLM(视觉模型)、TTS(语音合成)三个核心模块的响应速度 |
 
 > 💡 提示：测试模型速度时，只会测试配置了密钥的模型。
 
@@ -267,7 +267,7 @@ Websocket接口地址: wss://2662r3426b.vicp.fun/xiaomai/v1/
 
 ## 产品生态 👬
 
-优麦是一个生态，当你使用这个产品时，也可以看看其他在这个生态圈的[优秀项目](https://github.com/78/xiaomai-esp32/blob/main/README_zh.md#%E7%9B%B8%E5%85%B3%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
+优麦是一个生态，当你使用这个产品时，也可以看看其他在这个生态圈的[优秀项目](https://github.com/beer-on-ice/mdtg-esp32/blob/main/README_zh.md#%E7%9B%B8%E5%85%B3%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE)
 
 ---
 

@@ -4,7 +4,7 @@
 
 本项目的测试平台`https://2662r3426b.vicp.fun`，从开放以来就使用了该方法，效果良好。
 
-教程可参考 B 站博主`毕乐labs`发布的视频教程：[《开源优麦服务器 xiaomai-server 自动更新以及最新版本 MCP 接入点配置保姆教程》](https://www.bilibili.com/video/BV15H37zHE7Q)
+教程可参考 B 站博主`毕乐labs`发布的视频教程：[《开源优麦服务器 mdtg-server 自动更新以及最新版本 MCP 接入点配置保姆教程》](https://www.bilibili.com/video/BV15H37zHE7Q)
 
 # 开始条件
 
@@ -26,7 +26,7 @@
 例如，我规划了我的项目目录是，这是一个新建的空白的目录，如果你不想出错，可以和我一样
 
 ```
-/home/system/xiaomai
+/home/system/mdtg
 ```
 
 # 第二步 克隆本项目
@@ -34,7 +34,7 @@
 此刻，先要执行第一句话，拉取源码，这句命令适用于国内网络的服务器和电脑，无需翻墙
 
 ```
-cd /home/system/xiaomai
+cd /home/system/mdtg
 git clone https://ghproxy.net/https://github.com/beer-on-ice/mdtg-esp32-server.git
 ```
 
@@ -42,36 +42,36 @@ git clone https://ghproxy.net/https://github.com/beer-on-ice/mdtg-esp32-server.g
 
 # 第三步 复制基础的文件
 
-如果你之前已经跑通了整个流程，对 funasr 的模型文件`xiaomai-server/models/SenseVoiceSmall/model.pt`和你的私有配置文件`xiaomai-server/data/.config.yaml`这两个文件不会陌生。
+如果你之前已经跑通了整个流程，对 funasr 的模型文件`mdtg-server/models/SenseVoiceSmall/model.pt`和你的私有配置文件`mdtg-server/data/.config.yaml`这两个文件不会陌生。
 
 此刻你需要把`model.pt`文件复制到新的目录去，你可以这样
 
 ```
 # 创建需要的目录
-mkdir -p /home/system/xiaomai/mdtg-esp32-server/main/xiaomai-server/data/
+mkdir -p /home/system/mdtg/mdtg-esp32-server/main/mdtg-server/data/
 
-cp 你原来的.config.yaml完整路径 /home/system/xiaomai/mdtg-esp32-server/main/xiaomai-server/data/.config.yaml
-cp 你原来的model.pt完整路径 /home/system/xiaomai/mdtg-esp32-server/main/xiaomai-server/models/SenseVoiceSmall/model.pt
+cp 你原来的.config.yaml完整路径 /home/system/mdtg/mdtg-esp32-server/main/mdtg-server/data/.config.yaml
+cp 你原来的model.pt完整路径 /home/system/mdtg/mdtg-esp32-server/main/mdtg-server/models/SenseVoiceSmall/model.pt
 ```
 
 # 第四步 建立三个自动编译文件
 
 ## 4.1 自动编译 mananger-web 模块
 
-在`/home/system/xiaomai/`目录下，创建名字为`update_8001.sh`的文件，内容如下
+在`/home/system/mdtg/`目录下，创建名字为`update_8001.sh`的文件，内容如下
 
 ```
-cd /home/system/xiaomai/mdtg-esp32-server
+cd /home/system/mdtg/mdtg-esp32-server
 git fetch --all
 git reset --hard
 git pull origin main
 
 
-cd /home/system/xiaomai/mdtg-esp32-server/main/manager-web
+cd /home/system/mdtg/mdtg-esp32-server/main/manager-web
 npm install
 npm run build
-rm -rf /home/system/xiaomai/manager-web
-mv /home/system/xiaomai/mdtg-esp32-server/main/manager-web/dist /home/system/xiaomai/manager-web
+rm -rf /home/system/mdtg/manager-web
+mv /home/system/mdtg/mdtg-esp32-server/main/manager-web/dist /home/system/mdtg/manager-web
 ```
 
 保存好后执行赋权命令
@@ -84,23 +84,23 @@ chmod 777 update_8001.sh
 
 ## 4.2 自动编译运行 manager-api 模块
 
-在`/home/system/xiaomai/`目录下，创建名字为`update_8002.sh`的文件，内容如下
+在`/home/system/mdtg/`目录下，创建名字为`update_8002.sh`的文件，内容如下
 
 ```
-cd /home/system/xiaomai/mdtg-esp32-server
+cd /home/system/mdtg/mdtg-esp32-server
 git pull origin main
 
 
-cd /home/system/xiaomai/mdtg-esp32-server/main/manager-api
+cd /home/system/mdtg/mdtg-esp32-server/main/manager-api
 rm -rf target
 mvn clean package -Dmaven.test.skip=true
-cd /home/system/xiaomai/
+cd /home/system/mdtg/
 
 # 查找占用8002端口的进程号
 PID=$(sudo netstat -tulnp | grep 8002 | awk '{print $7}' | cut -d'/' -f1)
 
-rm -rf /home/system/xiaomai/xiaomai-esp32-api.jar
-mv /home/system/xiaomai/mdtg-esp32-server/main/manager-api/target/xiaomai-esp32-api.jar /home/system/xiaomai/xiaomai-esp32-api.jar
+rm -rf /home/system/mdtg/mdtg-esp32-api.jar
+mv /home/system/mdtg/mdtg-esp32-server/main/manager-api/target/mdtg-esp32-api.jar /home/system/mdtg/mdtg-esp32-api.jar
 
 # 检查是否找到进程号
 if [ -z "$PID" ]; then
@@ -113,7 +113,7 @@ else
   echo "已杀掉进程 $PID"
 fi
 
-nohup java -jar xiaomai-esp32-api.jar --spring.profiles.active=dev &
+nohup java -jar mdtg-esp32-api.jar --spring.profiles.active=dev &
 
 tail tail -f nohup.out
 ```
@@ -128,10 +128,10 @@ chmod 777 update_8002.sh
 
 ## 4.3 自动编译运行 Python 项目
 
-在`/home/system/xiaomai/`目录下，创建名字为`update_8000.sh`的文件，内容如下
+在`/home/system/mdtg/`目录下，创建名字为`update_8000.sh`的文件，内容如下
 
 ```
-cd /home/system/xiaomai/mdtg-esp32-server
+cd /home/system/mdtg/mdtg-esp32-server
 git pull origin main
 
 # 查找占用8000端口的进程号
@@ -147,13 +147,13 @@ else
   kill -9 $PID
   echo "已杀掉进程 $PID"
 fi
-cd main/xiaomai-server
+cd main/mdtg-server
 # 初始化conda环境
 source ~/.bashrc
 conda activate mdtg-esp32-server
 pip install -r requirements.txt
 nohup python app.py >/dev/null &
-tail -f /home/system/xiaomai/mdtg-esp32-server/main/xiaomai-server/tmp/server.log
+tail -f /home/system/mdtg/mdtg-esp32-server/main/mdtg-server/tmp/server.log
 ```
 
 保存好后执行赋权命令
@@ -169,7 +169,7 @@ chmod 777 update_8000.sh
 以上的脚本都建立好后，日常更新，我们只要依次执行以下命令就可以做到自动更新和启动
 
 ```
-cd /home/system/xiaomai
+cd /home/system/mdtg
 # 更新并启动Java程序
 ./update_8001.sh
 # 更新web程序
@@ -181,7 +181,7 @@ cd /home/system/xiaomai
 # 后期想查看java日志，执行以下命令
 tail -f nohup.out
 # 后期想查看python日志，执行以下命令
-tail -f /home/system/xiaomai/mdtg-esp32-server/main/xiaomai-server/tmp/server.log
+tail -f /home/system/mdtg/mdtg-esp32-server/main/mdtg-server/tmp/server.log
 ```
 
 # 注意事项

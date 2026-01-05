@@ -62,8 +62,8 @@ telnet 127.0.0.1 6379
 注意是将`mdtg-esp32-server-db`和`mdtg-esp32-server-redis`下面的`expose`改成`ports`。改完后，需要重新启动。以下是重启 mysql 的命令：
 
 ```shell
-# 进入你docker-compose_all.yml所在的文件夹，例如我的是xiaomai-server
-cd xiaomai-server
+# 进入你docker-compose_all.yml所在的文件夹，例如我的是mdtg-server
+cd mdtg-server
 docker compose -f docker-compose_all.yml down
 docker compose -f docker-compose.yml up -d
 ```
@@ -96,7 +96,7 @@ FLUSH PRIVILEGES;
 
 ## 第三步， 下载 ragflow 项目
 
-你需要在你电脑找一个文件夹，用来存放 ragflow 项目。例如我在`/home/system/xiaomai`文件夹。
+你需要在你电脑找一个文件夹，用来存放 ragflow 项目。例如我在`/home/system/mdtg`文件夹。
 
 你可以使用`git`命令，将 ragflow 项目下载到这个文件夹，本教程使用的是`v0.22.0`版本进行安装部署。
 

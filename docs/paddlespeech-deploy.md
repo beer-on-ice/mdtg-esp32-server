@@ -1,4 +1,4 @@
-# PaddleSpeechTTS 集成 xiaomai 服务
+# PaddleSpeechTTS 集成 mdtg 服务
 
 ## 重点说明
 
@@ -89,9 +89,9 @@ INFO:     Uvicorn running on http://0.0.0.0:8092 (Press CTRL+C to quit)
 
 ## 三、修改优麦的配置文件
 
-### 1.`main/xiaomai-server/core/providers/tts/paddle_speech.py`
+### 1.`main/mdtg-server/core/providers/tts/paddle_speech.py`
 
-### 2.`main/xiaomai-server/data/.config.yaml`
+### 2.`main/mdtg-server/data/.config.yaml`
 
 使用单模块部署
 
@@ -110,7 +110,7 @@ TTS:
     save_path: # 保存路径
 ```
 
-### 3.启动 xiaomai 服务
+### 3.启动 mdtg 服务
 
 ```py
 python app.py

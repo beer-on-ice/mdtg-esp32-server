@@ -40,14 +40,14 @@ sudo bash -c "$(wget -qO- https://ghfast.top/https://raw.githubusercontent.com/b
 
 #### 1.2.1 创建目录
 
-安装完后，你需要为这个项目找一个安放配置文件的目录，例如我们可以新建一个文件夹叫`xiaomai-server`。
+安装完后，你需要为这个项目找一个安放配置文件的目录，例如我们可以新建一个文件夹叫`mdtg-server`。
 
-创建好目录后，你需要在`xiaomai-server`下面创建`data`文件夹和`models`文件夹，`models`下面还要再创建`SenseVoiceSmall`文件夹。
+创建好目录后，你需要在`mdtg-server`下面创建`data`文件夹和`models`文件夹，`models`下面还要再创建`SenseVoiceSmall`文件夹。
 
 最终目录结构如下所示：
 
 ```
-xiaomai-server
+mdtg-server
   ├─ data
   ├─ models
      ├─ SenseVoiceSmall
@@ -69,28 +69,28 @@ xiaomai-server
 
 ##### 1.2.3.1 下载 docker-compose_all.yaml
 
-用浏览器打开[这个链接](../main/xiaomai-server/docker-compose_all.yml)。
+用浏览器打开[这个链接](../main/mdtg-server/docker-compose_all.yml)。
 
 在页面的右侧找到名称为`RAW`按钮，在`RAW`按钮的旁边，找到下载的图标，点击下载按钮，下载`docker-compose_all.yml`文件。 把文件下载到你的
-`xiaomai-server`中。
+`mdtg-server`中。
 
-或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/docker-compose_all.yml` 下载。
+或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/docker-compose_all.yml` 下载。
 
 下载完后，回到本教程继续往下。
 
 ##### 1.2.3.2 下载 config_from_api.yaml
 
-用浏览器打开[这个链接](../main/xiaomai-server/config_from_api.yaml)。
+用浏览器打开[这个链接](../main/mdtg-server/config_from_api.yaml)。
 
 在页面的右侧找到名称为`RAW`按钮，在`RAW`按钮的旁边，找到下载的图标，点击下载按钮，下载`config_from_api.yaml`文件。 把文件下载到你的
-`xiaomai-server`下面的`data`文件夹中，然后把`config_from_api.yaml`文件重命名为`.config.yaml`。
+`mdtg-server`下面的`data`文件夹中，然后把`config_from_api.yaml`文件重命名为`.config.yaml`。
 
-或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/config_from_api.yaml` 下载保存。
+或者直接执行 `wget https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/config_from_api.yaml` 下载保存。
 
-下载完配置文件后，我们确认一下整个`xiaomai-server`里面的文件如下所示：
+下载完配置文件后，我们确认一下整个`mdtg-server`里面的文件如下所示：
 
 ```
-xiaomai-server
+mdtg-server
   ├─ docker-compose_all.yml
   ├─ data
     ├─ .config.yaml
@@ -107,7 +107,7 @@ xiaomai-server
 
 ## 3. 清除历史版本镜像和容器
 
-接下来打开命令行工具，使用`终端`或`命令行`工具 进入到你的`xiaomai-server`，执行以下命令
+接下来打开命令行工具，使用`终端`或`命令行`工具 进入到你的`mdtg-server`，执行以下命令
 
 ```
 docker compose -f docker-compose_all.yml down
@@ -146,8 +146,8 @@ docker logs -f mdtg-esp32-server-web
 
 ```
 2025-xx-xx 22:11:12.445 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
-2025-xx-xx 21:28:53.873 [main] INFO  xiaomai.AdminApplication - Started AdminApplication in 16.057 seconds (process running for 17.941)
-http://localhost:8002/xiaomai/doc.html
+2025-xx-xx 21:28:53.873 [main] INFO  mdtg.AdminApplication - Started AdminApplication in 16.057 seconds (process running for 17.941)
+http://localhost:8002/mdtg/doc.html
 ```
 
 请注意此刻仅是`智控台`能运行，如果 8000 端口`mdtg-esp32-server`报错，先不要理会。
@@ -162,27 +162,27 @@ http://localhost:8002/xiaomai/doc.html
 
 `server.secret`需要说明一下，这个`参数值`很重要，作用是让我们的`Server`端连接`manager-api`。`server.secret`是每次从零部署 manager 模块时，会自动随机生成的密钥。
 
-复制`参数值`后，打开`xiaomai-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
+复制`参数值`后，打开`mdtg-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
 
 ```
 manager-api:
-  url:  http://127.0.0.1:8002/xiaomai
+  url:  http://127.0.0.1:8002/mdtg
   secret: 你的server.secret值
 ```
 
 1、把你刚才从`智控台`复制过来的`server.secret`的`参数值`复制到`.config.yaml`文件里的`secret`里。
 
-2、因为你是 docker 部署，把`url`改成下面的`http://mdtg-esp32-server-web:8002/xiaomai`
+2、因为你是 docker 部署，把`url`改成下面的`http://mdtg-esp32-server-web:8002/mdtg`
 
-3、因为你是 docker 部署，把`url`改成下面的`http://mdtg-esp32-server-web:8002/xiaomai`
+3、因为你是 docker 部署，把`url`改成下面的`http://mdtg-esp32-server-web:8002/mdtg`
 
-4、因为你是 docker 部署，把`url`改成下面的`http://mdtg-esp32-server-web:8002/xiaomai`
+4、因为你是 docker 部署，把`url`改成下面的`http://mdtg-esp32-server-web:8002/mdtg`
 
 类似这样的效果
 
 ```
 manager-api:
-  url: http://mdtg-esp32-server-web:8002/xiaomai
+  url: http://mdtg-esp32-server-web:8002/mdtg
   secret: 12345678-xxxx-xxxx-xxxx-123456789000
 ```
 
@@ -205,7 +205,7 @@ docker logs -f mdtg-esp32-server
 如果你能看到，类似以下日志,则是 Server 启动成功的标志。
 
 ```
-25-02-23 12:01:09[core.websocket_server] - INFO - Websocket地址是      ws://xxx.xx.xx.xx:8000/xiaomai/v1/
+25-02-23 12:01:09[core.websocket_server] - INFO - Websocket地址是      ws://xxx.xx.xx.xx:8000/mdtg/v1/
 25-02-23 12:01:09[core.websocket_server] - INFO - =======上面的地址是websocket协议地址，请勿用浏览器访问=======
 25-02-23 12:01:09[core.websocket_server] - INFO - 如想测试websocket请用谷歌浏览器打开test目录下的test_page.html
 25-02-23 12:01:09[core.websocket_server] - INFO - =======================================================
@@ -216,13 +216,13 @@ docker logs -f mdtg-esp32-server
 OTA 接口：
 
 ```
-http://你宿主机局域网的ip:8002/xiaomai/ota/
+http://你宿主机局域网的ip:8002/mdtg/ota/
 ```
 
 Websocket 接口：
 
 ```
-ws://你宿主机的ip:8000/xiaomai/v1/
+ws://你宿主机的ip:8000/mdtg/v1/
 ```
 
 ### 第三件重要的事情
@@ -241,16 +241,16 @@ ws://你宿主机的ip:8000/xiaomai/v1/
 
 ## 1.安装 MySQL 数据库
 
-如果本机已经安装了 MySQL，可以直接在数据库中创建名为`xiaomai_esp32_server`的数据库。
+如果本机已经安装了 MySQL，可以直接在数据库中创建名为`mdtg_esp32_server`的数据库。
 
 ```sql
-CREATE DATABASE xiaomai_esp32_server CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE mdtg_esp32_server CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 如果还没有 MySQL，你可以通过 docker 安装 mysql
 
 ```
-docker run --name mdtg-esp32-server-db -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -e MYSQL_DATABASE=xiaomai_esp32_server -e MYSQL_INITDB_ARGS="--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci" -e TZ=Asia/Shanghai -d mysql:latest
+docker run --name mdtg-esp32-server-db -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -e MYSQL_DATABASE=mdtg_esp32_server -e MYSQL_INITDB_ARGS="--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci" -e TZ=Asia/Shanghai -d mysql:latest
 ```
 
 ## 2.安装 redis
@@ -299,15 +299,15 @@ spring:
 
 ```
 路径地址：
-src/main/java/xiaomai/AdminApplication.java
+src/main/java/mdtg/AdminApplication.java
 ```
 
 当你看到输出日志时，说明你的`manager-api`启动成功了。
 
 ```
 2025-xx-xx 22:11:12.445 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
-2025-xx-xx 21:28:53.873 [main] INFO  xiaomai.AdminApplication - Started AdminApplication in 16.057 seconds (process running for 17.941)
-http://localhost:8002/xiaomai/doc.html
+2025-xx-xx 21:28:53.873 [main] INFO  mdtg.AdminApplication - Started AdminApplication in 16.057 seconds (process running for 17.941)
+http://localhost:8002/mdtg/doc.html
 ```
 
 ## 4.运行 manager-web 程序
@@ -384,13 +384,13 @@ conda install libiconv -y
 打开完，找到页面中一个绿色的按钮，写着`Code`的按钮，点开它，然后你就看到`Download ZIP`的按钮。
 
 点击它，下载本项目源码压缩包。下载到你电脑后，解压它，此时它的名字可能叫`mdtg-esp32-server-main`
-你需要把它重命名成`mdtg-esp32-server`，在这个文件里，进入到`main`文件夹，再进入到`xiaomai-server`，好了请记住这个目录`xiaomai-server`。
+你需要把它重命名成`mdtg-esp32-server`，在这个文件里，进入到`main`文件夹，再进入到`mdtg-server`，好了请记住这个目录`mdtg-server`。
 
 ```
 # 继续使用conda环境
 conda activate mdtg-esp32-server
-# 进入到你的项目根目录，再进入main/xiaomai-server
-cd main/xiaomai-server
+# 进入到你的项目根目录，再进入main/mdtg-server
+cd main/mdtg-server
 pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 pip install -r requirements.txt
 ```
@@ -411,14 +411,14 @@ pip install -r requirements.txt
 
 `server.secret`需要说明一下，这个`参数值`很重要，作用是让我们的`Server`端连接`manager-api`。`server.secret`是每次从零部署 manager 模块时，会自动随机生成的密钥。
 
-如果你的`xiaomai-server`目录没有`data`，你需要创建`data`目录。
-如果你的`data`下面没有`.config.yaml`文件，你可以把`xiaomai-server`目录下的`config_from_api.yaml`文件复制到`data`，并重命名为`.config.yaml`
+如果你的`mdtg-server`目录没有`data`，你需要创建`data`目录。
+如果你的`data`下面没有`.config.yaml`文件，你可以把`mdtg-server`目录下的`config_from_api.yaml`文件复制到`data`，并重命名为`.config.yaml`
 
-复制`参数值`后，打开`xiaomai-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
+复制`参数值`后，打开`mdtg-server`下的`data`目录的`.config.yaml`文件。此刻你的配置文件内容应该是这样的：
 
 ```
 manager-api:
-  url: http://127.0.0.1:8002/xiaomai
+  url: http://127.0.0.1:8002/mdtg
   secret: 你的server.secret值
 ```
 
@@ -428,14 +428,14 @@ manager-api:
 
 ```
 manager-api:
-  url: http://127.0.0.1:8002/xiaomai
+  url: http://127.0.0.1:8002/mdtg
   secret: 12345678-xxxx-xxxx-xxxx-123456789000
 ```
 
 ## 5.运行项目
 
 ```
-# 确保在xiaomai-server目录下执行
+# 确保在mdtg-server目录下执行
 conda activate mdtg-esp32-server
 python app.py
 ```
@@ -443,7 +443,7 @@ python app.py
 如果你能看到，类似以下日志,则是本项目服务启动成功的标志。
 
 ```
-25-02-23 12:01:09[core.websocket_server] - INFO - Server is running at ws://xxx.xx.xx.xx:8000/xiaomai/v1/
+25-02-23 12:01:09[core.websocket_server] - INFO - Server is running at ws://xxx.xx.xx.xx:8000/mdtg/v1/
 25-02-23 12:01:09[core.websocket_server] - INFO - =======上面的地址是websocket协议地址，请勿用浏览器访问=======
 25-02-23 12:01:09[core.websocket_server] - INFO - 如想测试websocket请用谷歌浏览器打开test目录下的test_page.html
 25-02-23 12:01:09[core.websocket_server] - INFO - =======================================================
@@ -454,13 +454,13 @@ python app.py
 OTA 接口：
 
 ```
-http://你电脑局域网的ip:8002/xiaomai/ota/
+http://你电脑局域网的ip:8002/mdtg/ota/
 ```
 
 Websocket 接口：
 
 ```
-ws://你电脑局域网的ip:8000/xiaomai/v1/
+ws://你电脑局域网的ip:8000/mdtg/v1/
 ```
 
 请你务必把以上两个接口地址写入到智控台中：他们将会影响 websocket 地址发放和自动升级功能。
@@ -513,4 +513,4 @@ ws://你电脑局域网的ip:8000/xiaomai/v1/
 ## 性能测试教程
 
 1、[各组件速度测试指南](./performance_tester.md)<br/>
-2、[定期公开测试结果](https://github.com/beer-on-ice/xiaomai-performance-research)<br/>
+2、[定期公开测试结果](https://github.com/beer-on-ice/mdtg-performance-research)<br/>

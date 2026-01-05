@@ -1,11 +1,11 @@
 [![Banners](docs/images/banner1.png)](https://github.com/beer-on-ice/mdtg-esp32-server)
 
-<h1 align="center">Xiaomai Backend Service mdtg-esp32-server</h1>
+<h1 align="center">Mdtg Backend Service mdtg-esp32-server</h1>
 
 <p align="center">
 This project is based on human-machine symbiotic intelligence theory and technology to develop intelligent terminal hardware and software systems<br/>providing backend services for the open-source intelligent hardware project
-<a href="https://github.com/78/xiaomai-esp32">xiaomai-esp32</a><br/>
-Implemented using Python, Java, and Vue according to the <a href="https://ccnphfhqs21z.feishu.cn/wiki/M0XiwldO9iJwHikpXD5cEx71nKh">Xiaomai Communication Protocol</a><br/>
+<a href="https://github.com/beer-on-ice/mdtg-esp32">mdtg-esp32</a><br/>
+Implemented using Python, Java, and Vue according to the <a href="https://ccnphfhqs21z.feishu.cn/wiki/M0XiwldO9iJwHikpXD5cEx71nKh">Mdtg Communication Protocol</a><br/>
 Support for MQTT+UDP protocol, Websocket protocol, MCP access point, voiceprint recognition, and knowledge base
 </p>
 
@@ -44,7 +44,7 @@ Spearheaded by Professor Siyuan Liu's Team (South China University of Technology
 
 ## Target Users 👥
 
-This project requires ESP32 hardware devices to work. If you have purchased ESP32-related hardware, successfully connected to Brother Xia's deployed backend service, and want to build your own `xiaomai-esp32` backend service independently, then this project is perfect for you.
+This project requires ESP32 hardware devices to work. If you have purchased ESP32-related hardware, successfully connected to Brother Xia's deployed backend service, and want to build your own `mdtg-esp32` backend service independently, then this project is perfect for you.
 
 Want to see the usage effects? Click the videos below 🎥
 
@@ -192,8 +192,8 @@ Intelligent Control Console Address: https://2662r3426b.vicp.fun
 Intelligent Control Console Address (H5): https://2662r3426b.vicp.fun/h5/index.html
 
 Service Test Tool: https://2662r3426b.vicp.fun/test/
-OTA Interface Address: https://2662r3426b.vicp.fun/xiaomai/ota/
-Websocket Interface Address: wss://2662r3426b.vicp.fun/xiaomai/v1/
+OTA Interface Address: https://2662r3426b.vicp.fun/mdtg/ota/
+Websocket Interface Address: wss://2662r3426b.vicp.fun/mdtg/v1/
 ```
 
 #### 🚩 Configuration Description and Recommendations
@@ -220,11 +220,11 @@ Websocket Interface Address: wss://2662r3426b.vicp.fun/xiaomai/v1/
 
 This project provides the following testing tools to help you verify the system and choose suitable models:
 
-|          Tool Name          | Location                                         |                Usage Method                 |                                             Function Description                                             |
-| :-------------------------: | :----------------------------------------------- | :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
-| Audio Interaction Test Tool | main》xiaomai-server》test》test_page.html       |      Open directly with Google Chrome       |       Tests audio playback and reception functions, verifies if Python-side audio processing is normal       |
-| Model Response Test Tool 1  | main》xiaomai-server》performance_tester.py      |   Execute `python performance_tester.py`    | Tests response speed of three core modules: ASR(speech recognition), LLM(large model), TTS(speech synthesis) |
-| Model Response Test Tool 2  | main》xiaomai-server》performance_tester_vllm.py | Execute `python performance_tester_vllm.py` |                                   Tests VLLM(vision model) response speed                                    |
+|          Tool Name          | Location                                      |                Usage Method                 |                                             Function Description                                             |
+| :-------------------------: | :-------------------------------------------- | :-----------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
+| Audio Interaction Test Tool | main》mdtg-server》test》test_page.html       |      Open directly with Google Chrome       |       Tests audio playback and reception functions, verifies if Python-side audio processing is normal       |
+| Model Response Test Tool 1  | main》mdtg-server》performance_tester.py      |   Execute `python performance_tester.py`    | Tests response speed of three core modules: ASR(speech recognition), LLM(large model), TTS(speech synthesis) |
+| Model Response Test Tool 2  | main》mdtg-server》performance_tester_vllm.py | Execute `python performance_tester_vllm.py` |                                   Tests VLLM(vision model) response speed                                    |
 
 > 💡 Note: When testing model speed, only models with configured keys will be tested.
 
@@ -262,13 +262,13 @@ If you are a software developer, here is an [Open Letter to Developers](docs/con
 
 ## Product Ecosystem 👬
 
-Xiaomai is an ecosystem. When using this product, you can also check out other [excellent projects](https://github.com/78/xiaomai-esp32?tab=readme-ov-file#related-open-source-projects) in this ecosystem
+Mdtg is an ecosystem. When using this product, you can also check out other [excellent projects](https://github.com/beer-on-ice/mdtg-esp32?tab=readme-ov-file#related-open-source-projects) in this ecosystem
 
-| Project Name           | Project Address                                                               | Project Description                                                                                                                                                                                     |
-| :--------------------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Xiaomai Android Client | [xiaomai-android-client](https://github.com/TOM88812/xiaomai-android-client)  | An Android and iOS voice dialogue application based on xiaomai-server, supporting real-time voice interaction and text dialogue.<br/>Currently a Flutter version, connecting iOS and Android platforms. |
-| Xiaomai Desktop Client | [py-xiaomai](https://github.com/Huang-junsen/py-xiaomai)                      | This project provides a Python-based AI client for beginners, allowing users to experience Xiaomai AI functionality through code even without physical hardware conditions.                             |
-| Xiaomai Java Server    | [mdtg-esp32-server-java](https://github.com/joey-zhou/mdtg-esp32-server-java) | Xiaomai open-source backend service Java version is a Java-based open-source project.<br/>It includes frontend and backend services, aiming to provide users with a complete backend service solution.  |
+| Project Name        | Project Address                                                               | Project Description                                                                                                                                                                                  |
+| :------------------ | :---------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mdtg Android Client | [mdtg-android-client](https://github.com/TOM88812/mdtg-android-client)        | An Android and iOS voice dialogue application based on mdtg-server, supporting real-time voice interaction and text dialogue.<br/>Currently a Flutter version, connecting iOS and Android platforms. |
+| Mdtg Desktop Client | [py-mdtg](https://github.com/Huang-junsen/py-mdtg)                            | This project provides a Python-based AI client for beginners, allowing users to experience Mdtg AI functionality through code even without physical hardware conditions.                             |
+| Mdtg Java Server    | [mdtg-esp32-server-java](https://github.com/joey-zhou/mdtg-esp32-server-java) | Mdtg open-source backend service Java version is a Java-based open-source project.<br/>It includes frontend and backend services, aiming to provide users with a complete backend service solution.  |
 
 ---
 
@@ -363,7 +363,7 @@ In fact, any VLLM that supports OpenAI interface calls can be integrated and use
 |                            Logo                             |                                      Project/Company                                      | Description                                                                                                                                                                                                                                                                                                                                                                                      |
 | :---------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   <img src="./docs/images/logo_bailing.png" width="160">    |           [Bailing Voice Dialogue Robot](https://github.com/wwbin2017/bailing)            | This project is inspired by [Bailing Voice Dialogue Robot](https://github.com/wwbin2017/bailing) and implemented on its basis                                                                                                                                                                                                                                                                    |
-|   <img src="./docs/images/logo_tenclass.png" width="160">   |                           [Tenclass](https://www.tenclass.com/)                           | Thanks to [Tenclass](https://www.tenclass.com/) for formulating standard communication protocols, multi-device compatibility solutions, and high-concurrency scenario practice demonstrations for the Xiaomai ecosystem; providing full-link technical documentation support for this project                                                                                                    |
+|   <img src="./docs/images/logo_tenclass.png" width="160">   |                           [Tenclass](https://www.tenclass.com/)                           | Thanks to [Tenclass](https://www.tenclass.com/) for formulating standard communication protocols, multi-device compatibility solutions, and high-concurrency scenario practice demonstrations for the Mdtg ecosystem; providing full-link technical documentation support for this project                                                                                                       |
 |   <img src="./docs/images/logo_xuanfeng.png" width="160">   |                    [Xuanfeng Technology](https://github.com/Eric0308)                     | Thanks to [Xuanfeng Technology](https://github.com/Eric0308) for contributing function calling framework, MCP communication protocol, and plugin-based calling mechanism implementation code. Through standardized instruction scheduling system and dynamic expansion capabilities, it significantly improves the interaction efficiency and functional extensibility of frontend devices (IoT) |
 |    <img src="./docs/images/logo_junsen.png" width="160">    |                     [huangjunsen](https://github.com/huangjunsen0406)                     | Thanks to [huangjunsen](https://github.com/huangjunsen0406) for contributing the `Smart Control Console Mobile` module, which enables efficient control and real-time interaction across mobile devices, significantly enhancing the system's operational convenience and management efficiency in mobile scenarios.                                                                             |
 |   <img src="./docs/images/logo_huiyuan.png" width="160">    |                          [Huiyuan Design](http://ui.kwd988.net/)                          | Thanks to [Huiyuan Design](http://ui.kwd988.net/) for providing professional visual solutions for this project, using their design practical experience serving over a thousand enterprises to empower this project's product user experience                                                                                                                                                    |

@@ -1,11 +1,11 @@
 [![Banners](docs/images/banner1.png)](https://github.com/beer-on-ice/mdtg-esp32-server)
 
-<h1 align="center">Xiaomai Backend-Service mdtg-esp32-server</h1>
+<h1 align="center">Mdtg Backend-Service mdtg-esp32-server</h1>
 
 <p align="center">
 Dieses Projekt basiert auf der Theorie und Technologie der Mensch-Maschine-symbiotischen Intelligenz zur Entwicklung intelligenter Terminal-Hardware- und Software-Systeme<br/>und bietet Backend-Dienste für das Open-Source-Hardware-Projekt
-<a href="https://github.com/78/xiaomai-esp32">xiaomai-esp32</a><br/>
-Implementiert mit Python, Java und Vue gemäß dem <a href="https://ccnphfhqs21z.feishu.cn/wiki/M0XiwldO9iJwHikpXD5cEx71nKh">Xiaomai-Kommunikationsprotokoll</a><br/>
+<a href="https://github.com/beer-on-ice/mdtg-esp32">mdtg-esp32</a><br/>
+Implementiert mit Python, Java und Vue gemäß dem <a href="https://ccnphfhqs21z.feishu.cn/wiki/M0XiwldO9iJwHikpXD5cEx71nKh">Mdtg-Kommunikationsprotokoll</a><br/>
 Unterstützt MQTT+UDP-Protokoll, Websocket-Protokoll, MCP-Endpunkte und Stimmabdruckerkennung
 </p>
 
@@ -44,7 +44,7 @@ Geleitet vom Team von Professor Siyuan Liu (South China University of Technology
 
 ## Zielgruppe 👥
 
-Dieses Projekt erfordert ESP32-Hardware-Geräte zum Betrieb. Wenn Sie ESP32-bezogene Hardware erworben haben, erfolgreich eine Verbindung zu Brother Xias bereitgestelltem Backend-Service hergestellt haben und Ihren eigenen `xiaomai-esp32`-Backend-Service unabhängig aufbauen möchten, dann ist dieses Projekt perfekt für Sie.
+Dieses Projekt erfordert ESP32-Hardware-Geräte zum Betrieb. Wenn Sie ESP32-bezogene Hardware erworben haben, erfolgreich eine Verbindung zu Brother Xias bereitgestelltem Backend-Service hergestellt haben und Ihren eigenen `mdtg-esp32`-Backend-Service unabhängig aufbauen möchten, dann ist dieses Projekt perfekt für Sie.
 
 Möchten Sie die Nutzungseffekte sehen? Klicken Sie auf die Videos unten 🎥
 
@@ -194,8 +194,8 @@ Adresse der intelligenten Steuerkonsole: https://2662r3426b.vicp.fun
 Adresse der intelligenten Steuerkonsole (H5): https://2662r3426b.vicp.fun/h5/index.html
 
 Service-Testtool: https://2662r3426b.vicp.fun/test/
-OTA-Schnittstellenadresse: https://2662r3426b.vicp.fun/xiaomai/ota/
-Websocket-Schnittstellenadresse: wss://2662r3426b.vicp.fun/xiaomai/v1/
+OTA-Schnittstellenadresse: https://2662r3426b.vicp.fun/mdtg/ota/
+Websocket-Schnittstellenadresse: wss://2662r3426b.vicp.fun/mdtg/v1/
 ```
 
 #### 🚩 Konfigurationsbeschreibung und Empfehlungen
@@ -218,16 +218,16 @@ Websocket-Schnittstellenadresse: wss://2662r3426b.vicp.fun/xiaomai/v1/
 | Intent (Absichtserkennung)  |       function_call (Funktionsaufruf)        |       function_call (Funktionsaufruf)        |
 | Memory (Gedächtnisfunktion) | mem_local_short (Lokales Kurzzeitgedächtnis) | mem_local_short (Lokales Kurzzeitgedächtnis) |
 
-Wenn Sie sich um die Latenz jeder Komponente kümmern, lesen Sie bitte den [Xiaomai-Komponenten-Leistungstestbericht](https://github.com/beer-on-ice/xiaomai-performance-research). Sie können gemäß den Testmethoden im Bericht in Ihrer Umgebung tatsächlich testen.
+Wenn Sie sich um die Latenz jeder Komponente kümmern, lesen Sie bitte den [Mdtg-Komponenten-Leistungstestbericht](https://github.com/beer-on-ice/mdtg-performance-research). Sie können gemäß den Testmethoden im Bericht in Ihrer Umgebung tatsächlich testen.
 
 #### 🔧 Testwerkzeuge
 
 Dieses Projekt bietet die folgenden Testwerkzeuge, um Ihnen bei der Überprüfung des Systems und der Auswahl geeigneter Modelle zu helfen:
 
-|        Werkzeugname        | Standort                                    |            Verwendungsmethode            |                                                              Funktionsbeschreibung                                                              |
-| :------------------------: | :------------------------------------------ | :--------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
-| Audio-Interaktionstesttool | main》xiaomai-server》test》test_page.html  |     Direkt mit Google Chrome öffnen      |                 Testet Audio-Wiedergabe- und Empfangsfunktionen, überprüft, ob die Python-seitige Audioverarbeitung normal ist                  |
-|  Modell-Reaktionstesttool  | main》xiaomai-server》performance_tester.py | Ausführen `python performance_tester.py` | Testet die Reaktionsgeschwindigkeit von ASR (Spracherkennung), LLM (großes Modell), VLLM (Vision-Modell), TTS (Sprachsynthese) drei Kernmodulen |
+|        Werkzeugname        | Standort                                 |            Verwendungsmethode            |                                                              Funktionsbeschreibung                                                              |
+| :------------------------: | :--------------------------------------- | :--------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+| Audio-Interaktionstesttool | main》mdtg-server》test》test_page.html  |     Direkt mit Google Chrome öffnen      |                 Testet Audio-Wiedergabe- und Empfangsfunktionen, überprüft, ob die Python-seitige Audioverarbeitung normal ist                  |
+|  Modell-Reaktionstesttool  | main》mdtg-server》performance_tester.py | Ausführen `python performance_tester.py` | Testet die Reaktionsgeschwindigkeit von ASR (Spracherkennung), LLM (großes Modell), VLLM (Vision-Modell), TTS (Sprachsynthese) drei Kernmodulen |
 
 > 💡 Hinweis: Beim Testen der Modellgeschwindigkeit werden nur Modelle mit konfigurierten Schlüsseln getestet.
 
@@ -265,7 +265,7 @@ Wenn Sie ein Softwareentwickler sind, finden Sie hier einen [Offenen Brief an En
 
 ## Produktökosystem 👬
 
-Xiaomai ist ein Ökosystem. Wenn Sie dieses Produkt verwenden, können Sie sich auch andere [hervorragende Projekte](https://github.com/78/xiaomai-esp32?tab=readme-ov-file#related-open-source-projects) in diesem Ökosystem ansehen
+Mdtg ist ein Ökosystem. Wenn Sie dieses Produkt verwenden, können Sie sich auch andere [hervorragende Projekte](https://github.com/beer-on-ice/mdtg-esp32?tab=readme-ov-file#related-open-source-projects) in diesem Ökosystem ansehen
 
 ---
 
@@ -364,7 +364,7 @@ Tatsächlich kann jedes VLLM, das OpenAI-Schnittstellenaufrufe unterstützt, int
 |                            Logo                             |                                   Projekt/Unternehmen                                    | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                    |
 | :---------------------------------------------------------: | :--------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   <img src="./docs/images/logo_bailing.png" width="160">    |           [Bailing Voice Dialogue Robot](https://github.com/wwbin2017/bailing)           | Dieses Projekt wurde von [Bailing Voice Dialogue Robot](https://github.com/wwbin2017/bailing) inspiriert und auf dessen Basis implementiert                                                                                                                                                                                                                                                                     |
-|   <img src="./docs/images/logo_tenclass.png" width="160">   |                          [Tenclass](https://www.tenclass.com/)                           | Dank an [Tenclass](https://www.tenclass.com/) für die Formulierung von Standardkommunikationsprotokollen, Multi-Geräte-Kompatibilitätslösungen und High-Concurrency-Szenario-Praxisdemonstrationen für das Xiaomai-Ökosystem; für die Bereitstellung vollständiger technischer Dokumentationsunterstützung für dieses Projekt                                                                                   |
+|   <img src="./docs/images/logo_tenclass.png" width="160">   |                          [Tenclass](https://www.tenclass.com/)                           | Dank an [Tenclass](https://www.tenclass.com/) für die Formulierung von Standardkommunikationsprotokollen, Multi-Geräte-Kompatibilitätslösungen und High-Concurrency-Szenario-Praxisdemonstrationen für das Mdtg-Ökosystem; für die Bereitstellung vollständiger technischer Dokumentationsunterstützung für dieses Projekt                                                                                      |
 |   <img src="./docs/images/logo_xuanfeng.png" width="160">   |                    [Xuanfeng Technology](https://github.com/Eric0308)                    | Dank an [Xuanfeng Technology](https://github.com/Eric0308) für den Beitrag des Funktionsaufruf-Frameworks, des MCP-Kommunikationsprotokolls und der plugin-basierten Aufrufmechanismus-Implementierungscode. Durch standardisiertes Befehlsplanungssystem und dynamische Erweiterungsfähigkeiten wird die Interaktionseffizienz und funktionale Erweiterbarkeit von Frontend-Geräten (IoT) erheblich verbessert |
 |    <img src="./docs/images/logo_junsen.png" width="160">    |                    [huangjunsen](https://github.com/huangjunsen0406)                     | Dank an [huangjunsen](https://github.com/huangjunsen0406) für den Beitrag des `Smart Control Console Mobile`-Moduls, das eine effiziente Steuerung und Echtzeit-Interaktion über mobile Geräte ermöglicht und die Betriebsbequemlichkeit und Verwaltungseffizienz des Systems in mobilen Szenarien erheblich verbessert                                                                                         |
 |   <img src="./docs/images/logo_huiyuan.png" width="160">    |                         [Huiyuan Design](http://ui.kwd988.net/)                          | Dank an [Huiyuan Design](http://ui.kwd988.net/) für die Bereitstellung professioneller visueller Lösungen für dieses Projekt, unter Verwendung ihrer Design-Praxiserfahrung im Dienst von über tausend Unternehmen, um die Produktbenutzererfahrung dieses Projekts zu stärken                                                                                                                                  |

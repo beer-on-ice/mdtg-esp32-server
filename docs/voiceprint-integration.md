@@ -60,8 +60,8 @@ telnet 127.0.0.1 3306
 注意是将`mdtg-esp32-server-db`下面的`expose`改成`ports`。改完后，需要重新启动。以下是重启 mysql 的命令：
 
 ```
-# 进入你docker-compose_all.yml所在的文件夹，例如我的是xiaomai-server
-cd xiaomai-server
+# 进入你docker-compose_all.yml所在的文件夹，例如我的是mdtg-server
+cd mdtg-server
 docker compose -f docker-compose_all.yml down
 docker compose -f docker-compose.yml up -d
 ```
@@ -209,7 +209,7 @@ http://192.168.1.25:8005/voiceprint/health?key=abcd
 
 ## 第一步 配置接口
 
-打开 `xiaomai-server/data/.config.yaml` 文件（如果没有需要创建），然后添加/修改以下内容：
+打开 `mdtg-server/data/.config.yaml` 文件（如果没有需要创建），然后添加/修改以下内容：
 
 ```
 # 声纹识别配置

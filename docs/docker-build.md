@@ -19,6 +19,6 @@ docker build -t mdtg-esp32-server:web_latest -f ./Dockerfile-web .
 
 # 编译完成后，可以使用docker-compose启动项目
 # docker-compose.yml你需要修改成自己编译的镜像版本
-cd main/xiaomai-server
+cd main/mdtg-server
 docker compose up -d
 ```

@@ -11,10 +11,10 @@
 此刻，请你用浏览器打开你的 ota 地址，例如我的 ota 地址
 
 ```
-http://192.168.1.25:8003/xiaomai/ota/
+http://192.168.1.25:8003/mdtg/ota/
 ```
 
-如果显示“OTA 接口运行正常，向设备发送的 websocket 地址是：ws://xxx:8000/xiaomai/v1/
+如果显示“OTA 接口运行正常，向设备发送的 websocket 地址是：ws://xxx:8000/mdtg/v1/
 
 你可以使用项目自带的`test_page.html`测试一下，是否能连上 ota 页面输出的 websocket 地址。
 
@@ -27,7 +27,7 @@ http://192.168.1.25:8003/xiaomai/ota/
 此刻，请你用浏览器打开你的 ota 地址，例如我的 ota 地址
 
 ```
-http://192.168.1.25:8002/xiaomai/ota/
+http://192.168.1.25:8002/mdtg/ota/
 ```
 
 如果显示“OTA 接口运行正常，websocket 集群数量：X”。那就往下进行 2 步。
@@ -41,7 +41,7 @@ http://192.168.1.25:8002/xiaomai/ota/
 - 3、在列表中找到`server.websocket`项目，输入你的`Websocket`地址。例如我的就是
 
 ```
-ws://192.168.1.25:8000/xiaomai/v1/
+ws://192.168.1.25:8000/mdtg/v1/
 ```
 
 配置完后，再使用浏览器刷新你的 ota 接口地址，看看是不是正常了。如果还不正常就，就再次确认一下 Websocket 是否正常启动，是否配置了 Websocket 地址。
@@ -52,23 +52,23 @@ ws://192.168.1.25:8000/xiaomai/v1/
 
 ## 第 3 步 打开配置文件
 
-配置好编译环境后，下载虾哥 xiaomai-esp32 项目源码，
+配置好编译环境后，下载虾哥 mdtg-esp32 项目源码，
 
-从这里下载虾哥[xiaomai-esp32 项目源码](https://github.com/78/xiaomai-esp32)。
+从这里下载虾哥[mdtg-esp32 项目源码](https://github.com/beer-on-ice/mdtg-esp32)。
 
-下载后，打开`xiaomai-esp32/main/Kconfig.projbuild`文件。
+下载后，打开`mdtg-esp32/main/Kconfig.projbuild`文件。
 
 ## 第 4 步 修改 OTA 地址
 
-找到`OTA_URL`的`default`的内容，把`https://api.tenclass.net/xiaomai/ota/`
-改成你自己的地址，例如，我的接口地址是`http://192.168.1.25:8002/xiaomai/ota/`，就把内容改成这个。
+找到`OTA_URL`的`default`的内容，把`https://api.tenclass.net/mdtg/ota/`
+改成你自己的地址，例如，我的接口地址是`http://192.168.1.25:8002/mdtg/ota/`，就把内容改成这个。
 
 修改前：
 
 ```
 config OTA_URL
     string "Default OTA URL"
-    default "https://api.tenclass.net/xiaomai/ota/"
+    default "https://api.tenclass.net/mdtg/ota/"
     help
         The application will access this URL to check for new firmwares and server address.
 ```
@@ -78,7 +78,7 @@ config OTA_URL
 ```
 config OTA_URL
     string "Default OTA URL"
-    default "http://192.168.1.25:8002/xiaomai/ota/"
+    default "http://192.168.1.25:8002/mdtg/ota/"
     help
         The application will access this URL to check for new firmwares and server address.
 ```
@@ -88,15 +88,15 @@ config OTA_URL
 设置编译参数
 
 ```
-# 终端命令行进入xiaomai-esp32的根目录
-cd xiaomai-esp32
+# 终端命令行进入mdtg-esp32的根目录
+cd mdtg-esp32
 # 例如我使用的板子是esp32s3，所以设置编译目标为esp32s3，如果你的板子是其他型号，请替换成对应的型号
 idf.py set-target esp32s3
 # 进入菜单配置
 idf.py menuconfig
 ```
 
-进入菜单配置后，再进入`Xiaomai Assistant`，将`BOARD_TYPE`设置你板子的具体型号
+进入菜单配置后，再进入`Mdtg Assistant`，将`BOARD_TYPE`设置你板子的具体型号
 保存退出，回到终端命令行。
 
 ## 第 5 步 编译固件

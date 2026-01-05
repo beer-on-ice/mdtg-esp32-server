@@ -4,7 +4,7 @@
 
 第一步：自定义你的`agent-base-prompt.txt`文件
 
-把 xiaomai-server 目录的`agent-base-prompt.txt`文件内容复制到你的`data`目录下，并重命名为`.agent-base-prompt.txt`。
+把 mdtg-server 目录的`agent-base-prompt.txt`文件内容复制到你的`data`目录下，并重命名为`.agent-base-prompt.txt`。
 
 第二步：修改`data/.agent-base-prompt.txt`文件，找到`<context>`标签，在标签内容中添加以下代码内容：
 
@@ -38,7 +38,7 @@ prompt_template: agent-base-prompt.txt
 prompt_template: data/.agent-base-prompt.txt
 ```
 
-第四步：重启你的 xiaomai-server 服务。
+第四步：重启你的 mdtg-server 服务。
 
 第五步：在你的 mcp 方法增加名称为`device_id`,类型为`string`,描述为`设备ID`的参数。
 

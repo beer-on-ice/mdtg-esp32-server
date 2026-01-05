@@ -95,7 +95,7 @@ docker logs -f mcp-endpoint-server
 
 ```
 server:
-  websocket: ws://你的ip或者域名:端口号/xiaomai/v1/
+  websocket: ws://你的ip或者域名:端口号/mdtg/v1/
   http_port: 8002
 log:
   log_level: INFO
@@ -109,7 +109,7 @@ mcp_endpoint: 你的接入点websocket地址
 
 ```
 server:
-  websocket: ws://你的ip或者域名:端口号/xiaomai/v1/
+  websocket: ws://你的ip或者域名:端口号/mdtg/v1/
   http_port: 8002
 log:
   log_level: INFO
@@ -124,10 +124,10 @@ mcp_endpoint: ws://192.168.1.25:8004/mcp_endpoint/mcp/?token=def
 ```
 250705[__main__]-INFO-初始化组件: vad成功 SileroVAD
 250705[__main__]-INFO-初始化组件: asr成功 FunASRServer
-250705[__main__]-INFO-OTA接口是          http://192.168.1.25:8002/xiaomai/ota/
+250705[__main__]-INFO-OTA接口是          http://192.168.1.25:8002/mdtg/ota/
 250705[__main__]-INFO-视觉分析接口是     http://192.168.1.25:8002/mcp/vision/explain
 250705[__main__]-INFO-mcp接入点是        ws://192.168.1.25:8004/mcp_endpoint/mcp/?token=abc
-250705[__main__]-INFO-Websocket地址是    ws://192.168.1.25:8000/xiaomai/v1/
+250705[__main__]-INFO-Websocket地址是    ws://192.168.1.25:8000/mdtg/v1/
 250705[__main__]-INFO-=======上面的地址是websocket协议地址，请勿用浏览器访问=======
 250705[__main__]-INFO-如想测试websocket请用谷歌浏览器打开test目录下的test_page.html
 250705[__main__]-INFO-=============================================================

@@ -6,11 +6,11 @@
 
 ## 功能介绍
 
-在单模块部署中，xiaomai-server 内置了 OTA 固件管理功能，可以自动检测设备版本并下发升级固件。系统会根据设备型号和当前版本，自动匹配并推送最新的固件版本。
+在单模块部署中，mdtg-server 内置了 OTA 固件管理功能，可以自动检测设备版本并下发升级固件。系统会根据设备型号和当前版本，自动匹配并推送最新的固件版本。
 
 ## 前提条件
 
-- 你已经成功进行**单模块部署**并运行 xiaomai-server
+- 你已经成功进行**单模块部署**并运行 mdtg-server
 - 设备能够正常连接到服务器
 
 ## 第一步 准备固件文件
@@ -48,27 +48,27 @@ lichuang-dev_2.0.0.bin
 
 将准备好的固件文件（.bin 文件）复制到`data/bin/`目录下：
 
-重要的事情说三遍：升级的 bin 文件是`xiaomai.bin`，不是全量固件文件`merged-binary.bin`!
+重要的事情说三遍：升级的 bin 文件是`mdtg.bin`，不是全量固件文件`merged-binary.bin`!
 
-重要的事情说三遍：升级的 bin 文件是`xiaomai.bin`，不是全量固件文件`merged-binary.bin`!
+重要的事情说三遍：升级的 bin 文件是`mdtg.bin`，不是全量固件文件`merged-binary.bin`!
 
-重要的事情说三遍：升级的 bin 文件是`xiaomai.bin`，不是全量固件文件`merged-binary.bin`!
+重要的事情说三遍：升级的 bin 文件是`mdtg.bin`，不是全量固件文件`merged-binary.bin`!
 
 ```bash
-cp xiaomai.bin data/bin/设备型号_版本号.bin
+cp mdtg.bin data/bin/设备型号_版本号.bin
 ```
 
 例如：
 
 ```bash
-cp xiaomai.bin data/bin/bread-compact-wifi_1.6.6.bin
+cp mdtg.bin data/bin/bread-compact-wifi_1.6.6.bin
 ```
 
 ## 第二步 配置公网访问地址（仅公网部署需要）
 
 **注意：此步骤仅适用于单模块公网部署的场景。**
 
-如果你的 xiaomai-server 是公网部署（使用公网 IP 或域名），**必须**配置`server.vision_explain`参数，因为 OTA 固件下载地址会使用该配置的域名和端口。
+如果你的 mdtg-server 是公网部署（使用公网 IP 或域名），**必须**配置`server.vision_explain`参数，因为 OTA 固件下载地址会使用该配置的域名和端口。
 
 如果你是局域网部署，可以跳过此步骤。
 
@@ -143,5 +143,5 @@ server:
 系统有 30 秒的缓存时间（默认），可以：
 
 - 等待 30 秒后再让设备发起 OTA 请求
-- 重启 xiaomai-server 服务
+- 重启 mdtg-server 服务
 - 调整`firmware_cache_ttl`配置为更短的时间

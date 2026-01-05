@@ -2,7 +2,7 @@
 
 本教程以虾哥开源的 mcp 计算器功能为示例，介绍如何将自己自定义的 mcp 服务接入到自己的接入点里。
 
-本教程的前提是，你的`xiaomai-server`已经启用了 mcp 接入点功能，如果你还没启用，可以先根据[这个教程](./mcp-endpoint-enable.md)启用。
+本教程的前提是，你的`mdtg-server`已经启用了 mcp 接入点功能，如果你还没启用，可以先根据[这个教程](./mcp-endpoint-enable.md)启用。
 
 # 如何为智能体接入一个简单的 mcp 功能，如计算器功能
 
@@ -21,10 +21,10 @@
 ```
 250705[__main__]-INFO-初始化组件: vad成功 SileroVAD
 250705[__main__]-INFO-初始化组件: asr成功 FunASRServer
-250705[__main__]-INFO-OTA接口是          http://192.168.1.25:8002/xiaomai/ota/
+250705[__main__]-INFO-OTA接口是          http://192.168.1.25:8002/mdtg/ota/
 250705[__main__]-INFO-视觉分析接口是     http://192.168.1.25:8002/mcp/vision/explain
 250705[__main__]-INFO-mcp接入点是        ws://192.168.1.25:8004/mcp_endpoint/mcp/?token=abc
-250705[__main__]-INFO-Websocket地址是    ws://192.168.1.25:8000/xiaomai/v1/
+250705[__main__]-INFO-Websocket地址是    ws://192.168.1.25:8000/mdtg/v1/
 250705[__main__]-INFO-=======上面的地址是websocket协议地址，请勿用浏览器访问=======
 250705[__main__]-INFO-如想测试websocket请用谷歌浏览器打开test目录下的test_page.html
 250705[__main__]-INFO-=============================================================
@@ -36,7 +36,7 @@
 
 ## 第一步 下载虾哥 MCP 计算器项目代码
 
-浏览器打开虾哥写的[计算器项目](https://github.com/78/mcp-calculator)，
+浏览器打开虾哥写的[计算器项目](https://github.com/beer-on-ice/mcp-calculator)，
 
 打开完，找到页面中一个绿色的按钮，写着`Code`的按钮，点开它，然后你就看到`Download ZIP`的按钮。
 

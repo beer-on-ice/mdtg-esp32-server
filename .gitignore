@@ -145,7 +145,7 @@ cython_debug/
 tmp
 .history
 .DS_Store
-main/xiaomai-server/data
+main/mdtg-server/data
 
 main/manager-web/node_modules
 .config.yaml
@@ -154,23 +154,23 @@ main/manager-web/node_modules
 .env.development
 
 # model files
-main/xiaomai-server/models/SenseVoiceSmall/model.pt
-main/xiaomai-server/models/sherpa-onnx*
-/main/xiaomai-server/audio_ref/
+main/mdtg-server/models/SenseVoiceSmall/model.pt
+main/mdtg-server/models/sherpa-onnx*
+/main/mdtg-server/audio_ref/
 /audio_ref/
 /asr-models/iic/SenseVoiceSmall/
-/main/xiaomai-server/asr-models/iic/SenseVoiceSmall/
+/main/mdtg-server/asr-models/iic/SenseVoiceSmall/
 /models/SenseVoiceSmall/model.pt
 my_wakeup_words.mp3
-!main/xiaomai-server/config/assets/bind_code.wav
-!main/xiaomai-server/config/assets/wakeup_words.wav
-!main/xiaomai-server/config/assets/bind_not_found.wav
-!main/xiaomai-server/config/assets/bind_code/*.wav
-!main/xiaomai-server/config/assets/max_output_size.wav
+!main/mdtg-server/config/assets/bind_code.wav
+!main/mdtg-server/config/assets/wakeup_words.wav
+!main/mdtg-server/config/assets/bind_not_found.wav
+!main/mdtg-server/config/assets/bind_code/*.wav
+!main/mdtg-server/config/assets/max_output_size.wav
 main/manager-api/.vscode
 # Ignore webpack cache directory
 main/manager-web/.webpack_cache/
-main/xiaomai-server/mysql
+main/mdtg-server/mysql
 uploadfile
 *.json
 .vscode
@@ -183,4 +183,4 @@ uploadfile
 !main/manager-mobile/**/env/
 !main/manager-mobile/**/.env*
 !main/manager-mobile/**/*.json
-!main/xiaomai-server/**/*.json
+!main/mdtg-server/**/*.json

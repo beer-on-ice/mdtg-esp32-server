@@ -38,7 +38,7 @@ COPY docs/docker/nginx.conf /etc/nginx/nginx.conf
 COPY --from=web-builder /app/dist /usr/share/nginx/html
 
 # 复制Java后端JAR包
-COPY --from=api-builder /app/target/xiaomai-esp32-api.jar /app/xiaomai-esp32-api.jar
+COPY --from=api-builder /app/target/mdtg-esp32-api.jar /app/mdtg-esp32-api.jar
 
 # 暴露端口
 EXPOSE 8002

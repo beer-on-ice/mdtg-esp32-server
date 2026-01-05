@@ -45,7 +45,7 @@ conda install conda-forge::ffmpeg
 | Intent(意图识别) |    function_call(函数调用)     |       function_call(函数调用)       |
 | Memory(记忆功能) | mem_local_short(本地短期记忆） |   mem_local_short（本地短期记忆）   |
 
-如果您关心各组件的耗时，请查阅[优麦各组件性能测试报告](https://github.com/beer-on-ice/xiaomai-performance-research)，可按报告中的测试方法在您的环境中实际测试。
+如果您关心各组件的耗时，请查阅[优麦各组件性能测试报告](https://github.com/beer-on-ice/mdtg-performance-research)，可按报告中的测试方法在您的环境中实际测试。
 
 ### 6、我说话很慢，停顿时优麦老是抢话 🗣️
 
@@ -96,7 +96,7 @@ VAD:
 ### 12、性能测试教程
 
 1、[各组件速度测试指南](./performance_tester.md)<br/>
-2、[定期公开测试结果](https://github.com/beer-on-ice/xiaomai-performance-research)<br/>
+2、[定期公开测试结果](https://github.com/beer-on-ice/mdtg-performance-research)<br/>
 
 ### 13、更多问题，可联系我们反馈 💬
 

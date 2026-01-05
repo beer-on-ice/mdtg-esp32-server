@@ -2,7 +2,7 @@
 
 ## 第 1 步 确认版本
 
-烧录虾哥已经编译好的[1.6.1 版本以上固件](https://github.com/78/xiaomai-esp32/releases)
+烧录虾哥已经编译好的[1.6.1 版本以上固件](https://github.com/beer-on-ice/mdtg-esp32/releases)
 
 ## 第 2 步 准备你的 ota 地址
 
@@ -11,7 +11,7 @@
 此刻，请你用浏览器打开你的 ota 地址，例如我的 ota 地址
 
 ```
-https://2662r3426b.vicp.fun/xiaomai/ota/
+https://2662r3426b.vicp.fun/mdtg/ota/
 ```
 
 如果显示“OTA 接口运行正常，websocket 集群数量：X”。那就往下。
@@ -25,7 +25,7 @@ https://2662r3426b.vicp.fun/xiaomai/ota/
 - 3、在列表中找到`server.websocket`项目，输入你的`Websocket`地址。例如我的就是
 
 ```
-wss://2662r3426b.vicp.fun/xiaomai/v1/
+wss://2662r3426b.vicp.fun/mdtg/v1/
 ```
 
 配置完后，再使用浏览器刷新你的 ota 接口地址，看看是不是正常了。如果还不正常就，就再次确认一下 Websocket 是否正常启动，是否配置了 Websocket 地址。

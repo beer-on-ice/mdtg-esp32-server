@@ -110,7 +110,7 @@ check_and_download() {
 # 检查是否已安装
 check_installed() {
     # 检查目录是否存在且非空
-    if [ -d "/opt/xiaomai-server/" ] && [ "$(ls -A /opt/xiaomai-server/)" ]; then
+    if [ -d "/opt/mdtg-server/" ] && [ "$(ls -A /opt/mdtg-server/)" ]; then
         DIR_CHECK=1
     else
         DIR_CHECK=0
@@ -138,7 +138,7 @@ if check_installed; then
         echo "开始升级操作..."
 
         # 停止并移除所有docker-compose服务
-        docker compose -f /opt/xiaomai-server/docker-compose_all.yml down
+        docker compose -f /opt/mdtg-server/docker-compose_all.yml down
 
         # 停止并删除特定容器（考虑容器可能不存在的情况）
         containers=(
@@ -176,21 +176,21 @@ if check_installed; then
         echo "所有清理操作完成"
 
         # 备份原有配置文件
-        mkdir -p /opt/xiaomai-server/backup/
-        if [ -f /opt/xiaomai-server/data/.config.yaml ]; then
-            cp /opt/xiaomai-server/data/.config.yaml /opt/xiaomai-server/backup/.config.yaml
-            echo "已备份原有配置文件到 /opt/xiaomai-server/backup/.config.yaml"
+        mkdir -p /opt/mdtg-server/backup/
+        if [ -f /opt/mdtg-server/data/.config.yaml ]; then
+            cp /opt/mdtg-server/data/.config.yaml /opt/mdtg-server/backup/.config.yaml
+            echo "已备份原有配置文件到 /opt/mdtg-server/backup/.config.yaml"
         fi
 
         # 下载最新版配置文件
-        check_and_download "/opt/xiaomai-server/docker-compose_all.yml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/docker-compose_all.yml"
-        check_and_download "/opt/xiaomai-server/data/.config.yaml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/config_from_api.yaml"
+        check_and_download "/opt/mdtg-server/docker-compose_all.yml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/docker-compose_all.yml"
+        check_and_download "/opt/mdtg-server/data/.config.yaml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/config_from_api.yaml"
 
         # 启动Docker服务
         echo "开始启动最新版本服务..."
         # 升级完成后标记，跳过后续下载步骤
         UPGRADE_COMPLETED=1
-        docker compose -f /opt/xiaomai-server/docker-compose_all.yml up -d
+        docker compose -f /opt/mdtg-server/docker-compose_all.yml up -d
     else
           whiptail --title "跳过升级" --msgbox "已取消升级，将继续使用当前版本。" 10 50
           # 跳过升级，继续执行后续安装流程
@@ -305,25 +305,25 @@ fi
 echo "------------------------------------------------------------"
 echo "开始创建安装目录..."
 # 检查并创建数据目录
-if [ ! -d /opt/xiaomai-server/data ]; then
-    mkdir -p /opt/xiaomai-server/data
-    echo "已创建数据目录: /opt/xiaomai-server/data"
+if [ ! -d /opt/mdtg-server/data ]; then
+    mkdir -p /opt/mdtg-server/data
+    echo "已创建数据目录: /opt/mdtg-server/data"
 else
-    echo "目录xiaomai-server/data已存在，跳过创建"
+    echo "目录mdtg-server/data已存在，跳过创建"
 fi
 
 # 检查并创建模型目录
-if [ ! -d /opt/xiaomai-server/models/SenseVoiceSmall ]; then
-    mkdir -p /opt/xiaomai-server/models/SenseVoiceSmall
-    echo "已创建模型目录: /opt/xiaomai-server/models/SenseVoiceSmall"
+if [ ! -d /opt/mdtg-server/models/SenseVoiceSmall ]; then
+    mkdir -p /opt/mdtg-server/models/SenseVoiceSmall
+    echo "已创建模型目录: /opt/mdtg-server/models/SenseVoiceSmall"
 else
-    echo "目录xiaomai-server/models/SenseVoiceSmall已存在，跳过创建"
+    echo "目录mdtg-server/models/SenseVoiceSmall已存在，跳过创建"
 fi
 
 echo "------------------------------------------------------------"
 echo "开始下载语音识别模型"
 # 下载模型文件
-MODEL_PATH="/opt/xiaomai-server/models/SenseVoiceSmall/model.pt"
+MODEL_PATH="/opt/mdtg-server/models/SenseVoiceSmall/model.pt"
 if [ ! -f "$MODEL_PATH" ]; then
     (
     for i in {1..20}; do
@@ -341,8 +341,8 @@ fi
 
 # 如果不是升级完成，才执行下载
 if [ -z "$UPGRADE_COMPLETED" ]; then
-    check_and_download "/opt/xiaomai-server/docker-compose_all.yml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/docker-compose_all.yml"
-    check_and_download "/opt/xiaomai-server/data/.config.yaml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/xiaomai-server/config_from_api.yaml"
+    check_and_download "/opt/mdtg-server/docker-compose_all.yml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/docker-compose_all.yml"
+    check_and_download "/opt/mdtg-server/data/.config.yaml" "https://ghfast.top/https://raw.githubusercontent.com/beer-on-ice/mdtg-esp32-server/refs/heads/main/main/mdtg-server/config_from_api.yaml"
 fi
 
 # 启动Docker服务
@@ -350,7 +350,7 @@ fi
 echo "------------------------------------------------------------"
 echo "正在拉取Docker镜像..."
 echo "这可能需要几分钟时间，请耐心等待"
-docker compose -f /opt/xiaomai-server/docker-compose_all.yml up -d
+docker compose -f /opt/mdtg-server/docker-compose_all.yml up -d
 
 if [ $? -ne 0 ]; then
     whiptail --title "错误" --msgbox "Docker服务启动失败，请尝试更换镜像源后重新执行本脚本" 10 60
@@ -376,7 +376,7 @@ done
 
     echo "服务端启动成功！正在完成配置..."
     echo "正在启动服务..."
-    docker compose -f /opt/xiaomai-server/docker-compose_all.yml up -d
+    docker compose -f /opt/mdtg-server/docker-compose_all.yml up -d
     echo "服务启动完成！"
 )
 
@@ -390,10 +390,10 @@ SECRET_KEY=$(whiptail --title "配置服务器密钥" --inputbox "请使用超�
 if [ -n "$SECRET_KEY" ]; then
     python3 -c "
 import sys, yaml;
-config_path = '/opt/xiaomai-server/data/.config.yaml';
+config_path = '/opt/mdtg-server/data/.config.yaml';
 with open(config_path, 'r') as f:
     config = yaml.safe_load(f) or {};
-config['manager-api'] = {'url': 'http://mdtg-esp32-server-web:8002/xiaomai', 'secret': '$SECRET_KEY'};
+config['manager-api'] = {'url': 'http://mdtg-esp32-server-web:8002/mdtg', 'secret': '$SECRET_KEY'};
 with open(config_path, 'w') as f:
     yaml.dump(config, f);
 "
@@ -407,7 +407,7 @@ LOCAL_IP=$(hostname -I | awk '{print $1}')
 whiptail --title "安装完成！" --msgbox "\
 服务端相关地址如下：\n\
 管理后台访问地址: http://$LOCAL_IP:8002\n\
-OTA 地址: http://$LOCAL_IP:8002/xiaomai/ota/\n\
+OTA 地址: http://$LOCAL_IP:8002/mdtg/ota/\n\
 视觉分析接口地址: http://$LOCAL_IP:8003/mcp/vision/explain\n\
-WebSocket 地址: ws://$LOCAL_IP:8000/xiaomai/v1/\n\
+WebSocket 地址: ws://$LOCAL_IP:8000/mdtg/v1/\n\
 \n安装完毕！感谢您的使用！\n按Enter键退出..." 16 70
