@@ -30,7 +30,7 @@ class SimpleHttpServer:
         if websocket_config and "你" not in websocket_config:
             return websocket_config
         else:
-            return f"ws://{local_ip}:{port}/xiaomai/v1/"
+            return f"ws://{local_ip}:{port}/mdtg/v1/"
 
     async def start(self):
         try:
@@ -46,18 +46,18 @@ class SimpleHttpServer:
                     # 如果没有开启智控台，只是单模块运行，就需要再添加简单OTA接口，用于下发websocket接口
                     app.add_routes(
                         [
-                            web.get("/xiaomai/ota/", self.ota_handler.handle_get),
-                            web.post("/xiaomai/ota/", self.ota_handler.handle_post),
+                            web.get("/mdtg/ota/", self.ota_handler.handle_get),
+                            web.post("/mdtg/ota/", self.ota_handler.handle_post),
                             web.options(
-                                "/xiaomai/ota/", self.ota_handler.handle_options
+                                "/mdtg/ota/", self.ota_handler.handle_options
                             ),
                             # 下载接口，仅提供 data/bin/*.bin 下载
                             web.get(
-                                "/xiaomai/ota/download/{filename}",
+                                "/mdtg/ota/download/{filename}",
                                 self.ota_handler.handle_download,
                             ),
                             web.options(
-                                "/xiaomai/ota/download/{filename}",
+                                "/mdtg/ota/download/{filename}",
                                 self.ota_handler.handle_options,
                             ),
                         ]

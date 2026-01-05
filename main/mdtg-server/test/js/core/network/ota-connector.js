@@ -86,16 +86,16 @@ async function sendOTA(otaUrl, config) {
 				version: 0,
 				uuid: '',
 				application: {
-					name: 'xiaomai-web-test',
+					name: 'mdtg-web-test',
 					version: '1.0.0',
 					compile_time: '2025-04-16 10:00:00',
 					idf_version: '4.4.3',
 					elf_sha256: '1234567890abcdef1234567890abcdef1234567890abcdef'
 				},
-				ota: { label: 'xiaomai-web-test' },
+				ota: { label: 'mdtg-web-test' },
 				board: {
-					type: 'xiaomai-web-test',
-					ssid: 'xiaomai-web-test',
+					type: 'mdtg-web-test',
+					ssid: 'mdtg-web-test',
 					rssi: 0,
 					channel: 0,
 					ip: '192.168.1.1',

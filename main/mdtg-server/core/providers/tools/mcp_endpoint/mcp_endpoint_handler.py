@@ -234,7 +234,7 @@ async def send_mcp_endpoint_initialize(mcp_client: MCPEndpointClient):
                 "sampling": {},
             },
             "clientInfo": {
-                "name": "XiaomaiMCPEndpointClient",
+                "name": "MdtgMCPEndpointClient",
                 "version": "1.0.0",
             },
         },
